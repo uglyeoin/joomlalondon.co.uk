@@ -1,0 +1,25 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+.cw-gplus-mod_copyrht{
+    display:block;
+    clear:both;
+    font-size: 12px;
+    margin:15px 0 0;
+}
+
+.cw-gplus-lft, .cw-gplus-ctr, .cw-gplus-rht {
+    display:block;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+}
+
+.cw-gplus-lft { text-align: left; }
+.cw-gplus-ctr { text-align: center; }
+.cw-gplus-rht { text-align: right; }

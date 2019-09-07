@@ -1,0 +1,93 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/* YooTheme Zoo specific
+-----------------------------------------------------------------------------*/
+#yoo-zoo .item div.pos-top {
+    overflow: visible;
+}
+#yoo-zoo .row, #yoo-zoo .floatbox {
+    overflow: visible;
+}
+
+#yoo-zoo .item div.pos-top .element {
+    overflow: visible;
+}
+#yoo-zoo div.box-1 {
+    overflow: visible;
+}
+#yoo-zoo .item div.pos-bottom {
+    overflow: visible;
+}
+#yoo-zoo .items div.teaser-item-bg {
+    overflow: visible;
+}
+#yoo-zoo .items {
+    overflow: visible;
+}
+.yoo-zoo .cwsl-zoo { 
+    width:100%;
+    margin:5px 2px !important;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    text-align:right;
+}
+#yoo-zoo .cwsl-zoo-sli { 
+    letter-spacing: 0px !important;
+}
+
+/* End
+------------------------------------------------------------------------------*/
+
+/* Social Links
+------------------------------------------------------------------------------*/
+ul.cwsl-zoo-items {
+    margin: 0 !important;
+    padding: 0!important;
+    list-style: none;
+}
+
+ul.cwsl-zoo-items li {
+    padding: 0px !important;
+    margin-left:5px !important;
+    display:inline-block;
+}
+
+.cwsl-zoo-share { margin-right:7px !important;}
+
+.cwsl-zoo-sli{ 
+    font-size:25px;
+    margin-bottom:-4px;
+}
+
+.cwsl-zoo-share,
+.cwsl-zoo-like,
+.cwsl-zoo-likeshare {
+   vertical-align: top;
+   margin-top:2px !important;
+}
+
+/* End
+-----------------------------------------------------------------------------*/
+
+/* Make drop downs visible on certain templates 
+------------------------------------------------------------------------------*/
+.item-page, .items-leading{
+    overflow: visible !important;
+}
+
+iframe,svg {
+  max-width: inherit !important;
+}
+
+.fb_iframe_widget_lift{
+    min-width:500px !important;
+}
+
+/* End
+-----------------------------------------------------------------------------*/

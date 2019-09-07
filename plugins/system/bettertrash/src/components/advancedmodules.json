@@ -1,0 +1,7 @@
+{
+	"modules": {
+		"table": "modules",
+		"state": "published",
+		"filter": "state"
+	}
+}

@@ -1,0 +1,88 @@
+// import breakpoints
+@import "dependencies";
+
+
+//  typically min 75rem  LARGE DESKTOP
+@include breakpoint(large-desktop-range) {
+   .jandbeyond {
+    text-align: center; 
+    padding-top: 86px;
+  } 
+}
+// typically range 60rem to 74.938rem  DESKTOP
+@include breakpoint(desktop-range) {
+    .features li {
+      float:left;
+      width:29%;
+      margin: 0 4% 0 0;
+      font-size: 1rem;      
+    } 
+   .jandbeyond {
+    text-align: center; 
+    padding-top: 120px;
+  } 
+  .g-branding, .totop {
+      margin-top: 3px;
+  } 
+}
+
+// typically 48rem to 59.938rem  TABLET
+@include breakpoint(tablet-range) {
+    div.fancy-select div.trigger {
+      padding: 16px 24px 9px 9px;
+    }
+    div.fancy-select {
+      font-size: 3rem;
+    }
+    .features li {
+      width:100%;
+      padding-right: 0%;
+      font-size: 1.5rem;
+    }  
+  .jandbeyond {
+    padding-top: 177px;
+  } 
+  .g-branding, .g-social.social-items, .totop.g-particle, .totop.g-particle {
+      margin-top: 3px;
+  }  
+}
+// typically 30rem to 47.938rem  LARGE MOBILE
+@include breakpoint(large-mobile-range) {
+    .features li {
+      float:left;
+      width:29%;
+      margin: 0 4% 0 0;
+      font-size: 1rem;      
+    }
+  .jandbeyond {
+    padding-top: 0px;
+  } 
+  .g-branding, .g-social.social-items, .totop.g-particle {
+      margin-top: 3px;
+  }        
+}
+// typically max 30rem  SMALL MOBILE
+@include breakpoint(small-mobile-range) {
+  .g-branding, .g-social.social-items, .totop.g-particle {
+      margin-top: 0;
+  }  
+}
+
+// Less commonly used media queries
+
+// typically min 60rem
+@include breakpoint(desktop-only) {
+
+}
+// typically min 48rem
+@include breakpoint(no-mobile) {
+
+}
+// typically max 47.938 rem
+@include breakpoint(mobile-only) {
+
+}
+// typically max 59.938rem
+@include breakpoint(no-desktop) {
+
+}

@@ -1,0 +1,103 @@
+name: 28
+timestamp: 1567212481
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1558378238
+positions:
+  logo: Logo
+  countdown-timer: Countdown-timer
+  header-banner: Header-banner
+  breadcrumbs: Breadcrumbs
+  sidebar: Sidebar
+  right: Right
+  footer: Footer
+  footer-menu-1: Footer-menu-1
+  footer-menu-2: Footer-menu-2
+  footer-menu-3: Footer-menu-3
+  footer-menu-4: Footer-menu-4
+  disclaimer: Disclaimer
+  address: Address
+  sub-footer: Sub-footer
+  copyright: Copyright
+  softforge: Softforge
+  download-joomla: Download-joomla
+sections:
+  logo: Logo
+  menu-and-countdown: Menu-and-countdown
+  sidebar1: Sidebar1
+  sidebar2: Sidebar2
+  sub-footer: Sub-footer
+  header-banner: Banner
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  position:
+    position-position-8999: Logo
+    position-position-7389: Countdown-timer
+    position-position-3018: Header-banner
+    position-position-4228: Breadcrumbs
+    position-position-5878: Sidebar
+    position-position-8147: Right
+    position-position-2481: Sidebar
+    position-position-5868: Right
+    position-position-6357: Footer
+    position-position-7867: Footer-menu-1
+    position-position-1601: Footer-menu-2
+    position-position-7133: Footer-menu-3
+    position-position-3836: Footer-menu-4
+    position-position-9937: Disclaimer
+    position-position-1329: Address
+    position-position-9550: Sub-footer
+    position-position-6441: Copyright
+    position-position-2299: Softforge
+    position-position-3623: Download-joomla
+  menu:
+    menu-5033: Menu
+  messages:
+    system-messages-7441: 'System Messages'
+  content:
+    system-content-4428: 'Page Content'
+  social:
+    social-4458: Social
+    social-1595: Social
+  mobile-menu:
+    mobile-menu-3141: Mobile-menu
+inherit:
+  default:
+    logo: logo
+    menu-and-countdown: menu-and-countdown
+    header-banner: header-banner
+    main: main
+    sidebar1: sidebar1
+    sidebar2: sidebar2
+    footer: footer
+    sub-footer: sub-footer
+    offcanvas: offcanvas
+    position-position-8999: position-logo
+    position-position-7389: position-countdown-timer
+    menu-5033: menu-6319
+    position-position-3018: position-header-banner
+    position-position-4228: position-breadcrumbs
+    system-messages-7441: system-messages-2715
+    system-content-4428: system-content-3598
+    social-4458: social-3688
+    position-position-5878: position-sidebar
+    position-position-8147: position-right
+    social-1595: social-2605
+    position-position-2481: position-position-9212
+    position-position-5868: position-position-5927
+    position-position-6357: position-footer
+    position-position-7867: position-footer-menu-1
+    position-position-1601: position-footer-menu-2
+    position-position-7133: position-footer-menu-3
+    position-position-3836: position-footer-menu-4
+    position-position-9937: position-disclaimer
+    position-position-1329: position-address
+    position-position-9550: position-sub-footer
+    position-position-6441: position-copyright
+    position-position-2299: position-softforge
+    position-position-3623: position-download-joomla
+    mobile-menu-3141: mobile-menu-5290

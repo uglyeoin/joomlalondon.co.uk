@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - AutoTweet and Joocial for Social Profile Links</name>
+	<creationDate>2019-05-22</creationDate>
+
+	<author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>8.28.0</version>
+
+	<description>PLG_AUTOTWEETSOCIALPROFILE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="autotweetsocialprofile">autotweetsocialprofile.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_autotweetsocialprofile.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_autotweetsocialprofile.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field name="type" type="list" default="Organization"
+					label="PLG_AUTOTWEETSOCIALPROFILE_TYPE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TYPE_DESC">
+					<option value="Organization">Organization</option>
+					<option value="Person">Person</option>
+                    <option value="LocalBusiness">Local Business</option>
+				</field>
+
+				<field name="customtype" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_CUSTOMTYPE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_CUSTOMTYPE_DESC">
+				</field>
+
+				<field name="name" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_NAME_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_NAME_DESC" />
+
+				<field name="url" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_URL_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_URL_DESC" />
+
+				<field name="logo" type="media" directory="images" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_LOGO_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_LOGO_DESC" />
+
+				<field name="image" type="media" directory="images" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_IMAGE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_IMAGE_DESC" />
+
+				<field name="telephone" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_TELEPHONE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TELEPHONE_DESC" />
+
+				<field name="sameAsFacebook" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_FACEBOOK_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_FACEBOOK_DESC" />
+
+				<field name="sameAsTwitter" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_TWITTER_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TWITTER_DESC" />
+
+				<field name="sameAsGPlus" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_GPLUS_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_GPLUS_DESC" />
+
+				<field name="sameAsInstagram" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_INSTAGRAM_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_INSTAGRAM_DESC" />
+
+				<field name="sameAsYoutube" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_YOUTUBE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_YOUTUBE_DESC" />
+
+				<field name="sameAsLinkedIn" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_LINKEDIN_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_LINKEDIN_DESC" />
+
+				<field name="sameAsMyspace" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_MYSPACE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_MYSPACE_DESC" />
+
+				<field name="sameAsPinterest" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_PINTEREST_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_PINTEREST_DESC" />
+
+				<field name="sameAsSoundCloud" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_SOUNDCLOUD_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_SOUNDCLOUD_DESC" />
+
+				<field name="sameAsTumblr" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_TUMBLR_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TUMBLR_DESC" />
+
+				<field name="spacer216" type="spacer" default="" label="PLG_AUTOTWEETSOCIALPROFILE_CORPORATE_CONTACT_SPACER_LABEL" description=""
+                    showon="type:Person"/>
+
+				<field name="contactTelephone" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_TELEPHONE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TELEPHONE_DESC"
+                    showon="type:Person"/>
+
+				<field name="contactType" type="list" default="customer support"
+					label="PLG_AUTOTWEETSOCIALPROFILE_CONTACTTYPE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_CONTACTTYPE_DESC"
+                    showon="type:Person">
+					<option value="customer support">Customer support</option>
+					<option value="technical support">Technical support</option>
+					<option value="billing support">Billing support</option>
+					<option value="bill payment">Bill payment</option>
+					<option value="sales">Sales</option>
+					<option value="reservations">Reservations</option>
+					<option value="credit card support">Credit card support</option>
+					<option value="emergency">Emergency</option>
+					<option value="baggage tracking">Baggage tracking</option>
+					<option value="roadside assistance">Roadside assistance</option>
+					<option value="package tracking">Package tracking</option>
+				</field>
+
+				<field name="areaServed" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_AREASERVED_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_AREASERVED_DESC"
+                    showon="type:Person"/>
+
+				<field name="contactOption" type="list" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_CONTACTOPTION_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_CONTACTOPTION_DESC"
+                    showon="type:Person">
+					<option value="">Default</option>
+					<option value="TollFree">Toll Free</option>
+					<option value="HearingImpairedSupported">Hearing Impaired Supported</option>
+				</field>
+
+				<field name="availableLanguage" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_AVAILABLELANGUAGE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_AVAILABLELANGUAGE_DESC"
+                    showon="type:Person"/>
+
+                <field name="spacer217" type="spacer" default="" label="PLG_AUTOTWEETSOCIALPROFILE_LOCAL_BUSINESS_SPACER_LABEL" description=""
+                    showon="type:LocalBusiness"/>
+
+				<field name="streetAddress" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_STREETADDRESS_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_STREETADDRESS_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="addressLocality" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_ADDRESSLOCALITY_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_ADDRESSLOCALITY_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="addressRegion" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_ADDRESSREGION_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_ADDRESSREGION_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="postalCode" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_POSTALCODE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_POSTALCODE_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="addressCountry" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_ADDRESSCOUNTRY_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_ADDRESSCOUNTRY_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="latitude" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_LATITUDE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_LATITUDE_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="longitude" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_LONGITUDE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_LONGITUDE_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="photo" type="media" directory="images" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_PHOTO_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_PHOTO_DESC"
+                    showon="type:LocalBusiness" />
+
+				<field name="priceRange" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_PRICERANGE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_PRICERANGE_DESC"
+                    showon="type:LocalBusiness" />
+
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

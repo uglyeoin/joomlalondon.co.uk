@@ -1,0 +1,53 @@
+css:
+  -
+    location: 'http://tympanus.net/Development/CardExpansion/css/demo.css'
+    inline: ''
+    extra: {  }
+    name: demo.css
+  -
+    location: 'http://tympanus.net/Development/CardExpansion/css/card.css'
+    inline: ''
+    extra: {  }
+    name: card.css
+  -
+    location: 'http://tympanus.net/Development/CardExpansion/css/pattern.css'
+    inline: ''
+    extra: {  }
+    name: pattern.css
+javascript:
+  -
+    location: 'gantry-assets://assets/js/card-expansion/js/vendors/trianglify.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: trianglify.min.js
+  -
+    location: 'gantry-assets://assets/js/card-expansion/js/vendors/TweenMax.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: tweenmax.min.js
+  -
+    location: 'gantry-assets://assets/js/card-expansion/js/vendors/ScrollToPlugin.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: scrolltoplugin.js
+  -
+    location: 'gantry-assets://assets/js/card-expansion/js/Card-circle.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: card-circle.js
+  -
+    location: 'gantry-assets://assets/js/card-expansion/js/vendors/cash.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: cash.min.js
+  -
+    location: 'gantry-assets://assets/js/card-expansion/js/demo.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: demo.js

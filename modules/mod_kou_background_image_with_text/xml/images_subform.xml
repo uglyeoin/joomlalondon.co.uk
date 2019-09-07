@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <fieldset name="imageFieldset">
+    <field name="mediaManagerOrUrl"
+          type="list"
+          label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_MEDIA_MANAGER_OR_URL_LABEL"
+          description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_MEDIA_MANAGER_OR_URL_DESCRIPTION"
+          default="0"
+          >
+            <option value="0">MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_MEDIA_MANAGER</option>
+            <option value="1">URL</option>
+    </field>
+    <field name="mediaManagerImagesSubform"
+            label= "MOD_KOU_BACKGROUND_IMAGE_WITH_IMAGES_SUBFORM_LABEL"				
+            description= "MOD_KOU_BACKGROUND_IMAGE_WITH_IMAGES_SUBFORM_DESCRIPTION"
+            type= "subform"
+            min= "1"
+            max= "1000"
+            required= "true"
+            formsource= "/modules/mod_kou_background_image_with_text/xml/media_manager_images_subform.xml"
+            multiple= "false"
+            buttons= ""
+            layout="joomla.form.field.subform.repeatable"
+            groupByFieldset="false"
+            showon="mediaManagerOrUrl:0"            
+  />	   
+    <field name="urlImagesSubform"
+            label= "MOD_KOU_BACKGROUND_IMAGE_WITH_IMAGES_SUBFORM_LABEL"				
+            description= "MOD_KOU_BACKGROUND_IMAGE_WITH_IMAGES_SUBFORM_DESCRIPTION"
+            type= "subform"
+            min= "1"
+            max= "1000"
+            required= "true"
+            formsource= "/modules/mod_kou_background_image_with_text/xml/url_images_subform.xml"
+            multiple= "false"
+            buttons= ""
+            layout="joomla.form.field.subform.repeatable"
+            groupByFieldset="false"
+            showon="mediaManagerOrUrl:1"
+  />	      
+  </fieldset>
+</form>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" version="3.0">
+	<name>CacheControl</name>
+	<creationDate>October 2013</creationDate>
+	<author>Crosstec GmbH &amp; Co. KG</author>
+	<copyright>This Joomla! component is released under the GNU/GPL license</copyright>
+	<authorEmail>markus.bopp@crosstec.de</authorEmail>
+	<authorUrl>www.crosstec.de</authorUrl>
+	<version>1.1</version>
+	<administration></administration>
+	<description>
+	<![CDATA[
+        Useful plugin that turns off joomla caching for the desired pages by using URL based parameters. PLEASE DO NOT FORGET TO ENABLE THE PLUGIN!
+        ]]>
+    </description>
+    <files>
+        <filename plugin="cachecontrol">cachecontrol.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="definitions" type="textarea" cols="30" rows="10" default="option=com_content" label="Rules" description="Add a line for each rule. Each line consists of a list of url parameters. For instance option=com_content&amp;view=article would turn off caching for com_content in article view. You can also use ? for any value, for instance option=com_content&amp;view=article&amp;id=?. Please do not forget to enable the plugin!"/>
+                <field name="reenable_afterdispatch" type="radio" default="0" label="Re-Enable Caching After Dispatch" description="Wether caching should be re-enabled after a rule fired. By that the page will be cached partially, but components such as com_content won't be cached. This option doesn't work if the joomla cache plugin is enabled.">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

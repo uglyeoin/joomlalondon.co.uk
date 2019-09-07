@@ -1,0 +1,19 @@
+div.tree ul li div.tree-row .zoo.root {
+    background: transparent url('images/zoo.png') no-repeat 3px 3px !important;
+}
+
+div.tree ul li div.tree-row .zoo.application {
+    background: transparent url('images/application.png') no-repeat 3px 3px !important;
+}
+
+div.tree ul li div.tree-row .zoo.category {
+    background: transparent url('images/category.png') no-repeat 3px 3px !important;
+}
+
+div.tree ul li div.tree-row .zoo.item {
+    background: transparent url('images/item.png') no-repeat 3px 3px !important;
+}
+
+div.tree ul li div.tree-row .zoo.tag {
+    background: transparent url('images/tag.png') no-repeat 3px 3px !important;
+}

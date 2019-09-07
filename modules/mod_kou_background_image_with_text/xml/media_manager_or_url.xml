@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <fieldset name="media-manager-or-url-fieldset">
+    <field name="image"
+          type="media"
+          label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_IMAGE_LABEL"
+          description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_IMAGE_DESCRIPTION"
+          showon="media_manager_or_url:0"
+          />       
+    <field  name="url"
+            type="url"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_URL_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_URL_DESCRIPTION"
+            showon="media_manager_or_url:1"            
+    />
+    <field  name="real-size"
+            type="text"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_REAL_SIZE_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_REAL_SIZE_DESCRIPTION"            
+    />
+    <field  name="size"
+            type="text"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_SIZE_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_SIZE_DESCRIPTION"            
+    />               
+  </fieldset>
+</form>

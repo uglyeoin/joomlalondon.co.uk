@@ -1,0 +1,75 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+ul.cws-tabs.left {
+    left:0px;
+    margin:0px;
+    width:auto;
+}
+
+ul.cws-tabs.left li { 
+    margin-left: -170px;
+    -webkit-transition: margin-left 0.3s;
+    -moz-transition: margin-left 0.3s;
+    -ms-transition: margin-left 0.3s;
+    -o-transition: margin-left 0.3s;
+    transition: margin-left 0.3s;
+}
+
+ul.cws-tabs.left li a { 
+    text-align:left;
+    padding: 11px 0px 11px 12px; 
+    margin-left: 0px;
+}
+
+ul.cws-tabs.left li:hover {margin-left: 0px;}
+ul.cws-tabs.left a {background-position: 168px 50%;}
+
+ul.cws-tabs.right{
+    right:-170px;
+    margin:0px;
+    width:auto;
+}
+
+ul.cws-tabs.right li { 
+    right: 0px;
+    position:relative;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    -ms-transition: right 0.3s;
+    -o-transition: right 0.3s;
+    transition: right 0.3s;
+}
+
+ul.cws-tabs.right li a { 
+    text-align:right;
+    padding: 11px 12px 11px 0px;
+}
+
+ul.cws-tabs.right li:hover {right: 170px;}
+ul.cws-tabs.right a {background-position: -2px 50%;}
+
+ul.cws-tabs .facebook a:hover, 
+ul.cws-tabs .twitter a:hover, 
+ul.cws-tabs .google a:hover, 
+ul.cws-tabs .reddit a:hover,
+ul.cws-tabs .stumbleupon a:hover,
+ul.cws-tabs .digg a:hover,
+ul.cws-tabs .pinterest a:hover,
+ul.cws-tabs .rss a:hover,
+ul.cws-tabs .linkedin a:hover,
+ul.cws-tabs .email a:hover,
+ul.cws-tabs .contact a:hover,
+ul.cws-tabs .whatsapp a:hover,
+ul.cws-tabs .customone a:hover,
+ul.cws-tabs .customtwo a:hover{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}

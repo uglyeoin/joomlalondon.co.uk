@@ -1,0 +1,10 @@
+name: 11
+timestamp: 1443864476
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1443864476
+positions:
+  header: Header
+  breadcrumbs: Breadcrumbs
+  footer: Footer

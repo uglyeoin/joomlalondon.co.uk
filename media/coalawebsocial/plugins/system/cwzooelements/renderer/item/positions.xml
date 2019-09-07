@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderer>
+	<positions layout="cwzooog">
+		<position name="og:url">og:url</position>
+		<position name="og:title">og:title</position>
+		<position name="og:description">og:description</position>
+		<position name="og:image">og:image</position>
+		<position name="og:image:width">og:image:width</position>
+		<position name="og:image:height">og:image:height</position>
+	</positions>
+</renderer>

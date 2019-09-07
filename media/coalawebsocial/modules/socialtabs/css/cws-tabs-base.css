@@ -1,0 +1,75 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+.cws-tabs * {
+    box-sizing: content-box;
+}
+
+.cws-tabs a:hover, 
+.cws-tabs a:active, 
+.cws-tabs a:focus {
+  outline: 0;
+ }
+ 
+ul.cws-tabs {
+    position: fixed;
+    padding: 0px;
+    list-style: none;
+    z-index:9999;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+ul.cws-tabs li {
+    padding: 1px 0px 1px 0px;
+    overflow:hidden;
+}
+
+ul.cws-tabs li a {
+    display: block;
+    width: 200px;  
+    background-repeat:no-repeat;
+    text-decoration: none;
+    color:#fff !important;
+    font-size: 14px;
+}
+
+ul.cws-tabs li a .tabs_text {
+    display: inline-block;
+    width: 155px;	
+}
+
+ul.cws-tabs .facebook a {background-image: url(../icons/facebook-48.png);}
+ul.cws-tabs .reddit a {background-image: url(../icons/reddit-48.png);}
+ul.cws-tabs .stumbleupon a {background-image: url(../icons/stumbleupon-48.png);}
+ul.cws-tabs .twitter a {background-image: url(../icons/twitter-48.png);}
+ul.cws-tabs .google a {background-image: url(../icons/google-48.png);}
+ul.cws-tabs .linkedin a {background-image: url(../icons/linkedin-48.png);}
+ul.cws-tabs .digg a {background-image: url(../icons/digg-48.png);}
+ul.cws-tabs .pinterest a {background-image: url(../icons/pinterest-48.png);}
+ul.cws-tabs .rss a {background-image: url(../icons/rss-48.png);}
+ul.cws-tabs .email a {background-image: url(../icons/email-48.png);}
+ul.cws-tabs .contact a {background-image: url(../icons/email-48.png);}
+ul.cws-tabs .whatsapp a {background-image: url(../icons/whatsapp-48.png);}
+
+ul.cws-tabs.bottom li a {
+    width: 46px;
+    height: 46px;
+    color: transparent !important;
+}
+
+ul.cws-tabs.bottom {
+    bottom: -6px;
+    margin: 0px auto;
+    text-align: center;
+    width: 90%;
+}
+
+ul.cws-tabs.bottom li {
+    display: inline-block;
+    padding: 0px;
+}
+

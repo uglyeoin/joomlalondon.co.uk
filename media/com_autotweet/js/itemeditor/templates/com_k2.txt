@@ -1,0 +1,122 @@
+<div id="autotweet-advanced-attrs">
+	<h3>
+		<%= editorTitle %>
+		<img src="<%= autotweetUrlRoot %>media/com_autotweet/images/autotweet-logo.png" style="float:right;">
+	</h3>
+	<div>
+		<table class="admintable table">
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-text-width"></i> <%= descriptionLabel %>
+				</td>
+				<td>
+					<textarea name="autotweet-description" id="autotweet-description" rows="2" class="readonly" readonly="readonly"><%= description %></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-tags"></i> <%= hashtagsLabel %>
+				</td>
+				<td>
+					<input type="text" name="autotweet-hashtags" id="autotweet-hashtags" value="<%= hashtags %>" size="30" class="readonly" readonly="readonly"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-text-height"></i> <%= fulltextLabel %>
+				</td>
+				<td>
+					<textarea name="autotweet-fulltext" id="autotweet-fulltext" rows="2" class="readonly" readonly="readonly"><%= fulltext %></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-arrow-circle-o-up"></i> <%= postthisLabel %>
+				</td>
+				<td>
+					 <%=
+                        (postthis == 1 ? postthisDefaultLabel :
+                            (postthis == 2 ? postthisNoLabel :
+                                (postthis == 3 ? postthisYesLabel :
+                                    (postthis == 4 ? postthisImmediatelyLabel :
+                                    '??'
+                                    )
+                                )
+                            )
+                        )
+					 %>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-leaf"></i> <%= evergreenLabel %>
+				</td>
+				<td>
+					 <%=
+						(evergreen == 1 ? postthisDefaultLabel :
+							(evergreen == 2 ? postthisNoLabel :
+								(evergreen == 3 ? postthisYesLabel :
+									'??'
+								)
+							)
+						)
+					 %>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-bullhorn"></i> <%= channelLabel %>
+				</td>
+				<td>
+					<input type="text" name="autotweet-channels_text" id="autotweet-channels_text" value="<%= channels_text %>" size="30" class="readonly" readonly="readonly"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-calendar"></i> <%= agendaLabel %>
+				</td>
+				<td>
+					<textarea name="autotweet-agenda" id="autotweet-agenda" cols="30" rows="3" class="readonly" readonly="readonly"><%= agenda.join("\n") %></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-refresh"></i> <%= unix_mhdmdLabel %>
+				</td>
+				<td>
+					<input type="text" name="autotweet-unix_mhdmd" id="autotweet-unix_mhdmd" value="<%= unix_mhdmd %>" size="30" class="readonly" readonly="readonly"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-calendar-o"></i> <%= repeat_untilLabel %>
+				</td>
+				<td>
+					<input type="text" name="autotweet-repeat_until" id="autotweet-repeat_until" value="<%= repeat_until %>" size="30" class="readonly" readonly="readonly"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+					<i class="xticon xticon-image"></i> <%= imageLabel %>
+				</td>
+				<td>
+					<input type="text" name="autotweet-image" id="autotweet-image" value="<%= (image_url || image) %>" size="30" class="readonly" readonly="readonly"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="key">
+				</td>
+				<td>
+					<img src="<%=
+
+							((image && image.indexOf('http') == 0) || (image_url && image_url.indexOf('http') == 0) ? '' : autotweetUrlRoot)
+
+						%><%= ((image && image.length && image != 'none') || (image_url && image_url.length) ? (image_url || image) : 'media/lib_extly/images/Blank.gif') %>" style="max-width:240px;" class="img-polaroid">
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

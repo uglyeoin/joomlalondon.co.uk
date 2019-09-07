@@ -1,0 +1,24 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+ul.cw-social-mod-icons-wpzoom-fadein li, 
+ul.cw-social-mod-icons-wpzoom-fadeout li,
+ul.cw-social-mod-icons-cws-square-fadein li,
+ul.cw-social-mod-icons-cws-square-fadeout li,
+ul.cw-social-mod-icons-cws-circle-fadein li,
+ul.cw-social-mod-icons-cws-circle-fadeout li,
+ul.cw-social-mod-icons-cws-square-rc-fadein li,
+ul.cw-social-mod-icons-cws-square-rc-fadeout li,
+ul.cw-social-mod-icons-custom-example li,
+ul.cw-social-mod-icons-custom-example li {
+display: inline-block;
+*display: inline;
+zoom: 1;
+}

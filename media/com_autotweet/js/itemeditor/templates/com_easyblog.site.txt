@@ -1,0 +1,108 @@
+<div id="autotweet-advanced-attrs">
+	<div class="ui-sectionsep">
+		<div>
+			<%= editorTitle %>
+		</div>
+	</div>
+
+	<ul class="list-form reset-ul">
+		<li>
+			<label id="autotweet-description-lbl" for="autotweet-description"><i class="xticon xticon-text-width"></i> <%= descriptionLabel %></label>
+			<div>
+				<textarea name="autotweet-description" id="autotweet-description" rows="2" class="readonly width-full" readonly="readonly"><%= description %></textarea>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-hashtags-lbl" for="autotweet-hashtags"><i class="xticon xticon-tags"></i> <%= hashtagsLabel %></label>
+			<div>
+				<input type="text" name="autotweet-hashtags" id="autotweet-hashtags" value="<%= hashtags %>" class="input text width-full readonly" readonly="readonly"/>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-fulltext-lbl" for="autotweet-fulltext"><i class="xticon xticon-text-height"></i> <%= fulltextLabel %></label>
+			<div>
+				<textarea name="autotweet-fulltext" id="autotweet-fulltext" rows="2" class="readonly width-full" readonly="readonly"><%= fulltext %></textarea>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-postthis-lbl" for="autotweet-postthis"><i class="xticon xticon-arrow-circle-o-up"></i> <%= postthisLabel %></label>
+			<div style="line-height: 30px; background: url(<%= autotweetUrlRoot %>media/com_autotweet/images/autotweet-logo-24.png) 98% 0px no-repeat;">
+				 <%=
+                        (postthis == 1 ? postthisDefaultLabel :
+                            (postthis == 2 ? postthisNoLabel :
+                                (postthis == 3 ? postthisYesLabel :
+                                    (postthis == 4 ? postthisImmediatelyLabel :
+                                    '??'
+                                    )
+                                )
+                            )
+                        )
+				 %>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-evergreen-lbl" for="autotweet-evergreen"><i class="xticon xticon-leaf"></i> <%= evergreenLabel %></label>
+			<div>
+				 <%=
+					(evergreen == 1 ? postthisDefaultLabel :
+						(evergreen == 2 ? postthisNoLabel :
+							(evergreen == 3 ? postthisYesLabel :
+								'??'
+							)
+						)
+					)
+				 %>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-channels_text-lbl" for="autotweet-channels_text"><i class="xticon xticon-bullhorn"></i> <%= channelLabel %></label>
+			<div>
+				<input type="text" name="autotweet-channels_text" id="autotweet-channels_text" value="<%= channels_text %>" class="input text width-full readonly" readonly="readonly"/>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-agenda-lbl" for="autotweet-agenda"><i class="xticon xticon-calendar"></i> <%= agendaLabel %></label>
+			<div>
+				<textarea name="autotweet-agenda" id="autotweet-agenda" rows="3" class="input textarea width-full readonly" readonly="readonly"><%= agenda.join("\n") %></textarea>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-unix_mhdmd-lbl" for="autotweet-unix_mhdmd"><i class="xticon xticon-refresh"></i> <%= unix_mhdmdLabel %></label>
+			<div>
+				<input type="text" name="autotweet-unix_mhdmd" id="autotweet-unix_mhdmd" value="<%= unix_mhdmd %>" class="input text width-full readonly" readonly="readonly"/>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-repeat_until-lbl" for="autotweet-repeat_until"><i class="xticon xticon-calendar-o"></i> <%= repeat_untilLabel %></label>
+			<div>
+				<input type="text" name="autotweet-repeat_until" id="autotweet-repeat_until" value="<%= repeat_until %>" class="input text width-full readonly" readonly="readonly"/>
+			</div>
+		</li>
+
+		<li>
+			<label id="autotweet-image-lbl" for="autotweet-image"><i class="xticon xticon-image"></i> <%= imageLabel %></label>
+			<div>
+				<input type="text" name="autotweet-image" id="autotweet-image" value="<%= (image_url || image) %>" size="30" class="input text width-full readonly" readonly="readonly"/>
+			</div>
+		</li>
+
+		<li>
+			<label></label>
+			<div>
+				<img src="<%=
+
+				((image && image.indexOf('http') == 0) || (image_url && image_url.indexOf('http') == 0) ? '' : autotweetUrlRoot)
+
+				%><%= ((image && image.length && image != 'none') || (image_url && image_url.length) ? (image_url || image) : 'media/lib_extly/images/Blank.gif') %>" style="max-width:170px;" class="img-polaroid">
+			</div>
+		</li>
+	</ul>
+</div>

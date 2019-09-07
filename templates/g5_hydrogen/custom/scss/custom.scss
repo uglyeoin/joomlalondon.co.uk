@@ -1,0 +1,302 @@
+@import "colour-scheme";
+
+/* General */
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+a.button {
+  background: $green;
+  color: $white;
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  font-weight: 900;
+  letter-spacing: 0.125rem;
+}
+
+
+
+  /* Positions & Background images */
+
+
+  #g-menu-and-countdown {
+    a {
+      color: $white;
+      font-weight: 700;
+      padding: 0.8rem 1.2rem;
+    }
+    .g-menu-item-101 {
+      background: $red;
+    }    
+    .g-menu-item-353 {
+      background: $green;
+    }
+    .g-menu-item-1048 {
+      background: $yellow;
+    }
+    .g-menu-item-1049 {
+      background: $light-blue;
+    }    
+  }
+
+  
+
+  #g-offcanvas {
+    background: $dark-blue;
+    #g-mobilemenu-container ul {
+      background: $dark-blue;
+      & > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover,
+      & > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):active{
+        background: darken($dark-blue, 10%);
+      }
+    }
+  }
+
+  .g-offcanvas-toggle {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #g-main {
+    .g-container {
+      background: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+
+  #g-footer {
+    font-weight: 600;
+    background: $light-blue;
+    h1, h2, h3, h4, h5, h6, p, a {
+      color: $white;
+    }
+    .menuFooter {
+      li {
+      padding: 0.25rem 0;
+      }
+    }
+  }
+  #g-sub-footer {
+    background: $dark-blue;
+    color: $white;
+    a {
+      color: $white;
+    }
+  }
+
+  /* End Positions & Background Images */
+
+
+  /* MODULES *//* MODULES *//* MODULES */
+
+  /* Modules General */
+  .moduletable {
+    // some stuff
+    .g-title {
+
+    }
+  }
+  .moduletable.bg--light-blue {
+    color: $white;
+    background-color: $light-blue;
+    padding: 0;
+    margin: 0;
+    .g-title {
+      color: $white;
+      border-bottom: $white solid 0.0625rem;
+    }
+  }
+
+  #g-menu-and-countdown {
+    .mod_next_jugl_countdown {
+      h3 {
+        font-size: 1rem;
+        color: $black;
+      }
+      a {
+        color: $black;
+        padding: 0 0 0.25rem 0;
+        border-bottom: 2px dotted $light-blue;
+        &:hover {
+          border: none;
+          color: lighten($black, 10%);
+        }
+      }
+    }
+  }  
+
+  /* MOD KOU RSS FEEDS EXTRA */
+
+  .mod_kou_youtube_rss_playlist_or_channel--Padding {
+    margin: 3px;
+    position: relative;
+  }
+  .mod_kou_youtube_rss_playlist_or_channel .item:first-of-type > div {
+      padding-left: 0;
+  }
+  .mod_kou_youtube_rss_playlist_or_channel .item:last-of-type > div {
+      padding-right: 0;
+  }
+
+
+  .itemTitle--padder {
+    position: absolute;    
+    bottom: 0;
+    width: 100%;
+  }
+  /*
+   .itemTitle--padder::before {
+    background: url('../../../../images/joomla-london-brand-assets/videos-diagonal-background.svg?5d167918') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:100%;
+    left:0;    
+    display: block;
+    content: "";
+    margin-top: -56px;
+  }
+  */
+
+  .itemTitle--holder  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $dark-blue;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .itemTitle--image {
+    width: 100%;
+    img {
+      position: absolute;
+      bottom: calc(100% - 1px);
+    }
+  }
+
+
+  
+  .itemTitle {
+    color: $white;  
+    /*
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;        
+    line-clamp: 3;    
+    -moz-line-clamp: 3;    
+    -webkit-line-clamp: 3;    
+    */
+  }
+  /* End mod kou RSS feeds extra */
+
+
+
+  /* Responsive Styles in separate file */
+  .mod_kou_background_image_with_text {
+    position: flex;
+    align-items: center;
+    justify-content: center;    
+    .text-holder {
+      text-align: center;
+      margin: 0 auto;
+      > * {
+        background: rgba($white, 0.81);
+        display: flex;
+      }
+      > div {
+        background: $red;
+      }
+      > div:nth-of-type(2) {
+        background: $green;
+      }
+      > div:nth-of-type(3) {
+        background: $light-blue;
+      } 
+      a {
+        display: inline-block;
+        font-weight: 600;
+        margin: 0 auto;  
+        background: $red;
+        color: $white; 
+        padding: 1rem 2rem;     
+      }     
+    }
+  }
+
+  /* End General Modules */
+
+/* COMPONENTS *//* COMPONENTS *//* COMPONENTS *//* COMPONENTS */
+
+  /* Breezing Forms */
+  /* Responsive Text Area */
+  body .bfQuickMode textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* Improve the inputs so they don't break out of their boxes */
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  input:not([type]),
+  textarea {
+    max-width: 100%;
+    -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+    -moz-box-sizing: border-box;    // Firefox, other Gecko
+    box-sizing: border-box;         // Opera/IE 8+
+  }
+  .form-actions {
+    background: none;
+    border: none;
+  }
+  /* End Breezing Forms */
+  /* Responsive text area */
+    .bfQuickMode input[type=text], .bfQuickMode textarea, .bfQuickMode select, .bfQuickMode .uneditable-input {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+  #g-main .span12 > .bfClearfix {
+    background: rgba(255,255,255,0.8);
+    padding: 1rem;
+  }
+  .bfQuickMode .bfLabelLeft label {
+    text-align: right;
+    width: auto !important;
+    min-width: 110px;
+  }
+  label#bfLabel42 {
+    margin-bottom: 0.75rem;
+  }
+  body .bfQuickMode .bfNextButton,
+  body .bfQuickMode .bfSubmitButton,
+  body .bfQuickMode .bfCancelButton {
+    float: left;
+  }
+  /* End Breezing Forms */
+
+
+  @import "responsive";

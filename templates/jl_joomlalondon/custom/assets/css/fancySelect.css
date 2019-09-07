@@ -1,0 +1,194 @@
+div.fancy-select {
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: #46565D;
+}
+
+div.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+	box-shadow: 0 0 0 2px #4B5468;
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+	cursor: pointer;
+	padding: 34px 24px 9px 9px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #none;
+	border-bottom: dotted #FFF 2px;
+	border-top-color: #A5B2CB;
+	color: #fff;
+	box-shadow: none;
+	text-transform: capitalize;
+
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+
+/*
+	min-width: 	600px;
+	*/
+}
+
+div.fancy-select div.trigger:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top-color: #fff;
+	top: 40px;
+	right: 9px;
+}
+
+div.fancy-select div.trigger.open {
+	background: #4A5368;
+	border: 1px solid #475062;
+	color: #7A8498;
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+	border-top-color: #7A8498;
+}
+
+div.fancy-select ul.options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 500px;
+	overflow: auto;
+	background: #ffffff;
+	color: #25304F;
+	border-radius: 4px;
+	border-top: 1px solid #7DD8D2;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	min-width: 200px;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 122px;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+	top: auto;
+	bottom: 40px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+	top: auto;
+	bottom: 50px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+	padding: 8px 12px;
+	color: #25304F;
+	cursor: pointer;
+	white-space: nowrap;
+	width: 100%;
+
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	text-transform: capitalize;
+
+
+	/* min-width: 600px; */
+}
+
+div.fancy-select ul.options li.selected {
+	background: #fff;
+	color: #25304F;
+}
+
+
+div.fancy-select ul.options li:nth-child(1n):hover {
+	color: #f44321;
+}
+div.fancy-select ul.options li:nth-child(2n):hover {
+	color: #5091cd;
+}
+div.fancy-select ul.options li:nth-child(3n):hover {
+	color: #f9a541;
+}
+div.fancy-select ul.options li:nth-child(4n):hover {
+	color: #7ac143;
+}
+
+/* RESPONSIVE */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	div.fancy-select ul.options li, div.fancy-select div.trigger {width:50%;}
+	div.fancy-select { font-size: 1rem;}  
+}
+
+/* Inbetween ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+	div.fancy-select ul.options li, div.fancy-select div.trigger {width: 50%;}
+	div.fancy-select { font-size: 1rem;}  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		div.fancy-select ul.options li, div.fancy-select div.trigger {width: 60%;}
+		div.fancy-select { font-size: 2rem;}  
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1025px) {
+  	div.fancy-select ul.options li, div.fancy-select div.trigger {width: 80%;}
+	div.fancy-select { font-size: 3rem;}  
+}
+
+
+

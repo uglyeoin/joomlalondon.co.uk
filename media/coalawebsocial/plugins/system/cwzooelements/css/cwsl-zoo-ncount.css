@@ -1,0 +1,95 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/* YooTheme Zoo specific
+-----------------------------------------------------------------------------*/
+#yoo-zoo .item div.pos-top {
+    overflow: visible;
+}
+#yoo-zoo .row, #yoo-zoo .floatbox {
+    overflow: visible;
+}
+#yoo-zoo .item div.pos-top .element {
+    overflow: visible;
+}
+#yoo-zoo div.box-1 {
+    overflow: visible;
+}
+#yoo-zoo .item div.pos-bottom {
+    overflow: visible;
+}
+#yoo-zoo .items div.teaser-item-bg {
+    overflow: visible;
+}
+#yoo-zoo .items {
+    overflow: visible;
+}
+.yoo-zoo .cwsl-zoo { 
+    float: none;
+    width:100%;
+    margin:5px 2px !important;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    text-align:left;
+}
+
+/* End
+-----------------------------------------------------------------------------*/
+ul.cwsl-zoo-items {
+    margin: 0 !important;
+    padding: 0!important;
+    list-style: none;
+}
+
+ul.cwsl-zoo-items li {
+    padding: 0px !important;
+    margin-right:5px !important;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.cwsl-zoo-t { width:55px; }
+.cwsl-zoo-gp { width:50px; }
+.cwsl-zoo-pi { width:40px; }
+.cwsl-zoo-xi { width:60px; }
+.cwsl-zoo-sli { 
+    min-width:60px;
+    letter-spacing: 0px !important;
+}
+.cwsl-zoo-like { min-width:45px; }
+.cwsl-zoo-likeshare { min-width:95px; }
+.cwsl-zoo-share {
+    margin-left:4px;
+    min-width:50px;
+}
+
+#contentarea .cwsl-zoo-like,
+#contentarea .cwsl-zoo-likeshare,
+#contentarea .cwsl-zoo-share {
+    margin-top: 0px !important;
+}
+
+/* End
+-----------------------------------------------------------------------------*/
+
+/* Make drop downs visible on certain templates 
+------------------------------------------------------------------------------*/
+.item-page, .items-leading{
+    overflow: visible !important;
+}
+
+iframe,svg {
+  max-width: inherit !important;
+}
+
+.fb_iframe_widget_lift{
+    min-width:500px !important;
+}
+
+/* End
+-----------------------------------------------------------------------------*/

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUTOTWEET_VIEW_COMPOSER_TITLE" option="COM_AUTOTWEET_VIEW_COMPOSER_OPTION">
+		<help key="COM_AUTOTWEET_JHELP_MENUS_MENU_ITEM_AUTOTWEET" />
+		<message>
+			<![CDATA[COM_AUTOTWEET_VIEW_COMPOSER_DESC]]>
+		</message>
+	</layout>
+</metadata>

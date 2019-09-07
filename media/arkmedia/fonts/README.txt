@@ -1,0 +1,1 @@
+To update IcoMoon Fonts go to http://icomoon.io/app/#/select select all & download as font.

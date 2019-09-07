@@ -1,0 +1,99 @@
+name: 29
+timestamp: 1567212481
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1558378238
+positions:
+  latest-joomla-london-event: Latest-joomla-london-event
+  other-joomla-events: Other-joomla-events
+  latest-blog-post: Latest-blog-post
+  benefits-of-attending: Benefits-of-attending
+  joomla-announcements: Joomla-announcements
+  joomla-security: Joomla-security
+  who-attends: Who-attends
+  joomla-extensions: Joomla-extensions
+  joomla-magazine: Joomla-magazine
+  joomla-videos: Joomla-videos
+  homepage-seo-content: Homepage-seo-content
+  logo: Logo
+  countdown-timer: Countdown-timer
+  header-banner: Header-banner
+  footer: Footer
+  footer-menu-1: Footer-menu-1
+  footer-menu-2: Footer-menu-2
+  footer-menu-3: Footer-menu-3
+  footer-menu-4: Footer-menu-4
+  disclaimer: Disclaimer
+  address: Address
+  sub-footer: Sub-footer
+  copyright: Copyright
+  softforge: Softforge
+  download-joomla: Download-joomla
+sections:
+  logo: Logo
+  menu-and-countdown: Menu-and-countdown
+  latest-joomla-london-event: Latest-joomla-london-event
+  other-joomla-events: Other-joomla-events
+  reasons-to-come: Reasons-to-come
+  joomla-videos: Joomla-videos
+  sub-footer: Sub-footer
+  header-banner: Banner
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  position:
+    position-latest-joomla-london-event: Latest-joomla-london-event
+    position-other-joomla-events: Other-joomla-events
+    position-latest-blog-post: Latest-blog-post
+    position-benefits-of-attending: Benefits-of-attending
+    position-joomla-announcements: Joomla-announcements
+    position-joomla-security: Joomla-security
+    position-who-attends: Who-attends
+    position-joomla-extensions: Joomla-extensions
+    position-joomla-magazine: Joomla-magazine
+    position-joomla-videos: Joomla-videos
+    position-homepage-seo-content: Homepage-seo-content
+    position-position-5869: Logo
+    position-position-4555: Countdown-timer
+    position-position-9917: Header-banner
+    position-position-3229: Footer
+    position-position-1024: Footer-menu-1
+    position-position-6199: Footer-menu-2
+    position-position-3075: Footer-menu-3
+    position-position-8454: Footer-menu-4
+    position-position-6648: Disclaimer
+    position-position-5668: Address
+    position-position-1134: Sub-footer
+    position-position-4001: Copyright
+    position-position-9075: Softforge
+    position-position-4820: Download-joomla
+  menu:
+    menu-2912: Menu
+  mobile-menu:
+    mobile-menu-6350: Mobile-menu
+inherit:
+  default:
+    logo: logo
+    menu-and-countdown: menu-and-countdown
+    header-banner: header-banner
+    footer: footer
+    sub-footer: sub-footer
+    offcanvas: offcanvas
+    position-position-5869: position-logo
+    position-position-4555: position-countdown-timer
+    menu-2912: menu-6319
+    position-position-9917: position-header-banner
+    position-position-3229: position-footer
+    position-position-1024: position-footer-menu-1
+    position-position-6199: position-footer-menu-2
+    position-position-3075: position-footer-menu-3
+    position-position-8454: position-footer-menu-4
+    position-position-6648: position-disclaimer
+    position-position-5668: position-address
+    position-position-1134: position-sub-footer
+    position-position-4001: position-copyright
+    position-position-9075: position-softforge
+    position-position-4820: position-download-joomla
+    mobile-menu-6350: mobile-menu-5290

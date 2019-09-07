@@ -1,0 +1,25 @@
+javascript:
+  -
+    location: 'gantry-assets://custom/assets/js/date-en-GB.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: Date.JS
+  -
+    location: ''
+    inline: "document.getElementById(\"next3rdTuesday\").innerHTML = next3rdTuesday();\n\nfunction next3rdTuesday(diff) {\n\tvar next = new Date.today().moveToNthOccurrence(2, 3);\n\tvar time = new Date.today().setTimeToNow();\n\tif (time.isAfter(next.addHours(18).addMinutes(59))) {\n\t\t\tnext = Date.today().addMonths(1).moveToNthOccurrence(2, 3);\n\t}\n\tif (diff != \"1\") {\n\t\tvar dateText;\n\t\tif (time.same().day(next)) {\n\t\t\tdateText = 'Today';\n\t\t}  else if (time.addDays(1).same().day(next)) {\n\t\t\tdateText = 'Tommorrow';\n} else {\n\t\t\tdateText = next.toString('dddd dS MMMM');\n\t\t}\n\t\treturn dateText;\n\t} else {\n\t\tvar future = next.getTime();\n\t\tvar present = Date.today().setTimeToNow().getTime();\n\t\tvar diff = Date.today().setTimeToNow().getTime() + Math.floor((future - present)/1000);\n\n\t\treturn diff;\n\t}\n}"
+    in_footer: '1'
+    extra: {  }
+    name: 'Next 3rd Tuesday'
+  -
+    location: 'gantry-assets://custom/assets/js/jquery.scrolldepth.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: ScrollDepthJS
+  -
+    location: ''
+    inline: "jQuery(function() {\n  jQuery.scrollDepth();\n});"
+    in_footer: '1'
+    extra: {  }
+    name: 'ScrollDepthJS Call'

@@ -1,0 +1,102 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/*------------------------------------------------------------------------------
+Inner Container Styling
+------------------------------------------------------------------------------*/
+.grid-box .cwsp-content, .cwsp-content { 
+    float: none;
+    height:auto;
+    position:relative;
+}
+
+.grid-box .width50 .cwsp-content { height:auto; }
+.grid-box .width33 .cwsp-content { height:auto; }
+.grid-box #k2Container .cwsp-content { height:auto;}
+
+#cw-spanel ul.cwsp-content-items {
+    margin: 0 !important;
+    padding: 0!important;
+    list-style: none !important;
+}
+
+#cw-spanel ul.cwsp-content-items li {
+    padding: 0px !important;
+    margin:10px 0 0 0px;
+}
+
+#cw-spanel li.cwsp-content-pi { margin: 35px 0 -5px 0 !important}
+#cw-spanel .cwsp-content-mc { margin: 5px 0 -10px 0 !important; }
+
+
+/*------------------------------------------------------------------------------
+Make drop downs visible on certain templates
+------------------------------------------------------------------------------*/
+.item-page, .items-leading{
+    overflow: visible !important;
+}
+
+iframe,svg {
+  max-width: inherit !important;
+}
+
+.fb_iframe_widget_lift{
+    min-width:500px !important;
+}
+
+/*------------------------------------------------------------------------------
+Panel Styling
+------------------------------------------------------------------------------*/
+#cw-spanel {
+    text-align:center !important;
+    height: auto;
+    position:fixed !important;
+    z-index:1 !important;
+}
+
+#cw-spanel.f-panel{
+    width: 70px;
+    padding:5px;
+}
+
+#cw-spanel.c-panel{
+    left:0;
+    margin-left:-79px;
+    padding:7px;
+    min-width:59px;
+}
+
+#c-panel-trigger{
+    left:0;
+    position: absolute;
+    top: 15%;
+    margin-left:73px;
+}
+
+#c-panel-trigger a{
+    text-decoration:none;
+}
+
+#c-panel-trigger a:hover{
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.c-panel-trigger-hidden {
+    visibility: hidden;
+}
+
+.cw-trigger, .cw-trigger-active{
+    display:inline-block;
+    padding:5px 10px 5px 15px;
+    text-decoration:none;
+}
+
+#c-panel-trigger p {
+    line-height: 16px;
+    margin: 5px 0px;
+}

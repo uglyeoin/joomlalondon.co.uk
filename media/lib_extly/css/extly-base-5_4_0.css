@@ -1,0 +1,261 @@
+/**
+ * @package     Extly.Library
+ * @subpackage  lib_extly - Extly Framework
+ *
+ * @author      Extly, CB. <team@extly.com>
+ * @copyright   Copyright (C) 2007 - 2017 Extly, CB. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+ * @link        http://www.extly.com http://support.extly.com
+ */
+
+a.chzn-single:hover {text-decoration:none;}
+
+.extly fieldset label {margin: 0 0 5px 0;}
+
+.extly #adminlist .input-ordering {width: 16px;}
+
+.extly #adminlist .order {text-align:left;}
+
+.extly #adminlist a.saveorder {float:none;display: inline-block;}
+
+.extly .loaderspinner  {display: inline-block; width:32px; margin: 4x;}
+.extly .loading {background: url("../images/ajax-loader.gif") no-repeat 100% 0px;}
+
+.extly .loaderspinner72  {display: none; padding: 2px 2px 2px 24px;}
+.extly .loading72 {background: url("../images/ajax-loader.gif") no-repeat; display: inline-block;}
+
+.extly .invalid {
+	color: #9d261d;
+	font-weight: bold;
+}
+.extly input.invalid {
+	border: 1px solid #9d261d;
+}
+
+.extly .xt-group {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *margin-left: .3em;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  *zoom: 1;
+}
+
+.extly .xt-group:first-child {
+  *margin-left: 0;
+}
+
+.extly .xt-group + .xt-group {
+  margin-left: 5px;
+}
+
+.extly .btn-toolbar .xt-group + .btn,
+.extly .btn-toolbar .btn + .xt-group {
+  margin-left: 5px;
+}
+
+.extly .xt-group > .btn {
+  position: relative;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.extly .xt-group > .btn + .btn {
+  margin-left: -1px;
+}
+
+.extly .xt-group > .btn,
+.extly .xt-group > .dropdown-menu {
+  font-size: 13px;
+}
+
+.extly .xt-group > .btn-mini {
+  font-size: 11px!important;
+}
+
+.extly .xt-group > .btn-small {
+  font-size: 12px;
+}
+
+.extly .xt-group > .btn-large {
+  font-size: 16px;
+}
+
+.extly .xt-group > .btn:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.extly .xt-group > .btn:last-child,
+.extly .xt-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.extly .xt-group > .btn.large:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-topleft: 6px;
+}
+
+.extly .xt-group > .btn.large:last-child,
+.extly .xt-group > .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.extly .xt-group > .btn:hover,
+.extly .xt-group > .btn:focus,
+.extly .xt-group > .btn:active,
+.extly .xt-group > .btn.active {
+  z-index: 2;
+}
+
+.extly .xt-group .dropdown-toggle:active,
+.extly .xt-group.open .dropdown-toggle {
+  outline: 0;
+}
+
+.extly .xt-group > .btn + .dropdown-toggle {
+  *padding-top: 5px;
+  padding-right: 8px;
+  *padding-bottom: 5px;
+  padding-left: 8px;
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.extly .xt-group > .btn-mini + .dropdown-toggle {
+  *padding-top: 2px;
+  padding-right: 5px;
+  *padding-bottom: 2px;
+  padding-left: 5px;
+}
+
+.extly .xt-group > .btn-small + .dropdown-toggle {
+  *padding-top: 5px;
+  *padding-bottom: 4px;
+}
+
+.extly .xt-group > .btn-large + .dropdown-toggle {
+  *padding-top: 7px;
+  padding-right: 12px;
+  *padding-bottom: 7px;
+  padding-left: 12px;
+}
+
+.extly .xt-group.open .dropdown-toggle {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.extly .xt-group.open .btn.dropdown-toggle {
+  background-color: #e6e6e6;
+}
+
+.extly .xt-group.open .btn-primary.dropdown-toggle {
+  background-color: #0044cc;
+}
+
+.extly .xt-group.open .btn-warning.dropdown-toggle {
+  background-color: #f89406;
+}
+
+.extly .xt-group.open .btn-danger.dropdown-toggle {
+  background-color: #bd362f;
+}
+
+.extly .xt-group.open .btn-success.dropdown-toggle {
+  background-color: #51a351;
+}
+
+.extly .xt-group.open .btn-info.dropdown-toggle {
+  background-color: #2f96b4;
+}
+
+.extly .xt-group.open .btn-inverse.dropdown-toggle {
+  background-color: #222222;
+}
+
+.extly .xt-group-vertical {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+
+.extly .xt-group-vertical .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.extly .xt-group-vertical .btn + .btn {
+  margin-top: -1px;
+  margin-left: 0;
+}
+
+.extly .xt-group-vertical .btn:first-child {
+  -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
+}
+
+.extly .xt-group-vertical .btn:last-child {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.extly .xt-group-vertical .btn-large:first-child {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+
+.extly .xt-group-vertical .btn-large:last-child {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+
+/* Fix for Chosen in J25 */
+.extly .chzn-container .chzn-results { 
+	clear: both; 
+}
+
+/* Pagination limit */
+#limit_chzn {
+	float: right;
+}
+
+.pagination-toolbar {
+	display: inline-block;
+}

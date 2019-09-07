@@ -1,0 +1,42 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+ul.cws-tabs.left {
+    left:-170px;
+    margin:0px;
+    width:auto;
+}
+
+ul.cws-tabs.left li {
+    left:0px;
+    position: relative;} 
+
+ul.cws-tabs.left li a { 
+    text-align:left;
+    padding: 11px 0px 11px 12px; 
+}
+
+ul.cws-tabs.left li:hover {margin-left: -2px;}
+ul.cws-tabs.left a {background-position: 168px 50%;}
+
+ul.cws-tabs.right {
+    right:-170px;
+    margin:0px;
+    width:auto;
+}
+
+ul.cws-tabs.right li {
+    right:0px;
+    position: relative;} 
+
+ul.cws-tabs.right li a { 
+    text-align:right;
+    padding: 11px 12px 11px 0px; 
+}
+
+ul.cws-tabs.right li:hover {right: -2px;}
+ul.cws-tabs.right a {background-position: -2px 50%;}

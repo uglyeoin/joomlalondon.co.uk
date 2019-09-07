@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/libraries/regularlabs/fields">
+	<fieldset name="text">
+		<field name="text" type="text" class="input-xxlarge input-large-text"
+			   label="RL_TEXT"
+			   hint="MDL_LINK_TEXT_HINT" />
+	</fieldset>
+
+	<fieldset name="settings">
+		<field name="@settings" type="rl_header"
+			   label="MDL_SETTINGS_TITLE" />
+		<field name="title" type="text" class="input-xxlarge"
+			   label="JGLOBAL_TITLE"
+			   description="MDL_TITLE_DESC" />
+		<field name="class" type="text" class="input-large"
+			   label="MDL_CSS_CLASS_LINK"
+			   description="MDL_CSS_CLASS_LINK_DESC" />
+		<field name="classname" type="text" class="input-large"
+			   label="MDL_CSS_CLASS_MODAL"
+			   description="MDL_CSS_CLASS_MODAL_DESC" />
+		<field name="width" type="text" class="input-small"
+			   label="RL_WIDTH"
+			   description="MDL_DIMENSION_DESC" />
+		<field name="height" type="text" class="input-small"
+			   label="RL_HEIGHT"
+			   description="MDL_DIMENSION_DESC" />
+		<field name="iframe" type="radio" class="btn-group" default="0"
+			   label="MDL_IFRAME"
+			   description="MDL_IFRAME_DESC2"
+			   showon="type:url,article">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="open" type="radio" class="btn-group" default="0"
+			   label="MDL_OPEN_ON_PAGELOAD"
+			   description="MDL_OPEN_ON_PAGELOAD_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="once">MDL_ONCE</option>
+		</field>
+		<field name="autoclose" type="text" class="input-small" default=""
+			   label="MDL_AUTOCLOSE"
+			   description="MDL_AUTOCLOSE_DESC">
+		</field>
+	</fieldset>
+
+	<fieldset name="url">
+		<field name="@url" type="note" description="MDL_URL_DESC" />
+		<field name="url" type="text" label="" class="input-full" />
+	</fieldset>
+
+	<fieldset name="image">
+		<field name="@image" type="note"
+			   description="MDL_IMAGE_DESC" />
+		<field name="image" type="media" label="" />
+
+		<field name="@showon_image_no_text_a" type="rl_showon" value="text:" />
+		<field name="image_thumbnail_width" type="number" size="10" class="input-mini" default=""
+			   label="MDL_THUMBNAIL_WIDTH"
+			   description="RL_RESIZE_IMAGES_WIDTH_DESC" />
+		<field name="image_thumbnail_height" type="number" size="10" class="input-mini" default=""
+			   label="MDL_THUMBNAIL_HEIGHT"
+			   description="RL_RESIZE_IMAGES_HEIGHT_DESC" />
+		<field name="@showon_image_no_text_b" type="rl_showon" />
+	</fieldset>
+
+	<fieldset name="gallery">
+		<field name="@gallery" type="note" description="MDL_GALLERY_DESC" />
+		<field name="gallery" type="text" class="input-full" label="" />
+		<field name="slideshow" type="radio" class="btn-group" default=""
+			   label="MDL_GALLERY_SLIDESHOW"
+			   description="MDL_GALLERY_SLIDESHOW_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="@showon_gallery_no_text_a" type="rl_showon" value="text:" />
+		<field name="gallery_thumbnails" type="list" default=""
+			   label="MDL_THUMBNAILS"
+			   description="MDL_THUMBNAILS_DESC">
+			<option value="">MDL_FIRST</option>
+			<option value="random">MDL_RANDOM</option>
+			<option value="specific">MDL_SPECIFIC</option>
+			<option value="all">JALL</option>
+		</field>
+		<field name="@showon_thumbnail_image_a" type="rl_showon" value="gallery_thumbnails:specific" />
+		<field name="gallery_thumbnail_image" type="text" class="input-large"
+			   label="MDL_GALLERY_THUMBNAIL_SPECIFIC"
+			   description="MDL_GALLERY_THUMBNAIL_SPECIFIC_DESC" />
+		<field name="@showon_thumbnail_image_b" type="rl_showon" />
+		<field name="gallery_thumbnail_width" type="number" size="10" class="input-mini" default=""
+			   label="MDL_THUMBNAIL_WIDTH"
+			   description="RL_RESIZE_IMAGES_WIDTH_DESC" />
+		<field name="gallery_thumbnail_height" type="number" size="10" class="input-mini" default=""
+			   label="MDL_THUMBNAIL_HEIGHT"
+			   description="RL_RESIZE_IMAGES_HEIGHT_DESC" />
+		<field name="@showon_gallery_no_text_b" type="rl_showon" />
+
+		<field name="@showon_gallery_with_text_a" type="rl_showon" value="text!:" />
+		<field name="gallery_first" type="list" default=""
+			   label="MDL_GALLERY_FIRST"
+			   description="MDL_GALLERY_FIRST_DESC">
+			<option value="">MDL_FIRST</option>
+			<option value="random">MDL_RANDOM</option>
+			<option value="specific">MDL_SPECIFIC</option>
+		</field>
+		<field name="gallery_first_image" type="text" class="input-large"
+			   label="MDL_GALLERY_FIRST_SPECIFIC"
+			   description="MDL_GALLERY_FIRST_SPECIFIC_DESC"
+			   showon="gallery_first:specific" />
+		<field name="@showon_gallery_with_text_b" type="rl_showon" />
+	</fieldset>
+
+	<fieldset name="video">
+		<field name="@video" type="note" description="MDL_VIDEO_DESC" />
+		<field name="youtube" type="text" class="input-full"
+			   label="MDL_YOUTUBE" />
+		<field name="vimeo" type="text" class="input-full"
+			   label="MDL_VIMEO" />
+	</fieldset>
+
+	<fieldset name="article" addfieldpath="plugins/editors-xtd/modals/fields">
+		<field name="@article" type="note" description="MDL_ARTICLE_DESC" />
+		<field name="article" type="modals_article" label="" />
+		<field name="article_type" type="radio" class="btn-group" default="title"
+			   label="MDL_ARTICLE_TYPE"
+			   description="MDL_ARTICLE_TYPE_DESC">
+			<option value="title">JGLOBAL_TITLE</option>
+			<option value="id">JGLOBAL_FIELD_ID_LABEL</option>
+		</field>
+	</fieldset>
+
+	<fieldset name="content">
+		<field name="@content" type="note" description="MDL_CONTENT_DESC" />
+		<field name="content" type="editor" label="" />
+	</fieldset>
+</config>

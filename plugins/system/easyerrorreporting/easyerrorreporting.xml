@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+    <name>PLG_EASYERRORREPORTING</name>
+    <version>3.1.2</version>
+    <creationDate>2016-03-30</creationDate>
+    <license>http://www.gnu.org/licenses/gpl</license>
+    <copyright>Copyright 2016 Viktor Vogel. All rights reserved.</copyright>
+    <author>Viktor Vogel</author>
+    <authoremail>admin@kubik-rubik.de</authoremail>
+    <authorurl>https://joomla-extensions.kubik-rubik.de/</authorurl>
+    <description>PLG_EASYERRORREPORTING_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="easyerrorreporting">easyerrorreporting.php</filename>
+        <filename plugin="easyerrorreporting">index.html</filename>
+        <folder plugin="easyerrorreporting">fields</folder>
+    </files>
+    <languages folder="language">
+        <language tag="de-DE">de-DE/de-DE.plg_system_easyerrorreporting.ini</language>
+        <language tag="de-DE">de-DE/de-DE.plg_system_easyerrorreporting.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_easyerrorreporting.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_easyerrorreporting.sys.ini</language>
+    </languages>
+    <updateservers>
+        <server type="extension" priority="1" name="PLG_EASYERRORREPORTING">https://check.kubik-rubik.de/updates/easyerrorreporting.xml</server>
+    </updateservers>
+    <config>
+        <fields name="params" addfieldpath="/plugins/system/easyerrorreporting/fields">
+            <fieldset name="settings">
+                <field type="krdonationcodecheck" />
+                <field name="filter_groups" type="usergroup" default="8" multiple="true" size="10" label="PLG_EASYERRORREPORTING_GROUPS" description="PLG_EASYERRORREPORTING_GROUPSDESC" />
+                <field name="error_level" type="list" default="0" label="PLG_EASYERRORREPORTING_ERRORLEVEL" description="PLG_EASYERRORREPORTING_ERRORLEVELDESC">
+                    <option value="0">PLG_EASYERRORREPORTING_DEFAULT</option>
+                    <option value="1">PLG_EASYERRORREPORTING_NONE</option>
+                    <option value="2">PLG_EASYERRORREPORTING_SIMPLE</option>
+                    <option value="3">PLG_EASYERRORREPORTING_MAXIMUM</option>
+                    <option value="4">PLG_EASYERRORREPORTING_DEVELOPMENT</option>
+                </field>
+            </fieldset>
+            <fieldset name="donation">
+                <field type="krdonationcodecheck" name="donation" />
+                <field name="donation_code" type="text" default="" size="40" label="KR_DONATION_CODE" description="KR_DONATION_CODEDESC" />
+                <field type="krtitle" name="spacer_krtitle_general" label="" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

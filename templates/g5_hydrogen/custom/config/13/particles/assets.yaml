@@ -1,0 +1,61 @@
+enabled: '1'
+css:
+  -
+    location: 'gantry-media://assets/css/normalize.css'
+    extra: {  }
+    name: Normalize
+  -
+    location: 'gantry-media://assets/css/demo.css'
+    extra: {  }
+    name: Demo
+  -
+    location: 'gantry-media://assets/css/card-4.css'
+    extra: {  }
+    name: 'Card 4'
+  -
+    location: 'gantry-media://assets/css/pattern-4.css'
+    extra: {  }
+    name: 'pattern 4'
+javascript:
+  -
+    location: ''
+    inline: "<script>\n    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {\n        var root = document.getElementsByTagName('html')[0];\n        root.setAttribute('class', 'ff');\n    };\n</script>"
+    in_footer: '0'
+    extra: {  }
+    name: 'Initiator thingy'
+  -
+    location: 'gantry-media://assets/js/trianglify.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: trianglify
+  -
+    location: 'gantry-media://assets/js/TweenMax.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: Tweenmax
+  -
+    location: 'gantry-media://assets/js/ScrollToPlugin.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: 'Scroll to Plugin'
+  -
+    location: 'gantry-media://assets/js/cash.min.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: cash.min.js
+  -
+    location: 'gantry-media://assets/js/Card-polygon-4.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: 'Card 4 Polygon'
+  -
+    location: 'gantry-media://assets/js/demo-4.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    name: 'Demo 4'

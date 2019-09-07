@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUTOTWEET_VIEW_USERCHANNELS_TITLE" option="COM_AUTOTWEET_VIEW_USERCHANNELS_OPTION">
+		<help key="COM_AUTOTWEET_JHELP_MENUS_MENU_ITEM_AUTOTWEET" />
+		<message>
+			<![CDATA[COM_AUTOTWEET_VIEW_USERCHANNELS_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="advanced" label="COM_AUTOTWEET_VIEW_USERCHANNELS_OPTIONS">
+		
+			<field name="show_filters" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_AUTOTWEET_VIEW_USERCHANNELS_SHOWFILTERS_LABEL" description="COM_AUTOTWEET_VIEW_USERCHANNELS_SHOWFILTERS_LABEL">
+				<option value="1">JYES</option>
+	            <option value="0">JNO</option>
+			</field>
+		
+		</fieldset>
+	</fields>
+
+</metadata>

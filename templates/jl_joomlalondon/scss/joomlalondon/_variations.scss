@@ -1,0 +1,492 @@
+.flush {
+	> .g-content {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+
+.nopaddingall {
+	> .g-content {
+		padding: 0 !important;
+	}	
+}
+
+.nomarginall {
+	> .g-content {
+		margin: 0 !important;
+	}	
+}
+
+.title-center {
+	.g-title {
+		text-align: center;
+		margin: 0 0 2rem 0;
+	}
+}
+
+.title-underline {
+	.g-title {
+		position: relative;
+		&:after {
+		    background: $accent-color-1;
+		    bottom: -10px;
+		    content: '';
+		    height: 2px;
+		    position: absolute;
+		    width: 50px;			
+		    left: 50%;
+		    margin-left: -25px;
+		}
+	}	
+}
+
+.title1, .title2, .title3 {
+	.g-title {
+		padding-left: 1.5rem;
+		padding-bottom: 1rem;
+		margin: 0.75rem 0 1.5rem 0;
+		width: 100%;
+		border-bottom: 1px solid $rule-color;	
+		.dir-rtl & {
+			padding-left: inherit;
+			padding-right: 1.5rem;
+		}		
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 12px;
+			width: 1rem; 
+			height: 1.15rem;
+			@include transform(skew(30deg));
+		    .dir-rtl & {
+		    	left: inherit;
+		    	right: 0;
+		    	@include transform(skew(-30deg));
+		    }			
+		}
+	}
+}
+
+.title1 {
+	.g-title {
+		&:before {
+			background: #212121;
+		}		
+	}
+}
+
+.title2 {
+	.g-title {
+		&:before {
+			background: $accent-color-1;
+		}		
+	}
+}
+
+.title3 {
+	.g-title {
+		&:before {
+			background: $accent-color-3;
+		}		
+	}
+}
+
+.box1, .box2, .box3, .box4 {
+	&.g-outer-box {
+		background-image: url("gantry-theme://images/variations/box-bg.png") !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;	
+	}
+	> .g-content {
+		background-image: url("gantry-theme://images/variations/box-bg.png");
+		background-repeat: no-repeat;
+		background-position: center center;			
+	}	
+}	
+
+.box1 {
+	&.g-outer-box {
+		background-color: darken($box1-background, 8%) !important;
+	}
+	> .g-content {
+		background-color: darken($box1-background, 8%);
+		color: $white;
+	}	
+	.button {
+		background: darken($box1-background, 15%);
+		&:hover, &:active, &:focus {
+			background: lighten($box1-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: darken($box1-background, 15%) !important;
+			border-color: darken($box1-background, 15%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: darken($box1-background, 30%);
+		&:hover {
+			color: inherit;
+		}
+	}	
+}
+
+.box2 {
+	&.g-outer-box {
+		background-color: $box2-background !important;
+	}
+	 > .g-content {
+		background-color: $box2-background;
+		color: $white;
+	}
+	.button {
+		background: darken($box2-background, 15%);
+		&:hover, &:active, &:focus {
+			background: lighten($box2-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: darken($box2-background, 15%) !important;
+			border-color: darken($box2-background, 15%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: darken($box2-background, 30%);
+		&:hover {
+			color: inherit;
+		}
+	}	
+}
+
+.box3 {
+	&.g-outer-box {
+		background-color: $box3-background !important;
+	}
+	 > .g-content {
+		background-color: $box3-background;
+		color: $white;
+	}
+	.button {
+		background: darken($box3-background, 15%);
+		&:hover, &:active, &:focus {
+			background: lighten($box3-background, 5%);
+		}
+		&.button-3, &.button-4 {
+			color: darken($box3-background, 15%) !important;
+			border-color: darken($box3-background, 15%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: $accent-color-1;
+		&:hover {
+			color: inherit;
+		}
+	}	
+}
+
+.box4 {
+	&.g-outer-box {
+		background-color: $box4-background !important;
+	}
+	 > .g-content {
+		background-color: $box4-background;
+		color: $base-text-color;
+	}
+	.button {
+		background: darken($box4-background, 15%);
+		&:hover, &:active, &:focus {
+			background: darken($box4-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: darken($box4-background, 15%) !important;
+			border-color: darken($box4-background, 15%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: $accent-color-1;
+		&:hover {
+			color: inherit;
+		}
+	}	
+}
+
+.box-white {
+	color: lighten($black, 10%);
+}
+.box-grey, .box-pink, .box-red, .box-purple, .box-blue, .box-orange, .box-darkgrey {
+	color: $white;
+	a:hover {
+		color: inherit;
+	}
+}
+
+.box-white {
+	&.g-outer-box {
+		background: $box-white-background !important;
+	}
+	 > .g-content {
+		background: $box-white-background;
+	}
+	.button {
+		background: darken($box-white-background, 25%);
+		&:hover, &:active, &:focus {
+			background: darken($box-white-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: darken($box-white-background, 25%) !important;
+			border-color: darken($box-white-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $black !important;
+				border-color: $black;
+			}
+		}
+	}
+	a {
+		color: darken($box-white-background, 25%);
+	}
+}
+
+.box-grey {
+	&.g-outer-box {
+		background: $box-grey-background !important;
+	}
+	 > .g-content {
+		background: $box-grey-background;
+	}
+	.button {
+		background: darken($box-grey-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-grey-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-grey-background, 25%) !important;
+			border-color: lighten($box-grey-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-grey-background, 25%);
+	}
+}
+
+.box-darkgrey {
+	&.g-outer-box {
+		background: $box-darkgrey-background !important;
+	}
+	 > .g-content {
+		background: $box-darkgrey-background;
+	}
+	.button {
+		background: lighten($box-darkgrey-background, 15%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-darkgrey-background, 25%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-darkgrey-background, 25%) !important;
+			border-color: lighten($box-darkgrey-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-darkgrey-background, 25%);
+	}
+}
+
+.box-pink {
+	&.g-outer-box {
+		background: $box-pink-background !important;
+	}
+	 > .g-content {
+		background: $box-pink-background;
+	}
+	.button {
+		background: darken($box-pink-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-pink-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-pink-background, 25%) !important;
+			border-color: lighten($box-pink-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-pink-background, 25%);
+	}
+}
+
+.box-red {
+	&.g-outer-box {
+		background: $box-red-background !important;
+	}
+	 > .g-content {
+		background: $box-red-background;
+	}
+	.button {
+		background: darken($box-red-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-red-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-red-background, 25%) !important;
+			border-color: lighten($box-red-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-red-background, 25%);
+	}
+}
+
+.box-purple {
+	&.g-outer-box {
+		background: $box-purple-background !important;
+	}
+	 > .g-content {
+		background: $box-purple-background;
+	}
+	.button {
+		background: darken($box-purple-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-purple-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-purple-background, 25%) !important;
+			border-color: lighten($box-purple-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-purple-background, 25%);
+	}
+}
+
+.box-blue {
+	&.g-outer-box {
+		background: $box-blue-background !important;
+	}
+	 > .g-content {
+		background: $box-blue-background;
+	}
+	.button {
+		background: darken($box-blue-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-blue-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-blue-background, 25%) !important;
+			border-color: lighten($box-blue-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-blue-background, 25%);
+	}
+}
+
+.box-orange {
+	&.g-outer-box {
+		background: $box-orange-background !important;
+	}
+	 > .g-content {
+		background: $box-orange-background;
+	}
+	.button {
+		background: darken($box-orange-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-orange-background, 10%);
+		}
+		&.button-3, &.button-4 {
+			color: lighten($box-orange-background, 25%) !important;
+			border-color: lighten($box-orange-background, 25%);
+			&:hover, &:active, &:focus {
+				color: $white !important;
+				border-color: $white;
+			}
+		}
+	}
+	a {
+		color: lighten($box-orange-background, 25%);
+	}
+}
+
+.spaced {
+	.g-content {
+		margin: 1px;
+	}		
+}
+
+.bordered {
+	.g-content {
+		border: 1px solid $rule-color;
+		margin: 1px;
+	}	
+}
+
+.shadow {
+	.g-content {
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	}
+}
+
+.shadow2 {
+	.g-content {
+		box-shadow: 0 0 4px rgba(0,0,0,0.15);
+	}
+}
+
+.disabled {
+	.g-content {
+		opacity: 0.4;
+	}
+}
+
+.square {
+	.g-content {
+		border-radius: none;
+	}
+}
+
+.rounded {
+	.g-content {
+		border-radius: $core-border-radius;
+		overflow: hidden;
+	}
+}
+
+.no-bg-image {
+	background-image: none !important;
+}

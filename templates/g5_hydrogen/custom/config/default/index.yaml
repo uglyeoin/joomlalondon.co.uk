@@ -1,0 +1,68 @@
+name: default
+timestamp: 1567212481
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1558378238
+positions:
+  logo: Logo
+  countdown-timer: Countdown-timer
+  header-banner: Header-banner
+  breadcrumbs: Breadcrumbs
+  sidebar: Sidebar
+  right: Right
+  footer: Footer
+  footer-menu-1: Footer-menu-1
+  footer-menu-2: Footer-menu-2
+  footer-menu-3: Footer-menu-3
+  footer-menu-4: Footer-menu-4
+  disclaimer: Disclaimer
+  address: Address
+  sub-footer: Sub-footer
+  copyright: Copyright
+  softforge: Softforge
+  download-joomla: Download-joomla
+sections:
+  logo: Logo
+  menu-and-countdown: Menu-and-countdown
+  sidebar1: Sidebar1
+  sidebar2: Sidebar2
+  sub-footer: Sub-footer
+  header-banner: Banner
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  position:
+    position-logo: Logo
+    position-countdown-timer: Countdown-timer
+    position-header-banner: Header-banner
+    position-breadcrumbs: Breadcrumbs
+    position-sidebar: Sidebar
+    position-right: Right
+    position-position-9212: Sidebar
+    position-position-5927: Right
+    position-footer: Footer
+    position-footer-menu-1: Footer-menu-1
+    position-footer-menu-2: Footer-menu-2
+    position-footer-menu-3: Footer-menu-3
+    position-footer-menu-4: Footer-menu-4
+    position-disclaimer: Disclaimer
+    position-address: Address
+    position-sub-footer: Sub-footer
+    position-copyright: Copyright
+    position-softforge: Softforge
+    position-download-joomla: Download-joomla
+  menu:
+    menu-6319: Menu
+  messages:
+    system-messages-2715: 'System Messages'
+  content:
+    system-content-3598: 'Page Content'
+  social:
+    social-3688: Social
+    social-2605: Social
+  mobile-menu:
+    mobile-menu-5290: Mobile-menu
+inherit: {  }

@@ -1,0 +1,358 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1443867711
+layout:
+  /top/:
+    -
+      - system-messages-4510
+    -
+      - 'position-position-4298 33.3'
+      - 'position-position-4640 33.3'
+      - 'position-position-5386 33.3'
+  /navigation/:
+    -
+      - 'logo-9601 35'
+      - 'position-position-9181 65'
+    -
+      - 'spacer-spacer-7759 35'
+      - 'position-position-3826 65'
+  /header/:
+    -
+      - position-position-4036
+  /slideshow/:
+    -
+      - 'custom-6994 25'
+      - 'position-position-8155 25'
+      - 'position-position-1001 25'
+      - 'position-position-5832 25'
+  /showcase/:
+    -
+      - 'position-position-9855 33.3'
+      - 'position-position-7666 33.3'
+      - 'position-position-7716 33.3'
+  /above/:
+    -
+      - 'position-position-2014 33.3'
+      - 'position-position-6644 33.3'
+      - 'position-position-7052 33.3'
+  /utility/:
+    -
+      - 'position-position-6653 33.3'
+      - 'position-position-9565 33.3'
+      - 'position-position-1557 33.3'
+  /feature/:
+    -
+      - 'position-position-2406 33.3'
+      - 'position-position-2873 33.3'
+      - 'position-position-9700 33.3'
+  /container-1188/:
+    -
+      -
+        'sidebar 20':
+          -
+            - position-position-5533
+      -
+        'mainbar 60':
+          -
+            - 'position-position-3605 33.3'
+            - 'position-position-2347 33.3'
+            - 'position-position-1278 33.3'
+          -
+            - position-position-2944
+      -
+        'aside 20':
+          -
+            - position-position-7701
+  /expanded/:
+    -
+      - 'position-position-3804 33.3'
+      - 'position-position-2259 33.3'
+      - 'position-position-2718 33.3'
+  /extension/:
+    -
+      - 'position-position-2418 33.3'
+      - 'position-position-2284 33.3'
+      - 'position-position-5407 33.3'
+  /bottom/:
+    -
+      - 'position-position-8012 33.3'
+      - 'position-position-3688 33.3'
+      - 'position-position-8746 33.3'
+  /container-7125/:
+    -
+      -
+        'footer 75':
+          -
+            - 'position-position-1690 25'
+            - 'position-position-5528 75'
+      -
+        'footside 25':
+          -
+            - position-position-5336
+  /copyright/:
+    -
+      - 'logo-6784 24'
+      - 'branding-2615 51'
+      - 'social-8770 15'
+      - 'totop-5925 10'
+    -
+      - position-module-5165
+    -
+      - position-module-1123
+  offcanvas:
+    -
+      - mobile-menu-1333
+    -
+      - position-position-5414
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: headerSection
+  header:
+    attributes:
+      boxed: ''
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'box-darkgrey g-outer-box'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+  mainbar:
+    type: section
+  container-1188:
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+  footside:
+    type: section
+  container-7125:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  system-messages-4510:
+    block:
+      variations: 'nomarginall nopaddingall'
+  position-position-4298:
+    title: 'Top A'
+    attributes:
+      key: top-a
+  position-position-4640:
+    title: 'Top B'
+    attributes:
+      key: top-b
+  position-position-5386:
+    title: 'Top C'
+    attributes:
+      key: top-c
+  logo-9601:
+    attributes:
+      image: 'gantry-media://jugl-website-logo-new.png'
+  position-position-9181:
+    title: 'Module Position'
+    attributes:
+      key: menu
+  position-position-3826:
+    title: 'Module Position'
+    attributes:
+      key: subMenu
+    block:
+      class: subMenuWrap
+  position-position-4036:
+    title: Header
+    attributes:
+      key: header
+  custom-6994:
+    title: 'Off Canvas Toggle'
+    attributes:
+      enabled: 0
+      html: "<div class=\"g-offcanvas-toggle\" data-offcanvas-toggle=\"\">\n  <i class=\"fa fa-fw fa-indent\"></i>\n</div>"
+  position-position-8155:
+    title: 'Slideshow A'
+    attributes:
+      key: slideshow-a
+  position-position-1001:
+    title: 'Slideshow B'
+    attributes:
+      key: slideshow-b
+  position-position-5832:
+    title: 'Slideshow C'
+    attributes:
+      key: slideshow-c
+  position-position-9855:
+    title: 'Showcase A'
+    attributes:
+      key: showcase-a
+  position-position-7666:
+    title: 'Showcase B'
+    attributes:
+      key: showcase-b
+  position-position-7716:
+    title: 'Showcase C'
+    attributes:
+      key: showcase-c
+  position-position-2014:
+    title: 'Above A'
+    attributes:
+      key: above-a
+  position-position-6644:
+    title: 'Above B'
+    attributes:
+      key: above-b
+  position-position-7052:
+    title: 'Above C'
+    attributes:
+      key: above-c
+  position-position-6653:
+    title: 'Utility A'
+    attributes:
+      key: utility-a
+  position-position-9565:
+    title: 'Utility B'
+    attributes:
+      key: utility-b
+  position-position-1557:
+    title: 'Utility C'
+    attributes:
+      key: utility-c
+  position-position-2406:
+    title: 'Feature A'
+    attributes:
+      key: feature-a
+  position-position-2873:
+    title: 'Feature B'
+    attributes:
+      key: feature-b
+  position-position-9700:
+    title: 'Feature C'
+    attributes:
+      key: feature-c
+  position-position-5533:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  position-position-3605:
+    title: 'Mainbar A'
+    attributes:
+      key: mainbar-a
+  position-position-2347:
+    title: 'Mainbar B'
+    attributes:
+      key: mainbar-b
+  position-position-1278:
+    title: 'Mainbar C'
+    attributes:
+      key: mainbar-c
+  position-position-2944:
+    title: content-bottom
+    attributes:
+      key: content-bottom
+  position-position-7701:
+    title: Aside
+    attributes:
+      key: aside
+  position-position-3804:
+    title: 'Expanded A'
+    attributes:
+      key: expanded-a
+  position-position-2259:
+    title: 'Expanded B'
+    attributes:
+      key: expanded-b
+  position-position-2718:
+    title: 'Expanded C'
+    attributes:
+      key: expanded-c
+  position-position-2418:
+    title: 'Extension A'
+    attributes:
+      key: extension-a
+  position-position-2284:
+    title: 'Extension B'
+    attributes:
+      key: extension-b
+  position-position-5407:
+    title: 'Extension C'
+    attributes:
+      key: extension-c
+  position-position-8012:
+    title: 'Bottom A'
+    attributes:
+      key: bottom-a
+  position-position-3688:
+    title: 'Bottom B'
+    attributes:
+      key: bottom-b
+  position-position-8746:
+    title: 'Bottom C'
+    attributes:
+      key: bottom-c
+  position-position-1690:
+    title: 'Footer A'
+    attributes:
+      key: footer-a
+  position-position-5528:
+    title: 'Footer B'
+    attributes:
+      key: footer-b
+  position-position-5336:
+    title: 'Footside A'
+    attributes:
+      key: footside-a
+  totop-5925:
+    title: 'To Top'
+  position-module-5165:
+    title: 'Module Instance'
+    attributes:
+      module_id: '216'
+      key: module-instance
+  position-module-1123:
+    title: 'Module Instance'
+    attributes:
+      module_id: '220'
+      key: module-instance
+  mobile-menu-1333:
+    title: 'Mobile Menu'
+  position-position-5414:
+    title: mobile-menu
+    attributes:
+      key: mobile-menu

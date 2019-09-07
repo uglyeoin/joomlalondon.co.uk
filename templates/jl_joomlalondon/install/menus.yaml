@@ -1,0 +1,9 @@
+joomlalondon-theme:
+  title: 'Joomlalondon Theme'
+  description: 'Sample menu for Joomlalondon theme.'
+
+  items:
+    joomlalondon:
+      title: 'Home'
+      layout: home
+      home: 1

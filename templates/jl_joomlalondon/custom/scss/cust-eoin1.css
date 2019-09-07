@@ -1,0 +1,56 @@
+#g-navigation .g-main-nav .g-toplevel > li > .g-menu-item-container .g-menu-item-title {
+    padding-right: 0;
+}
+
+.g-superpromo {
+    font-weight: 300;
+	color: #fff;
+}
+
+#g-header {
+	background: #25304F;	
+}
+
+/* Nav */
+nav {text-align: right;}
+
+	/* Business Owner */
+	li.g-menu-item.g-menu-item-type-component.g-menu-item-534.g-standard {
+		color: #f44321;
+	}
+	
+	/* Designer */
+	.g-menu-item-523 .g-menu-item-container {
+		color: #5091cd;
+	}
+	
+	/* Hobbyist */
+	#g-navigation .g-main-nav .g-toplevel li .g-menu-item-255 .g-menu-item-container {
+		color: #f9a541;
+	}
+	
+	/* Developer*/
+	#g-navigation .g-menu-item-252 .g-menu-item-container {
+		color: #7ac143;
+	}
+	
+	/* Blog*/
+	#g-navigation .g-main-nav .g-toplevel > li .g-menu-item-256 > .g-menu-item-container {
+		color: #75bee9;
+	}
+	/* Blog*/
+	#g-navigation .g-main-nav .g-toplevel > li > .g-menu-item-257 .g-menu-item-container .g-menu-item-title {
+		color: #fec34d;
+	}
+
+/* Dazzle */
+div#dazzle {
+    float: left;
+}
+
+/* Fancy Select */
+
+div.fancy-select div.trigger {
+	font-size: 2rem;
+	background: #fff;	
+}

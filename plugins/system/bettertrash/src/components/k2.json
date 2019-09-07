@@ -1,0 +1,24 @@
+{
+	"items": {
+		"table": "k2_items",
+		"state": "trash",
+		"state_trashed": 1,
+		"filter": "trash",
+		"filter_trashed": 1,
+		"action_delete": "remove",
+		"published_to_trashed_state": {
+			"-2": 1
+		}
+	},
+	"categories": {
+		"table": "k2_categories",
+		"state": "trash",
+		"state_trashed": 1,
+		"filter": "trash",
+		"filter_trashed": 1,
+		"action_delete": "remove",
+		"published_to_trashed_state": {
+			"-2": 1
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.mod_kou_youtube_rss_playlist_or_channel--Padding {
+    padding: 0.25rem;
+}
+.mod_kou_youtube_rss_playlist_or_channel .item:first-of-type > div {
+    padding-left: 0;
+}
+.mod_kou_youtube_rss_playlist_or_channel .item:last-of-type > div {
+    padding-right: 0;
+}

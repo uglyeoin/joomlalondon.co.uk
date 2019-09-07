@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <fieldset name="text-fieldset">
+    <field name="HTMLElement"
+          type="list"
+          label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_ELEMENT_LABEL"
+          description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_ELEMENT_DESCRIPTION"
+          >
+            <option value="h1">H1</option>
+            <option value="h2">H2</option>
+            <option value="h3">H3</option>
+            <option value="h4">H4</option>
+            <option value="h5">H5</option>
+            <option value="p">p</option>
+            <option value="div">div</option>
+            <option value="span">span</option>
+            <option value="button">button</option>           
+            <option value="a">a</option>                       
+            <option value="other">other</option>              
+    </field>
+    <field  name="text-url"
+            type="url"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_TEXT_URL_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_TEXT_URL_DESCRIPTION"
+            showon="HTMLElement:a[OR]HTMLElement:button[OR]HTMLElement:other"
+    />     
+    <field  name="text"
+            type="text"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_TEXT_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_TEXT_DESCRIPTION"
+    />
+    <field  name="text"
+            type="class"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_CLASS_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_CLASS_DESCRIPTION"
+    />    
+  </fieldset>
+</form>

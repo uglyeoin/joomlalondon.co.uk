@@ -1,0 +1,37 @@
+/**
+ * NoNumber Extension Manager Admin CSS
+ *
+ * @package         NoNumber Extension Manager
+ * @version         5.2.1
+ *
+ * @author          Peter van Westen <peter@nonumber.nl>
+ * @link            http://www.nonumber.nl
+ * @copyright       Copyright © 2015 NoNumber All Rights Reserved
+ * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+html,
+body {
+  height: auto !important;
+  overflow-y: auto !important;
+}
+#nnem h2 {
+  min-height: 26px;
+}
+#nnem .table {
+  margin-bottom: 0;
+}
+#nnem td {
+  height: 20px;
+}
+#nnem td.ext_name {
+  font-size: 16px;
+}
+#nnem .progress {
+  margin-bottom: 1px;
+}
+#nnem .label small {
+  white-space: normal;
+}
+#system-message-container {
+  display: none;
+}

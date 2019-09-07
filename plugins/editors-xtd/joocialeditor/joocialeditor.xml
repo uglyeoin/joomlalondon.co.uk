@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd" method="upgrade">
+	<name>plg_editors-xtd_joocialeditor</name>
+	<creationDate>2019-05-22</creationDate>
+
+    <author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>8.28.0</version>
+
+	<description>PLG_JOOCIALEDITOR_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="joocialeditor">joocialeditor.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_editors-xtd_joocialeditor.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_editors-xtd_joocialeditor.sys.ini</language>
+	</languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+				<field name="integrated_components" type="textarea" default="com_autotweet,com_content,com_easyblog,com_flexicontent,com_k2,com_zoo" label="PLG_AUTOTWEET_PARAM_INTEGRATED_COMPONENTS_LABEL" description="PLG_AUTOTWEET_PARAM_INTEGRATED_COMPONENTS_DESC" rows="4" cols="40" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

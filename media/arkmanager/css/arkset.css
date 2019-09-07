@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'arklogo';
+  src: url('../fonts/arklogo.eot?45275132');
+  src: url('../fonts/arklogo.eot?45275132#iefix') format('embedded-opentype'),
+       url('../fonts/arklogo.woff?45275132') format('woff'),
+       url('../fonts/arklogo.ttf?45275132') format('truetype'),
+       url('../fonts/arklogo.svg?45275132#arklogo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.icon-nonumber:before {
+    font-family: 'arklogo' !important;
+    font-size: 16px !important;
+}
+
+.header .page-title .icon-arkmanager {
+    height: auto;
+    margin-right: 5px;
+    width: auto;
+}
+.header .page-title .icon-arkmanager:before {
+    content: "\e802";
+    font-family: 'arklogo';
+    font-size: 27px;
+}
+
+.icon-a:before , .icon-nonumber:before{
+    content: "\e800";
+}
+.icon-arkeditor:before {
+    content: "\e801";
+}
+.icon-arkmanager:before {
+    content: "\e802";
+}
+.icon-arkmediasuite:before {
+    content: "\e803";
+}
+.icon-arkhive:before {
+    content: "\e804";
+}

@@ -1,0 +1,21 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/* Market */
+.icon-48-coalawebmarket-categories {background-image: url('../images/icons/icon-48-cw-categories.png')!important;}
+.icon-48-coalawebmarket-category-edit {background-image: url('../images/icons/icon-48-cw-categories-edit.png')!important;}
+.icon-48-coalawebmarket-category-add {background-image: url('../images/icons/icon-48-cw-categories-new.png')!important;}
+
+/* Quotes */
+.icon-48-coalawebquotes-categories {background-image: url('../images/icons/icon-48-cw-categories.png')!important;}
+.icon-48-coalawebquotes-category-edit {background-image: url('../images/icons/icon-48-cw-categories-edit.png')!important;}
+.icon-48-coalawebquotes-category-add {background-image: url('../images/icons/icon-48-cw-categories-new.png')!important;}
+
+/* Traffic */
+.icon-48-coalawebtraffic-categories {background-image: url('../images/icons/icon-48-cw-categories.png')!important;}
+.icon-48-coalawebtraffic-category-edit {background-image: url('../images/icons/icon-48-cw-categories-edit.png')!important;}
+.icon-48-coalawebtraffic-category-add {background-image: url('../images/icons/icon-48-cw-categories-new.png')!important;}

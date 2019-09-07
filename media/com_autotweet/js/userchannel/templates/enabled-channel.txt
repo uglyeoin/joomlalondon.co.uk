@@ -1,0 +1,32 @@
+<input type="hidden" class="channel_id" value="<%= id %>">
+
+<td class="channel-name">
+	<%= name %>
+</td>
+
+<td class="channel-type">
+	<%= typeName %>
+</td>
+
+<td>
+	<span class="auth-action">
+
+		<span class="auth-published">
+
+		<%= 
+			(published ? 
+				' <a class="unpublish" href="#" title="' +
+					 lbl_unpublish_item + '">' +
+					 '<span class="label label-success"><i class="xticon xticon-check"></i></span> ' +
+					 lbl_published + '</a>' : 
+					 
+				' <a class="publish" href="#" title="' +
+					 lbl_publish_item + '">' +
+					 '<span class="label label-important"><i class="xticon xticon-times"></i></span> ' +
+					 lbl_unpublished + '</a>'
+			) 
+		%>
+		
+		</span>
+	</span>
+</td>

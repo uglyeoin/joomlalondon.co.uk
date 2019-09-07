@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/libraries/regularlabs/fields">
+	<fieldset name="tab_notice">
+		<field name="@notice_title_empty" type="note" class="alert alert-warning"
+			   description="TAB_TITLE_EMPTY"
+			   showon="title:" />
+	</fieldset>
+
+	<fieldset name="tab_params">
+		<field name="open" type="radio" class="btn-group" default="0"
+			   label="TAB_DEFAULT"
+			   description="TAB_DEFAULT_DESC">
+			<option value="1">JYES</option>
+		</field>
+		<field name="alias" type="text"
+			   label="JFIELD_ALIAS_LABEL"
+			   description="TAB_ALIAS_DESC" />
+		<field name="class" type="text"
+			   label="RL_CSS_CLASS"
+			   description="RL_CSS_CLASS_DESC" />
+		<field name="scroll" type="radio" class="btn-group" default=""
+			   label="TAB_SCROLL"
+			   description="TAB_SCROLL_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="access" type="accesslevel" default=""
+			   label="JFIELD_ACCESS_LABEL"
+			   description="JFIELD_ACCESS_DESC">
+			<option value="">JALL</option>
+		</field>
+		<field name="usergroup" type="usergrouplist" default=""
+			   label="RL_USER_GROUPS"
+			   description="RL_USER_GROUPS_DESC">
+			<option value="">JALL</option>
+		</field>
+		<field name="extra" type="text" class="input-full"
+			   label="RL_EXTRA_PARAMETERS"
+			   description="RL_EXTRA_PARAMETERS_DESC" />
+	</fieldset>
+
+	<fieldset name="params">
+		<field name="mainclass" type="text" default=""
+			   label="TAB_MAIN_CLASS"
+			   description="TAB_MAIN_CLASS_DESC" />
+		<field name="color_inactive_handles" type="radio" class="btn-group" default=""
+			   label="TAB_COLOR_INACTIVE_HANDLES"
+			   description="TAB_COLOR_INACTIVE_HANDLES_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="outline_handles" type="radio" class="btn-group" default=""
+			   label="TAB_OUTLINE_HANDLES"
+			   description="TAB_OUTLINE_HANDLES_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="outline_content" type="radio" class="btn-group" default=""
+			   label="TAB_OUTLINE_CONTENT"
+			   description="TAB_OUTLINE_CONTENT_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="alignment" type="radio" class="btn-group" default=""
+			   label="TAB_ALIGNMENT_HANDLES"
+			   description="TAB_ALIGNMENT_HANDLES_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="left">&lt;span class="icon-reglab-paragraph-left">&lt;/span></option>
+			<option value="right">&lt;span class="icon-reglab-paragraph-right">&lt;/span></option>
+			<option value="center">&lt;span class="icon-reglab-paragraph-center">&lt;/span></option>
+			<option value="justify">&lt;span class="icon-reglab-paragraph-justify">&lt;/span></option>
+		</field>
+		<field name="positioning" type="radio" class="btn-group" default=""
+			   label="TAB_POSITIONING_HANDLES"
+			   description="TAB_POSITIONING_HANDLES_DESC">
+			<option value="">JDEFAULT</option>
+			<option value="top">RL_TOP</option>
+			<option value="bottom">RL_BOTTOM</option>
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+		</field>
+		
+		<field name="slideshow_radio" type="radio" class="btn-group" default="0"
+			   label="TAB_SLIDESHOW"
+			   description="TAB_SLIDESHOW_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="slideshow" type="text" default="" class="input-small"
+			   label="TAB_SLIDESHOW_TIMEOUT"
+			   description="TAB_SLIDESHOW_TIMEOUT_DESC"
+			   showon="slideshow_radio:1" />
+		<field name="nested" type="radio" class="btn-group" default="0"
+			   label="TAB_NESTED_SET"
+			   description="TAB_NESTED_SET_DESC">
+			<option value="">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="nested_id" type="text" class="btn-group" default="nested"
+			   label="TAB_NESTED_ID"
+			   description="TAB_NESTED_ID_DESC"
+			   showon="nested:1" />
+	</fieldset>
+</config>

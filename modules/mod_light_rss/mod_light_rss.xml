@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>AutoTweetNG Light RSS</name>
+    <creationDate>2019-05-22</creationDate>
+
+	<author>Extly.com</author>
+    <authorEmail>team@extly.com</authorEmail>
+    <authorUrl>https://www.extly.com</authorUrl>
+    <copyright>Copyright (c)2007-2019 Extly, CB. All rights reserved.</copyright>
+    <license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+
+	<version>8.28.0</version>
+	<description>
+	<![CDATA[
+	Parse and Display RSS Feed News with DHTML Teaser Tooltip. This module is based on David Thomas's Slick RSS J1.5 module.
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_light_rss">mod_light_rss.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_light_rss.xml</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="rsscache" type="text" size="6" default="3600" label="RSS Cache time" description="Set the cache time for the RSS feed (seconds)" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="rssurl" type="text" size="50" default="http://pipes.yahoo.com/pipes/pipe.run?_id=5054e2e1eb44cfaa6f631c9413e4f502&amp;_render=rss" label="RSS URL" description="Enter the URL of a RSS feed. e.g: http://digg.com/rss/indexnews.xml" />
+				<field name="rsstitle" type="radio" class="btn-group btn-group-yesno" default="0" label="Feed Title" description="Display news feed title">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="rssdesc" type="radio" class="btn-group btn-group-yesno" default="0" label="Feed Description" description="Show the description text for each news feed">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="rssimage" type="radio" class="btn-group btn-group-yesno" default="0" label="Feed Image" description="Show the image associated with each news feed">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="rssitems" type="text"  size="6" default="5" label="Number of Items" description="Enter number of RSS items to display for each RSS feed" />
+				<field name="rssitemtitle_words" type="text" size="6" default="15" label="Item Title Word Count " description="Allows you to limit the amount of visible item title text. 0 will show all the text" />
+				<field name="rssitemdesc" type="radio" class="btn-group btn-group-yesno" default="0" label="Item Description Text" description="Show description text for each RSS item in the main list.">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="rssitemdesc_words" type="text" size="6" default="25" label="Item Description Word Count" description="Maximum number of words to display for each RSS item description. 0 will show all the text" />
+				<field name="rssitemdesc_images" type="radio" class="btn-group btn-group-yesno" default="0" label="Item Description Text Images" description="Allow images in the item description text in the main list.">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="link_target" type="radio" default="1" label="RSS Feed Link Target" description="Open RSS feed links in this window or a new window?">
+					<option value="1">New Window</option>
+					<option value="0">Same Window</option>
+				</field>
+				<field name="no_follow" type="radio" class="btn-group btn-group-yesno" default="0" label="Add rel='nofollow' to links" description="Add rel='nofollow' to links">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="Tooltip Settings" description="The settings below are related to the mouseover tooltip" />
+				<field name="enable_tooltip" type="radio" class="btn-group btn-group-yesno" default="yes" label="Enable Tooltip" description="Show item description in mouseover tooltip? e.g this one!">
+					<option value="yes">JYES</option>
+					<option value="no">JNO</option>
+				</field>
+				<field name="t_word_count_title" type="text" size="6" default="25" label="Tooltip Title Word Count" description="Allows you to limit the amount of visible item title text in the tooltip. 0 will show all the text" />
+				<field name="t_word_count_desc" type="text" size="6" default="25" label="Tooltip Description Word Count" description="Allows you to limit the amount of visible item description text in the tooltip. 0 will show all the text" />
+				<field name="tooltip_desc_images" type="radio" class="btn-group btn-group-yesno" default="0" label="Tooltip Description Text Images" description="Allow images in the tooltip description text">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					label="Cache Mode"
+					type="list"
+					default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+
+</extension>

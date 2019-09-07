@@ -1,0 +1,12 @@
+{
+	"list": {
+		"table": "snippets",
+		"state": "published",
+		"filter": "state"
+	},
+	"items": {
+		"table": "snippets",
+		"state": "published",
+		"filter": "state"
+	}
+}

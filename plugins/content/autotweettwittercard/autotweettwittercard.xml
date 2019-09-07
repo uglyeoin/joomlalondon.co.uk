@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_content_autotweettwittercard</name>
+	<creationDate>2018-01-02</creationDate>
+
+	<author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>8.18.0</version>
+
+	<description>PLG_CONTENT_AUTOTWEETTWITTERCARD_DESC</description>
+
+	<files>
+		<filename plugin="autotweettwittercard">autotweettwittercard.php</filename>
+		<filename plugin="autotweettwittercard">twittercard.php</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_content_autotweettwittercard.ini</language>
+		<language tag="en-GB">en-GB.plg_content_autotweettwittercard.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="settings" label="PLG_CONTENT_AUTOTWEETTWITTERCARD_SETTINGS">
+
+				<field name="smart-loader" type="radio" class="btn-group btn-group-yesno" default="1"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_SMARTLOADER_LABEL"
+                    description="PLG_CONTENT_AUTOTWEETTWITTERCARD_SMARTLOADER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="included_components" type="textarea" cols="40" rows="5" default="com_content,com_easyblog,com_flexicontent,com_k2,com_zoo"
+                    label="PLG_CONTENT_AUTOTWEETTWITTERCARD_INCLUDED_COMPONENTS_LABEL"
+                    description="PLG_CONTENT_AUTOTWEETTWITTERCARD_INCLUDED_COMPONENTS_DESC" />
+
+				<field name="og-title" type="list" default="1"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGTITLE" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGTITLE_DESC">
+					<option value="1">PLG_CONTENT_AUTOTWEETTWITTERCARD_ARTICLE_TITLE
+					</option>
+					<option value="2">PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="og-title-custom" type="text" default=""
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_OGTITLE" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_OGTITLE_DESC"
+                    showon="og-title:2" />
+
+				<field name="og-type" type="list" default="summary_large_image"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGTYPE" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGTYPE_DESC">
+					<option value="summary">Summary Card</option>
+					<option value="summary_large_image">Summary Card with Large Image</option>
+					<option value="photo">Photo Card</option>
+					<option value="gallery">Gallery Card</option>
+					<option value="app">App Card</option>
+					<option value="player">Player Card</option>
+					<option value="product">Product Card</option>
+					<option value="custom">Custom</option>
+				</field>
+
+				<field name="og-type-custom" type="text" default=""
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_OGTYPE" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_OGTYPE_DESC"
+                    showon="og-type:custom" />
+
+				<field name="og-img-prio1" type="list" default="2"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGIMGPRIO1" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGIMGPRIO1_DESC">
+					<option value="1">PLG_CONTENT_AUTOTWEETTWITTERCARD_FIRST_IMAGE_FOUND
+					</option>
+					<option value="2">PLG_CONTENT_AUTOTWEETTWITTERCARD_INTRO_IMAGE
+					</option>
+					<option value="3">PLG_CONTENT_AUTOTWEETTWITTERCARD_FULL_ARTICLE_IMAGE
+					</option>
+					<option value="4">PLG_CONTENT_AUTOTWEETTWITTERCARD_IMAGE_WITH_CLASS
+					</option>
+					<option value="5">PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_IMAGE
+					</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="og-img-prio2" type="list" default="3"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGIMGPRIO2" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGIMGPRIO2_DESC">
+					<option value="1">PLG_CONTENT_AUTOTWEETTWITTERCARD_FIRST_IMAGE_FOUND
+					</option>
+					<option value="2">PLG_CONTENT_AUTOTWEETTWITTERCARD_INTRO_IMAGE
+					</option>
+					<option value="3">PLG_CONTENT_AUTOTWEETTWITTERCARD_FULL_ARTICLE_IMAGE
+					</option>
+					<option value="4">PLG_CONTENT_AUTOTWEETTWITTERCARD_IMAGE_WITH_CLASS
+					</option>
+					<option value="5">PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_IMAGE
+					</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="og-img-prio3" type="list" default="1"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGIMGPRIO3" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGIMGPRIO3_DESC">
+					<option value="1">PLG_CONTENT_AUTOTWEETTWITTERCARD_FIRST_IMAGE_FOUND
+					</option>
+					<option value="2">PLG_CONTENT_AUTOTWEETTWITTERCARD_INTRO_IMAGE
+					</option>
+					<option value="3">PLG_CONTENT_AUTOTWEETTWITTERCARD_FULL_ARTICLE_IMAGE
+					</option>
+					<option value="4">PLG_CONTENT_AUTOTWEETTWITTERCARD_IMAGE_WITH_CLASS
+					</option>
+					<option value="5">PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_IMAGE
+					</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="og-img-class" type="text" default="xt-image"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_IMG_CLASS"
+					description="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_IMG_CLASS_DESC"
+                    showon="og-img-prio1:4[OR]og-img-prio2:4[OR]og-img-prio3:4" />
+
+				<field name="og-img-custom" type="imagelist" directory="images"
+					default="" label="PLG_CONTENT_AUTOTWEETTWITTERCARD_SELECT_IMAGE"
+					description="PLG_CONTENT_AUTOTWEETTWITTERCARD_SELECT_IMAGE_DESC"
+                    showon="og-img-prio1:5[OR]og-img-prio2:5[OR]og-img-prio3:5" />
+
+				<field name="og-desc" type="list" default="3"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGDESC" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_OGDESC_DESC">
+					<option value="1">PLG_CONTENT_AUTOTWEETTWITTERCARD_ARTICLE_METADESC
+					</option>
+					<option value="2">PLG_CONTENT_AUTOTWEETTWITTERCARD_ARTICLE_INTROTEXT
+					</option>
+					<option value="3">PLG_CONTENT_AUTOTWEETTWITTERCARD_SITE_DESC
+					</option>
+					<option value="4">PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOMDESC
+					</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="og-desc-custom" type="text" default=""
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_OGDESC" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_OGDESC_DESC"
+                    showon="og-desc:4" />
+
+				<field name="og-author" type="list" default="1"
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_AUTHOR" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_AUTHOR_DESC">
+					<option value="1">PLG_CONTENT_AUTOTWEETTWITTERCARD_JOOMLA_AUTHOR
+					</option>
+					<option value="2">PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_AUTHOR
+					</option>
+					<option value="0">JOFF</option>
+				</field>
+
+				<field name="og-author-custom" type="text" default=""
+					label="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_AUTHOR" description="PLG_CONTENT_AUTOTWEETTWITTERCARD_CUSTOM_AUTHOR_DESC"
+                    showon="og-author:2" />
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

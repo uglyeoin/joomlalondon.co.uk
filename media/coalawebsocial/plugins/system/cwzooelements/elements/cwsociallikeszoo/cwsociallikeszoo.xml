@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<element type="cwsociallikeszoo" group="Social">
+    <name>CoalaWeb Social Likes</name>
+    <creationDate>2014-03-05</creationDate>
+    <author>Steven Palmer</author>
+    <authorEmail>support@coalaweb.com</authorEmail>
+    <authorUrl>http://coalaweb.com</authorUrl>
+    <copyright>Copyright (c) 2015 Steven Palmer All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>0.1.1</version>
+    <description>This plugin will display a variety of social network buttons in your Zoo content.</description>
+    <params>
+        <param 
+            name="default" 
+            type="radio" 
+            default="1" 
+            label="Enabled By Default" 
+            description="Enabled by default">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </param>    		
+        <param 
+            name="locale" 
+            type="radio" 
+            default="0" 
+            label="Detect Language" 
+            description="Choose a language for buttons that support this">
+            <option value="0">Joomla</option>
+            <option value="1">Browser</option>
+        </param>
+    </params>
+</element>

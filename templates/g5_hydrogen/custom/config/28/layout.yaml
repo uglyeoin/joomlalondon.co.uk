@@ -1,0 +1,100 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1558378238
+layout:
+  /container-top/:
+    -
+      -
+        'logo 30': {  }
+      -
+        'menu-and-countdown 70': {  }
+  header-banner: {  }
+  /container-main/:
+    -
+      -
+        'main 60': {  }
+      -
+        'sidebar1 20': {  }
+      -
+        'sidebar2 20': {  }
+  footer: {  }
+  sub-footer: {  }
+  offcanvas: {  }
+structure:
+  logo:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  menu-and-countdown:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-top:
+    attributes:
+      boxed: ''
+  header-banner:
+    title: Banner
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  main:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar1:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar2:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sub-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children

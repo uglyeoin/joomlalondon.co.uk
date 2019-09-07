@@ -1,0 +1,12 @@
+{
+	"list": {
+		"table": "rereplacer",
+		"state": "published",
+		"filter": "state"
+	},
+	"items": {
+		"table": "rereplacer",
+		"state": "published",
+		"filter": "state"
+	}
+}

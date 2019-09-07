@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+	<name>YouTube RSS Videos</name>
+	<author>Kind of Useful</author>
+	<creationDate>September 2016</creationDate>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<version>0.1.1</version>
+	<description>MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_kou_youtube_rss_playlist_or_channel">mod_kou_youtube_rss_playlist_or_channel.php</filename>	
+		<folder>media</folder>				
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>install.php</filename>		
+	</files>
+	<media destination="mod_kou_youtube_rss_playlist_or_channel" folder="media">
+		<folder>css</folder>
+	</media>	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_kou_youtube_rss_playlist_or_channel.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_kou_youtube_rss_playlist_or_channel.sys.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" name="mod_kou_youtube_rss_playlist_or_channel" priority="1">http://www.kindofuseful.com/downloads/joomla/modules/mod_kou_youtube_rss_playlist_or_channel/updates.xml</server>
+	</updateservers>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_CSS_SHARING_BUTTON" />
+	<config>
+		<fields name="params">		
+			<fieldset name="basic">
+				<field
+					name="feed_type"
+					type="list"
+					label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_FEED_TYPE_LABEL"
+					description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_FEED_TYPE_DESC"
+					default="1"
+					>
+					<option value="0">MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_FEED_TYPE_OPTION_YOUTUBE_PLAYLIST</option>
+					<option value="1">MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_FEED_TYPE_OPTION_YOUTUBE_CHANNEL</option>
+				</field>			
+				<field
+						name="channel_id"
+						type="text"
+						label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_CHANNEL_ID_LABEL"
+						description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_CHANNEL_ID_DESC"
+						showon="feed_type:1"
+						default="UCy6ThiEDnalZOd_pgtpBk1Q"
+				/>
+				<field
+						name="playlist_id"
+						type="text"
+						label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_PLAYLIST_ID_LABEL"
+						description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_PLAYLIST_ID_DESC"
+						showon="feed_type:0"
+						default="PLx0GbZ0m42LqeIybI2x_bBLGlo85-5VNg"
+				/>				
+				<field
+						name="Number_of_feed_items"
+						type="text"
+						label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_NUMBER_OF_FEED_ITEMS_LABEL"
+						description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_NUMBER_OF_FEED_ITEMS_DESC"
+						default="5"
+				/>
+				<field
+						name="container_class"
+						type="text"
+						label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_CONTAINER_CLASS_LABEL"
+						description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_CONTAINER_CLASS_DESC"
+				/>	
+				<field
+						name="row_class"
+						type="text"
+						label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_ROW_CLASS_LABEL"
+						description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_ROW_CLASS_DESC"
+				/>	
+				<field
+						name="column_class"
+						type="text"
+						label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_COLUMN_CLASS_LABEL"
+						description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_COLUMN_CLASS_DESC"
+				/>	
+				<field
+					name="order"
+					type="list"
+					label="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_ORDER_LABEL"
+					description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_ORDER_DESC"
+					default="1"
+					>
+					<option value="0">MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_FEED_TYPE_OPTION_ORDER_LATEST_BY_DATE</option>
+					<option value="1">MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_FEED_TYPE_OPTION_ORDER_RANDOM</option>
+				</field>															
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="MOD_KOU_YOUTUBE_RSS_PLAYLIST_OR_CHANNEL_TYPE_LABEL_JFIELD_ALT_MODULE_LAYOUT"
+					default="default"
+				/>
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING"
+					default="1"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME"
+					default="900"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

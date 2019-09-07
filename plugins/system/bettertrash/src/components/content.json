@@ -1,0 +1,8 @@
+{
+	"articles": {
+		"table": "content"
+	},
+	"featured": {
+		"table": "content"
+	}
+}

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+	<name>plg_system_articlesanywhere</name>
+	<description>PLG_SYSTEM_ARTICLESANYWHERE_DESC</description>
+	<version>9.3.5PRO</version>
+	<creationDate>August 2019</creationDate>
+	<author>Regular Labs (Peter van Westen)</author>
+	<authorEmail>info@regularlabs.com</authorEmail>
+	<authorUrl>https://www.regularlabs.com</authorUrl>
+	<copyright>Copyright © 2018 Regular Labs - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<scriptfile>script.install.php</scriptfile>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Regular Labs - Articles Anywhere">
+			https://download.regularlabs.com/updates.xml?e=articlesanywhere&amp;pro=1&amp;type=.xml
+		</server>
+	</updateservers>
+
+	<files>
+		<filename plugin="articlesanywhere">articlesanywhere.php</filename>
+		<filename>script.install.helper.php</filename>
+		<folder>language</folder>
+		<folder>src</folder>
+		<folder>vendor</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/libraries/regularlabs/fields">
+			<fieldset name="basic">
+				<field name="@loadlanguage_mod_articles_category" type="rl_loadlanguage"
+					   extension="mod_articles_category" admin="0" />
+				<field name="@loadlanguage_regularlabs" type="rl_loadlanguage" extension="plg_system_regularlabs" />
+				<field name="@loadlanguage" type="rl_loadlanguage" extension="plg_system_articlesanywhere" />
+				<field name="@license" type="rl_license" extension="ARTICLES_ANYWHERE" />
+				<field name="@version" type="rl_version" extension="ARTICLES_ANYWHERE" />
+				<field name="@header" type="rl_header"
+					   label="ARTICLES_ANYWHERE"
+					   description="ARTICLES_ANYWHERE_DESC"
+					   url="https://www.regularlabs.com/articlesanywhere" />
+			</fieldset>
+			<fieldset name="RL_BEHAVIOUR">
+				<field name="use_ellipsis" type="radio" class="btn-group" default="1"
+					   label="AA_ADD_ELLIPSIS"
+					   description="AA_ADD_ELLIPSIS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="increase_hits_on_text" type="radio" class="btn-group" default="1"
+					   label="AA_INCREASE_HITS_ON_TEXT"
+					   description="AA_INCREASE_HITS_ON_TEXT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_multiple_a" type="rl_block" start="1" label="AA_MULTIPLE_ARTICLES" />
+				<field name="limit" type="number" default="0" size="5" class="input-mini"
+					   label="AA_LIMIT"
+					   description="AA_LIMIT_DESC" />
+				<field name="ordering" type="list" default="ordering"
+					   label="MOD_ARTICLES_CATEGORY_FIELD_ARTICLEORDERING_LABEL"
+					   description="AA_ORDERING_DESC">
+					<option value="ordering">MOD_ARTICLES_CATEGORY_OPTION_ORDERING_VALUE</option>
+					<option value="hits">MOD_ARTICLES_CATEGORY_OPTION_HITS_VALUE</option>
+					<option value="title">JGLOBAL_TITLE</option>
+					<option value="id">MOD_ARTICLES_CATEGORY_OPTION_ID_VALUE</option>
+					<option value="alias">JFIELD_ALIAS_LABEL</option>
+					<option value="created">MOD_ARTICLES_CATEGORY_OPTION_CREATED_VALUE</option>
+					<option value="modified">MOD_ARTICLES_CATEGORY_OPTION_MODIFIED_VALUE</option>
+					<option value="publish_up">MOD_ARTICLES_CATEGORY_OPTION_STARTPUBLISHING_VALUE</option>
+					<option value="publish_down">MOD_ARTICLES_CATEGORY_OPTION_FINISHPUBLISHING_VALUE</option>
+					<option value="category">JCATEGORY</option>
+					<option value="author">JGLOBAL_FIELD_CREATED_BY_LABEL</option>
+					<option value="modifier">JGLOBAL_FIELD_MODIFIED_BY_LABEL</option>
+					<option value="random">RL_RANDOM</option>
+				</field>
+				<field name="ordering_direction" type="list" default="ASC"
+					   label="MOD_ARTICLES_CATEGORY_FIELD_ARTICLEORDERINGDIR_LABEL"
+					   description="MOD_ARTICLES_CATEGORY_FIELD_ARTICLEORDERINGDIR_DESC">
+					<option value="DESC">MOD_ARTICLES_CATEGORY_OPTION_DESCENDING_VALUE</option>
+					<option value="ASC">MOD_ARTICLES_CATEGORY_OPTION_ASCENDING_VALUE</option>
+				</field>
+				<field name="include_child_categories" type="list" default="0"
+					   label="JGLOBAL_SHOW_SUBCATEGORY_CONTENT_LABEL"
+					   description="AA_INCLUDE_CHILD_CATEGORIES_DESC">
+					<option value="0">JNONE</option>
+					<option value="true">JALL</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+				</field>
+				<field name="@block_multiple_b" type="rl_block" end="1" />
+
+				<field name="@block_pagination_a" type="rl_block" start="1" label="JGLOBAL_PAGINATION_LABEL" />
+				<field name="pagination" type="radio" class="btn-group" default="0"
+					   label="AA_PAGINATION"
+					   description="AA_PAGINATION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="per_page" type="number" default="10" size="5" class="input-mini"
+					   label="AA_LIMIT_PER_PAGE"
+					   description="AA_LIMIT_PER_PAGE_DESC" />
+				<field name="pagination_position" type="list" default="bottom"
+					   label="AA_PAGINATION_POSITION"
+					   description="AA_PAGINATION_POSITION_DESC">
+					<option value="bottom">RL_BOTTOM</option>
+					<option value="top">RL_TOP</option>
+					<option value="top,bottom">RL_BOTH</option>
+				</field>
+				<field name="pagination_results" type="radio" class="btn-group" default="1"
+					   label="JGLOBAL_PAGINATION_RESULTS_LABEL"
+					   description="JGLOBAL_PAGINATION_RESULTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="page_param" type="text" default="page"
+					   label="AA_PAGE_PARAM"
+					   description="AA_PAGE_PARAM_DESC" />
+				<field name="@block_pagination_b" type="rl_block" end="1" />
+			</fieldset>
+
+			<fieldset name="RL_MEDIA">
+				<field name="@block_image_resizing_a" type="rl_block" start="1" label="AA_IMAGE_RESIZING" />
+				<field name="resize_images" type="radio" class="btn-group" default="standard"
+					   label="RL_RESIZE_IMAGES"
+					   description="AA_RESIZE_IMAGES_DESC">
+					<option value="0">JNO</option>
+					<option value="standard">AA_STANDARD</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@resize_images_no" type="note" class="alert alert-info"
+					   title="AA_RESIZE_IMAGES_NO_TITLE"
+					   description="AA_RESIZE_IMAGES_NO_DESC"
+					   showon="resize_images:0" />
+
+				<field name="@resize_images_standard" type="note" class="alert alert-info"
+					   title="AA_RESIZE_IMAGES_STANDARD_TITLE"
+					   description="AA_RESIZE_IMAGES_STANDARD_DESC"
+					   showon="resize_images:standard" />
+
+				<field name="@resize_images_yes" type="note" class="alert alert-info"
+					   title="AA_RESIZE_IMAGES_YES_TITLE"
+					   description="AA_RESIZE_IMAGES_YES_DESC"
+					   showon="resize_images:1" />
+
+				<field name="resize_type" type="radio" class="btn-group" default="crop"
+					   label="RL_RESIZE_IMAGES_TYPE"
+					   description="%1$s&lt;br>&lt;br>&lt;strong>%2$s&lt;/strong>&lt;br>%3$s&lt;br>&lt;br>&lt;strong>%4$s&lt;/strong>&lt;br>%5$s,RL_RESIZE_IMAGES_TYPE_DESC,RL_RESIZE_IMAGES_SCALE,RL_RESIZE_IMAGES_SCALE_DESC,RL_RESIZE_IMAGES_CROP,RL_RESIZE_IMAGES_CROP_DESC">
+					<option value="scale">RL_RESIZE_IMAGES_SCALE</option>
+					<option value="crop">RL_RESIZE_IMAGES_CROP</option>
+				</field>
+
+				<field name="resize_using" type="radio" class="btn-group" default="height"
+					   label="RL_RESIZE_IMAGES_SCALE_USING"
+					   description="RL_RESIZE_IMAGES_SCALE_USING_DESC"
+					   showon="resize_type:scale">
+					<option value="width">RL_WIDTH</option>
+					<option value="height">RL_HEIGHT</option>
+				</field>
+
+				<field name="@resize_width" type="rl_plaintext"
+					   label="RL_WIDTH"
+					   default="RL_RESIZE_IMAGES_NO_WIDTH_DESC"
+					   showon="resize_type:scale[AND]resize_using:height" />
+
+				<field name="resize_width" type="number" size="10" class="input-mini" default="320"
+					   label="RL_WIDTH"
+					   description="RL_RESIZE_IMAGES_WIDTH_DESC"
+					   showon="resize_type:crop[OR]resize_using:width" />
+
+				<field name="@resize_height" type="rl_plaintext"
+					   label="RL_HEIGHT"
+					   default="RL_RESIZE_IMAGES_NO_HEIGHT_DESC"
+					   showon="resize_type:scale[AND]resize_using:width" />
+
+				<field name="resize_height" type="number" size="10" class="input-mini" default="180"
+					   label="RL_HEIGHT"
+					   description="RL_RESIZE_IMAGES_HEIGHT_DESC"
+					   showon="resize_type:crop[OR]resize_using:height" />
+
+				<field name="resize_folder" type="text" class="input" default="resized"
+					   label="RL_RESIZE_IMAGES_FOLDER"
+					   description="RL_RESIZE_IMAGES_FOLDER_DESC" />
+
+				<field name="resize_filetypes" type="checkboxes" multiple="true" default="gif,jpg,png" checked="gif,jpg,png"
+					   label="RL_RESIZE_IMAGES_FILETYPES"
+					   description="RL_RESIZE_IMAGES_FILETYPES_DESC">
+					<option value="gif">GIF</option>
+					<option value="jpg">JPG</option>
+					<option value="png">PNG</option>
+				</field>
+
+				<field name="resize_quality" type="radio" class="btn-group" default="medium"
+					   label="RL_RESIZE_IMAGES_QUALITY"
+					   description="RL_RESIZE_IMAGES_QUALITY_DESC"
+					   showon="resize_filetypes:jpg">
+					<option value="low">RL_LOW</option>
+					<option value="medium">RL_MEDIUM</option>
+					<option value="high">RL_HIGH</option>
+				</field>
+				<field name="@block_image_resizing_b" type="rl_block" end="1" />
+
+				<field name="@block_image_titles_a" type="rl_block" start="1" label="AA_IMAGE_TITLES" />
+				<field name="image_titles_cross_fill" type="radio" class="btn-group" default="1"
+					   label="AA_TITLES_CROSS_FILL"
+					   description="AA_TITLES_CROSS_FILL_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@block_image_titles_default_a" type="rl_block" start="1" label="AA_IMAGE_TITLES_DEFAULT" description="AA_IMAGE_TITLES_DEFAULT_DESC" />
+				<field name="image_titles_intro" type="list" default="file"
+					   label="AA_IMAGE_TITLES_INTRO"
+					   description="AA_IMAGE_TITLES_DEFAULT_DESC">
+					<option value="0">JNONE</option>
+					<option value="file">AA_FILE_NAME</option>
+					<option value="article">AA_ARTICLE_TITLE</option>
+				</field>
+				<field name="image_titles_fulltext" type="list" default="file"
+					   label="AA_IMAGE_TITLES_FULLTEXT"
+					   description="AA_IMAGE_TITLES_DEFAULT_DESC">
+					<option value="0">JNONE</option>
+					<option value="file">AA_FILE_NAME</option>
+					<option value="article">AA_ARTICLE_TITLE</option>
+				</field>
+				<field name="image_titles_category" type="list" default="file"
+					   label="AA_IMAGE_TITLES_CATEGORY"
+					   description="AA_IMAGE_TITLES_DEFAULT_DESC">
+					<option value="0">JNONE</option>
+					<option value="file">AA_FILE_NAME</option>
+					<option value="article">AA_ARTICLE_TITLE</option>
+					<option value="category">AA_CATEGORY_TITLE</option>
+				</field>
+				<field name="image_titles_content" type="list" default="file"
+					   label="AA_IMAGE_TITLES_CONTENT"
+					   description="AA_IMAGE_TITLES_DEFAULT_DESC">
+					<option value="0">JNONE</option>
+					<option value="file">AA_FILE_NAME</option>
+					<option value="article">AA_ARTICLE_TITLE</option>
+				</field>
+				<field name="image_titles_video" type="list" default="article"
+					   label="AA_IMAGE_TITLES_VIDEO"
+					   description="AA_IMAGE_TITLES_DEFAULT_DESC">
+					<option value="0">JNONE</option>
+					<option value="article">AA_ARTICLE_TITLE</option>
+				</field>
+				<field name="image_titles_custom_fields" type="list" default="file"
+					   label="AA_IMAGE_TITLES_CUSTOM_FIELDS"
+					   description="AA_IMAGE_TITLES_DEFAULT_DESC">
+					<option value="0">JNONE</option>
+					<option value="file">AA_FILE_NAME</option>
+					<option value="article">AA_ARTICLE_TITLE</option>
+					<option value="field">AA_CUSTOM_FIELD_NAME</option>
+				</field>
+
+				<field name="@showon_image_titles_file_a" type="rl_showon"
+					   value="image_titles_intro:file[OR]image_titles_fulltext:file[OR]image_titles_content:file[OR]image_titles_custom_fields:file[OR]image_titles_category:file" />
+				<field name="@block_image_titles_case_a" type="rl_block" start="1" />
+				<field name="image_titles_case" type="list" default="titlecase_smart"
+					   label="AA_CASE_TITLES"
+					   description="AA_CASE_TITLES_DESC"
+					   class="input-xxlarge">
+					<option value="0">JNONE</option>
+					<option value="lowercase">AA_LOWERCASE</option>
+					<option value="uppercase">AA_UPPERCASE</option>
+					<option value="uppercasefirst">AA_UPPERCASE_FIRST</option>
+					<option value="titlecase">AA_TITLECASE</option>
+					<option value="titlecase_smart">AA_TITLECASE_SMART</option>
+				</field>
+				<field name="image_titles_lowercase_words" type="text" default="a,the,to,at,in,with,and,but,or"
+					   label="AA_TITLECASE_LOWERCASE_WORDS"
+					   description="AA_TITLECASE_LOWERCASE_WORDS_DESC"
+					   class="input-xxlarge"
+					   showon="image_titles_case:titlecase_smart" />
+				<field name="@block_title_case_b" type="rl_block" end="1" />
+				<field name="@showon_image_titles_file_b" type="rl_showon" />
+				<field name="@block_image_titles_default_b" type="rl_block" end="1" />
+
+				<field name="@block_image_titles_b" type="rl_block" end="1" />
+			</fieldset>
+
+			<fieldset name="AA_IGNORES">
+				<field name="@block_ignore_articles_a" type="rl_block" start="1" label="JGLOBAL_ARTICLES" />
+				<field name="ignore_language" type="radio" class="btn-group" default="0"
+					   label="AA_IGNORE_LANGUAGE"
+					   description="AA_IGNORE_LANGUAGE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ignore_access" type="radio" class="btn-group" default="0"
+					   label="AA_IGNORE_ACCESS"
+					   description="AA_IGNORE_ACCESS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ignore_state" type="radio" class="btn-group" default="0"
+					   label="AA_IGNORE_STATE"
+					   description="AA_IGNORE_STATE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_ignore_articles_b" type="rl_block" end="1" />
+				<field name="@block_ignore_categories_a" type="rl_block" start="1" label="JCATEGORIES" />
+				<field name="ignore_language_categories" type="radio" class="btn-group" default="-1"
+					   label="AA_IGNORE_LANGUAGE"
+					   description="AA_IGNORE_LANGUAGE_DESC">
+					<option value="-1">JDEFAULT</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ignore_access_categories" type="radio" class="btn-group" default="-1"
+					   label="AA_IGNORE_ACCESS"
+					   description="AA_IGNORE_ACCESS_DESC">
+					<option value="-1">JDEFAULT</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ignore_state_categories" type="radio" class="btn-group" default="-1"
+					   label="AA_IGNORE_STATE"
+					   description="AA_IGNORE_STATE_DESC">
+					<option value="-1">JDEFAULT</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_ignore_categories_b" type="rl_block" end="1" />
+				<field name="@block_ignore_tags_a" type="rl_block" start="1" label="JTAG" />
+				<field name="ignore_language_tags" type="radio" class="btn-group" default="-1"
+					   label="AA_IGNORE_LANGUAGE"
+					   description="AA_IGNORE_LANGUAGE_DESC">
+					<option value="-1">JDEFAULT</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ignore_access_tags" type="radio" class="btn-group" default="-1"
+					   label="AA_IGNORE_ACCESS"
+					   description="AA_IGNORE_ACCESS_DESC">
+					<option value="-1">JDEFAULT</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ignore_state_tags" type="radio" class="btn-group" default="-1"
+					   label="AA_IGNORE_STATE"
+					   description="AA_IGNORE_STATE_DESC">
+					<option value="-1">JDEFAULT</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_ignore_tags_b" type="rl_block" end="1" />
+			</fieldset>
+
+			<fieldset name="RL_SETTINGS_SECURITY">
+				<field name="@block_articles_a" type="rl_block" start="1"
+					   label="RL_ARTICLES"
+					   description="AA_ARTICLES_DESC" />
+				<field name="articles_enable" type="radio" class="btn-group" default="1"
+					   label="RL_ENABLE_IN_ARTICLES"
+					   description="AA_ENABLE_IN_ARTICLES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="articles_security_level" type="rl_grouplevel" multiple="1" show_all="1" default="-1"
+					   label="AA_SECURITY_LEVEL"
+					   description="AA_SECURITY_LEVEL_DESC"
+					   showon="articles_enable:1" />
+				<field name="@block_articles_b" type="rl_block" end="1" />
+
+				<field name="@block_components_a" type="rl_block" start="1"
+					   label="RL_COMPONENTS"
+					   description="AA_COMPONENTS_DESC" />
+				<field name="components_enable" type="radio" class="btn-group" default="1"
+					   label="RL_ENABLE_IN_COMPONENTS"
+					   description="AA_ENABLE_IN_COMPONENTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="components" type="rl_components" multiple="1" default="" admin="0"
+					   label="RL_DISABLE_ON_COMPONENTS"
+					   description="AA_DISABLE_ON_COMPONENTS_DESC"
+					   showon="components_enable:1" />
+				<field name="disable_components_remove" type="radio" class="btn-group" default="1"
+					   label="RL_REMOVE_IN_DISABLED_COMPONENTS"
+					   description="RL_REMOVE_IN_DISABLED_COMPONENTS_DESC"
+					   showon="components_enable:1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_components_b" type="rl_block" end="1" />
+
+				<field name="@block_otherareas_a" type="rl_block" start="1"
+					   label="RL_OTHER_AREAS"
+					   description="AA_OTHER_AREAS_DESC" />
+				<field name="other_enable" type="radio" class="btn-group" default="1"
+					   label="RL_ENABLE_OTHER_AREAS"
+					   description="AA_ENABLE_OTHER_AREAS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_otherareas_b" type="rl_block" end="1" />
+			</fieldset>
+
+			<fieldset name="RL_SETTINGS_EDITOR_BUTTON">
+				<field name="button_text" type="text" default="Article"
+					   label="RL_BUTTON_TEXT"
+					   description="RL_BUTTON_TEXT_DESC" />
+				<field name="enable_frontend" type="radio" class="btn-group" default="1"
+					   label="RL_ENABLE_IN_FRONTEND"
+					   description="RL_ENABLE_IN_FRONTEND_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@block_tag_a" type="rl_block" start="1"
+					   label="AA_DEFAULT_DATA_TAG_SETTINGS"
+					   description="AA_DEFAULT_DATA_TAG_SETTINGS_DESC" />
+
+				<field name="@block_data_layout_a" type="rl_block" start="1"
+					   label="%s,AA_FULL_ARTICLE" />
+
+				<field name="data_layout_enable" type="radio" class="btn-group" default="0"
+					   label="AA_ENABLE_FULL_ARTICLE_TAG"
+					   description="AA_ENABLE_FULL_ARTICLE_TAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@showon_data_layout_1_a" type="rl_showon"
+					   value="data_layout_enable:1" />
+
+				<field name="data_layout_layout" type="text" default=""
+					   label="AA_ENABLE_FULL_ARTICLE_LAYOUT"
+					   description="AA_FULL_ARTICLE_LAYOUT_DESC"
+					   showon="data_layout_enable:1" />
+
+				<field name="@showon_data_layout_1_b" type="rl_showon" />
+
+				<field name="@block_data_layout_b" type="rl_block" end="1" />
+
+				<field name="@showon_data_layout_0_a" type="rl_showon"
+					   value="data_layout_enable:0" />
+
+				<field name="@block_data_title_a" type="rl_block" start="1"
+					   label="JGLOBAL_TITLE" />
+
+				<field name="data_title_enable" type="radio" class="btn-group" default="1"
+					   label="AA_ENABLE_TITLE_TAG"
+					   description="AA_ENABLE_TITLE_TAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@showon_data_title_0_a" type="rl_showon"
+					   value="data_title_enable:1" />
+
+				<field name="data_title_heading" type="list" default=""
+					   label="AA_TITLE_HEADING"
+					   description="AA_TITLE_HEADING_DESC">
+					<option value="">JNONE</option>
+					<option value="h1">RL_HEADING_1</option>
+					<option value="h2">RL_HEADING_2</option>
+					<option value="h3">RL_HEADING_3</option>
+					<option value="h4">RL_HEADING_4</option>
+					<option value="h5">RL_HEADING_5</option>
+					<option value="h6">RL_HEADING_6</option>
+				</field>
+
+				<field name="data_title_add_link" type="radio" class="btn-group" default="0"
+					   label="AA_TITLE_ADD_LINK_TAG"
+					   description="AA_TITLE_ADD_LINK_TAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@showon_data_title_1_b" type="rl_showon" />
+
+				<field name="@block_data_title_b" type="rl_block" end="1" />
+
+				<field name="@block_data_intro_image_a" type="rl_block" start="1"
+					   label="AA_INTRO_IMAGE" />
+
+				<field name="data_intro_image_enable" type="radio" class="btn-group" default="0"
+					   label="AA_ENABLE_INTRO_IMAGE_TAG"
+					   description="AA_ENABLE_INTRO_IMAGE_TAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="@block_data_intro_image_b" type="rl_block" end="1" />
+
+				<field name="@block_data_text_a" type="rl_block" start="1"
+					   label="RL_CONTENT" />
+
+				<field name="data_text_enable" type="radio" class="btn-group" default="1"
+					   label="AA_ENABLE_TEXT_TAG"
+					   description="AA_ENABLE_TEXT_TAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@showon_data_text_a" type="rl_showon" value="data_text_enable:1" />
+				<field name="data_text_type" type="list" default="text"
+					   label="AA_TEXT_TYPE"
+					   description="AA_TEXT_TYPE_DESC">
+					<option value="text">AA_ALL_TEXT</option>
+					<option value="introtext">AA_INTRO_TEXT</option>
+					<option value="fulltext">AA_FULL_TEXT</option>
+				</field>
+				<field name="data_text_length" type="text" default="" size="5"
+					   label="AA_MAXIMUM_TEXT_LENGTH"
+					   description="AA_MAXIMUM_TEXT_LENGTH_DESC" />
+				<field name="data_text_strip" type="radio" class="btn-group" default="0"
+					   label="AA_STRIP_HTML_TAGS"
+					   description="AA_STRIP_HTML_TAGS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@showon_data_text_b" type="rl_showon" />
+
+				<field name="@block_data_text_b" type="rl_block" end="1" />
+
+				<field name="@block_readmore_a" type="rl_block" start="1"
+					   label="AA_READMORE_LINK" />
+
+				<field name="data_readmore_enable" type="radio" class="btn-group" default="1"
+					   label="AA_ENABLE_READMORE_TAG"
+					   description="AA_ENABLE_READMORE_TAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@showon_data_readmore_a" type="rl_showon" value="data_readmore_enable:1" />
+				<field name="data_readmore_text" type="text" default=""
+					   label="AA_READMORE_TEXT"
+					   description="AA_READMORE_TEXT_DESC" />
+				<field name="data_readmore_class" type="text" default=""
+					   label="AA_CLASSNAME"
+					   description="AA_CLASSNAME_DESC" />
+				<field name="@showon_data_readmore_b" type="rl_showon" />
+
+
+				<field name="@block_readmore_b" type="rl_block" end="1" />
+
+				<field name="@showon_data_layout_2_b" type="rl_showon" />
+
+				<field name="use_k2" type="radio" class="btn-group" default="0"
+					   label="AA_USE_K2"
+					   description="AA_USE_K2_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@showon_use_k2_a" type="rl_showon" value="use_k2:1" />
+				<field name="content_type" type="radio" default="core"
+					   label="AA_CONTENT_TYPE"
+					   description="AA_CONTENT_TYPE_DESC">
+					<option value="core">AA_CONTENT_TYPE_CORE</option>
+					<option value="k2">AA_CONTENT_TYPE_K2</option>
+				</field>
+				<field name="@showon_use_k2_b" type="rl_showon" />
+
+				<field name="@block_tag_b" type="rl_block" end="1" />
+			</fieldset>
+
+			<fieldset name="RL_TAG_SYNTAX">
+				<field name="article_tag" type="text" default="article"
+					   label="AA_TAG"
+					   description="AA_TAG_DESC" />
+				<field name="articles_tag" type="text" default="articles"
+					   label="AA_TAG2"
+					   description="AA_TAG2_DESC" />
+				<field name="tag_characters" type="list" default="{.}" class="input-small"
+					   label="RL_TAG_CHARACTERS"
+					   description="RL_TAG_CHARACTERS_DESC">
+					<option value="{.}">{...}</option>
+					<option value="[.]">[...]</option>
+					<option value="«.»">«...»</option>
+					<option value="{{.}}">{{...}}</option>
+					<option value="[[.]]">[[...]]</option>
+					<option value="[:.:]">[:...:]</option>
+					<option value="[%.%]">[%...%]</option>
+				</field>
+				<field name="tag_characters_data" type="list" default="[.]" class="input-small"
+					   label="AA_TAG_CHARACTERS_DATA"
+					   description="RL_TAG_CHARACTERS_DESC">
+					<option value="{.}">{...}</option>
+					<option value="[.]">[...]</option>
+					<option value="«.»">«...»</option>
+					<option value="{{.}}">{{...}}</option>
+					<option value="[[.]]">[[...]]</option>
+					<option value="[:.:]">[:...:]</option>
+					<option value="[%.%]">[%...%]</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="fix_html_syntax" type="radio" class="btn-group" default="1"
+					   label="RL_FIX_HTML"
+					   description="RL_FIX_HTML_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="force_content_triggers" type="radio" class="btn-group" default="0"
+					   label="AA_FORCE_CONTENT_TRIGGERS"
+					   description="AA_FORCE_CONTENT_TRIGGERS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="use_query_cache" type="radio" class="btn-group" default="1"
+					   label="AA_USE_QUERY_CACHING"
+					   description="AA_USE_QUERY_CACHING_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="query_cache_time" type="text" default=""
+					   class="input-small" maxlength="5"
+					   hint="JDEFAULT"
+					   label="AA_QUERY_CACHE_TIME"
+					   description="%s&lt;br&gt;%s,AA_QUERY_CACHE_TIME_DESC,AA_QUERY_CACHE_TIME_DESC2"
+					   showon="use_query_cache:1" />
+				<field name="place_comments" type="radio" class="btn-group" default="1"
+					   label="RL_PLACE_HTML_COMMENTS"
+					   description="RL_PLACE_HTML_COMMENTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@block_registeredurlparams_a" type="rl_block" start="1" />
+				<field name="registeredurlparams" type="subform"
+					   formsource="plugins/system/articlesanywhere/src/registeredurlparams.xml" multiple="true" buttons="add,remove"
+					   label="AA_REGISTERED_URL_PARAMS" description="AA_REGISTERED_URL_PARAMS_DESC"
+					   default_bk="{&quot;registeredurlparams0&quot;:{&quot;name&quot;:&quot;limit&quot;,&quot;type&quot;:&quot;UINT&quot;}}"
+				/>
+				<field name="@block_registeredurlparams_b" type="rl_block" end="1" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

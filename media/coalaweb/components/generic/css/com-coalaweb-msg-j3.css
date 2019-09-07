@@ -1,0 +1,123 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/* Admin Config Style
+------------------------------------------------------------------------------*/
+
+.spacer label {
+    color: #1272A5;
+    font: bold 14px/30px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* END Admin Config
+------------------------------------------------------------------------------*/
+
+/* Header Custom Field
+------------------------------------------------------------------------------*/
+.cwclr { 
+    clear:both; 
+    height:0; 
+    line-height:0; 
+    border:none; 
+    float:none; 
+    background:none; 
+    padding:0; 
+    margin:0; 
+}
+.paramHeaderContainer { 
+    clear:both; 
+    padding:0px; 
+    font-weight: normal; 
+    border-bottom: 4px solid #1272A5 !important;
+    margin: 2px 0 2px -180px;
+    font: bold 14px/30px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+}
+.paramHeaderContent { 
+    color:#1272A5;
+    text-shadow: 0 1px 1px #FFFFFF;
+    padding:2px 2px 2px 15px; }
+
+/* END Header Custom 
+------------------------------------------------------------------------------*/
+
+/* Messages
+------------------------------------------------------------------------------*/
+
+/* General message */
+.cw-message p.info, .cw-message p.alert, .cw-message p.vote, .cw-message p.upgrade {
+    padding:10px 10px 10px 40px;
+    line-height: 18px; 
+    margin: 0px 0px 10px 0px; 
+    border-radius:5px;
+    text-align:left;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #4D4D4D;
+}
+.cw-message p { margin: 10px 20px }
+
+.cw-message p a, .cw-message ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+.cw-message p a:hover, .cw-message ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+/* Info Message */
+.cw-message p.info a, .cw-message p.info em { color: #1272A5;}
+.cw-message p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border: 1px solid #D2DCE1;
+}
+
+/* Alert Message */
+.cw-message p.alert a, .cw-message p.alert em { color: #B1191C;}
+.cw-message p.alert a:hover { color: #D85863;}
+.cw-message p.alert {
+    background: url("../images/icons/cw-alert.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+}
+
+/* Vote Message */
+.cw-message p.vote a, .cw-message p.vote em { color:#268413; }
+.cw-message p.vote a:hover {color:#b0bf7f;}
+.cw-message p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border: 1px solid #DCE6BE;
+}
+
+/* Upgrade message*/
+.cw-message p.upgrade a, .cw-message p.upgrade em  { color:#CE6A23; }
+.cw-message p.upgrade a:hover {color:#E2AB53;}
+.cw-message p.upgrade {
+    background: url("../images/icons/cw-forum.png") no-repeat scroll 0 0  #FFFAE6; 
+    border: 1px solid #FAE6BE;
+}
+
+#permissions-sliders .pane-toggler-down span.level, 
+#permissions-sliders .pane-toggler span.level,
+#permissions-sliders .pane-sliders{
+    background-image: none !important;
+    margin:0px;
+}
+
+/* END Messages
+------------------------------------------------------------------------------*/
+
+/* Admin Forms
+------------------------------------------------------------------------------*/
+.adminform ul li{
+    list-style: none outside none;
+}
+

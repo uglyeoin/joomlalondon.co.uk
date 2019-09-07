@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>plg_system_joocialwebpush</name>
+	<creationDate>2019-05-22</creationDate>
+
+    <author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>8.28.0</version>
+
+	<description>PLG_JOOCIALWEBPUSH_DESC</description>
+
+	<files>
+		<filename plugin="joocialwebpush">joocialwebpush.php</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_joocialwebpush.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_joocialwebpush.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+            <fieldset name="general" label="Configuration">
+
+				<field
+					name="set_itemid"
+					type="menuitem"
+					label="PLG_JOOCIALWEBPUSH_NOTIFICATION_PAGES_LABEL"
+					description="PLG_JOOCIALWEBPUSH_NOTIFICATION_PAGES_DESC"
+					default="0"
+                    multiple="true"
+					>
+					<option value="0">On all pages</option>
+				</field>
+
+				<field name="pushservice" type="list"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHSERVICE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHSERVICE_DESC">
+                    <option value="">JSELECT</option>
+                    <option value="onesignal">OneSignal</option>
+                    <option value="pushalert">PushAlert</option>
+                    <option value="pushwoosh">Pushwoosh</option>
+				</field>
+
+                <field name="spacer_onesignal" type="spacer" label="PLG_JOOCIALWEBPUSH_ONESIGNAL_LABEL" showon="pushservice:onesignal"/>
+
+                <field name="onesignal_app_id" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_APP_ID_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_APP_ID_DESC" showon="pushservice:onesignal"/>
+
+                <field name="onesignal_safari_website_push_id" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_SAFARI_WEBSITE_PUSH_ID_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_SAFARI_WEBSITE_PUSH_ID_DESC"
+                    showon="pushservice:onesignal"/>
+
+                <field name="onesignal_auto_register" type="radio" class="btn-group btn-group-yesno" default="0"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_AUTO_REGISTER_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_AUTO_REGISTER_DESC"
+                    showon="pushservice:onesignal">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="onesignal_notify_button" type="radio" class="btn-group" default="1"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_NOTIFY_BUTTON_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_NOTIFY_BUTTON_DESC"
+                    showon="pushservice:onesignal">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="onesignal_persist_notification" type="radio" class="btn-group btn-group-yesno" default="0"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_PERSIST_NOTIFICATION_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_PERSIST_NOTIFICATION_DESC"
+                    showon="pushservice:onesignal">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="onesignal_action_message" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_ACTION_MESSAGE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_ACTION_MESSAGE_DESC"
+                    default="We'd like to show you notifications for the latest news and updates."
+                    showon="pushservice:onesignal"/>
+
+                <field name="onesignal_accept_button_text" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_ACCEPT_BUTTON_TEXT_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_ACCEPT_BUTTON_TEXT_DESC"
+                    default="ALLOW"
+                    showon="pushservice:onesignal"/>
+
+                <field name="onesignal_cancel_button_text" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_CANCEL_BUTTON_TEXT_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_CANCEL_BUTTON_TEXT_DESC"
+                    default="NO THANKS"
+                    showon="pushservice:onesignal"/>
+
+                <field name="onesignal_auto_accept_title" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_AUTO_ACCEPT_TITLE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_ONESIGNAL_AUTO_ACCEPT_TITLE_DESC"
+                    default="Click Allow"
+                    showon="pushservice:onesignal"/>
+
+                <field name="spacer_pushalert" type="spacer" label="PLG_JOOCIALWEBPUSH_PUSHALERT_LABEL" showon="pushservice:pushalert"/>
+
+                <field name="pushalert_website_id" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHALERT_WEBSITE_ID_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHALERT_WEBSITE_ID_DESC"
+                    showon="pushservice:pushalert"/>
+
+                <field name="spacer_pushwoosh" type="spacer" label="PLG_JOOCIALWEBPUSH_PUSHWOOSH_LABEL" showon="pushservice:pushwoosh"/>
+
+                <field name="pushwoosh_application_code" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_APPLICATION_CODE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_APPLICATION_CODE_DESC" showon="pushservice:pushwoosh"/>
+
+                <field name="pushwoosh_safari_website_push_id" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_SAFARI_WEBSITE_PUSH_ID_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_SAFARI_WEBSITE_PUSH_ID_DESC"
+                    showon="pushservice:pushwoosh"/>
+
+                <field name="pushwoosh_default_notification_title" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_DEFAULT_NOTIFICATION_TITLE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_DEFAULT_NOTIFICATION_TITLE_DESC"
+                    showon="pushservice:pushwoosh"/>
+
+                <field name="pushwoosh_default_notification_image" type="text"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_DEFAULT_NOTIFICATION_IMAGE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_DEFAULT_NOTIFICATION_IMAGE_DESC"
+                    default="https://cp.pushwoosh.com/img/logo-medium.png"
+                    showon="pushservice:pushwoosh"/>
+
+                <field name="pushwoosh_auto_subscribe" type="radio" class="btn-group btn-group-yesno" default="1"
+                    label="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_AUTO_SUBSCRIBE_LABEL"
+                    description="PLG_JOOCIALWEBPUSH_PARAM_PUSHWOOSH_AUTO_SUBSCRIBE_DESC"
+                    showon="pushservice:pushwoosh">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="Web Push for Joocial">http://cdn.extly.com/update-joocial-web-push.xml</server>
+	</updateservers>
+
+</extension>

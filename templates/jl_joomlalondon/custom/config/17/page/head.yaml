@@ -1,0 +1,17 @@
+atoms:
+  -
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: 'gantry-assets://custom/assets/css/jquery.classycountdown.min.css', inline: '', extra: {  }, name: ClassyCountdown }
+        - { location: 'gantry-assets://custom/assets/css/typed.css', inline: '', extra: {  }, name: Typed.css }
+      javascript:
+        - { location: 'gantry-assets://custom/assets/js/typed.min.js', inline: '', in_footer: '1', extra: {  }, name: typed.js }
+        - { location: '', inline: "jQuery(function(){\n\tjQuery(\"#typed\").typed({\n\t\tstrings: [\"Hobbyist?\", \"Business Owner?\", \"Designer?\", \"Developer?\"],\n\t\ttypeSpeed: 30,\n\t\tbackDelay: 500,\n\t\tloop: false,\n\t\tcontentType: 'html', // or text\n\t\t// defaults to false for infinite loop\n\t\tloopCount: false,\n\t\tshowCursor: false,\n\t\tcallback: function() {\n\t\t\tjQuery(function() {\n\t\t\t\tvar hideme = jQuery(\".type-wrap\");\n\t\t\t\tvar hideme2 = jQuery(\"#ru\");\n\t\t\t\tmy_timer = setTimeout(function () {\n\t\t\t\t\thideme.hide();\n\t\t\t\t\thideme2.hide();\n\t\t\t\t}, 500);\n\t\t\t});\n\n\t\t\tjQuery(function() {\n\t\t\t\tvar showme = jQuery(\"#dazzle\");\n\t\t\t\tvar showme2 = jQuery(\"#iam\");\n\t\t\t\tmy_timer = setTimeout(function () {\n\t\t\t\t\tshowme.fadeIn();\n\t\t\t\t\tshowme2.fadeIn();\n\t\t\t\t}, 501);\t\t\t\t\t\t\t\n\t\t\t});\n\n\t\t\tjQuery(function() {\n\t\t\t\tvar hideme3 = jQuery(\"#dazzle\");\t\t\t\n\t\t\t\tmy_2timer = setTimeout(function () {\n\t\t\t\t\thideme3.hide();\n\t\t\t\t}, 1700);\n\t\t\t});\n\n\t\t\tjQuery(function() {\n\t\t\t\tvar showme3 = jQuery(\"#jAd\");\n\t\t\t\tmy_2timer = setTimeout(function () {\n\t\t\t\t\tshowme3.fadeIn();\n\t\t\t\t}, 1700);\t\t\t\t\t\t\t\n\t\t\t});\n\t\t}\n\t});\n});", in_footer: '1', extra: {  }, name: 'typed script' }
+        - { location: 'gantry-assets://custom/assets/js/date-en-GB.js', inline: '', in_footer: '1', extra: {  }, name: Date-en-GB.js }
+        - { location: 'gantry-assets://custom/assets/js/jquery.classycountdown.min.js', inline: '', in_footer: '1', extra: {  }, name: ClassyCountdown.js }
+        - { location: 'gantry-assets://custom/assets/js/jquery.throttle.js', inline: '', in_footer: '1', extra: {  }, name: Throttle.js }
+        - { location: 'gantry-assets://custom/assets/js/jquery.knob.js', inline: '', in_footer: '1', extra: {  }, name: Knob.js }
+        - { location: '', inline: "document.getElementById(\"next3rdTuesday\").innerHTML = next3rdTuesday();\n\nfunction next3rdTuesday(diff) {\n\tvar next = new Date.today().moveToNthOccurrence(2, 3);\n\tvar time = new Date.today().setTimeToNow();\n\tif (time.isAfter(next.addHours(18).addMinutes(59))) {\n\t\t\tnext = Date.today().addMonths(1).moveToNthOccurrence(2, 3);\n\t}\n\tif (diff != \"1\") {\n\t\tvar dateText;\n\t\tif (time.same().day(next)) {\n\t\t\tdateText = 'Today';\n\t\t}  else if (time.addDays(1).same().day(next)) {\n\t\t\tdateText = 'Tommorrow';\n} else {\n\t\t\tdateText = next.toString('dddd dS MMMM');\n\t\t}\n\t\treturn dateText;\n\t} else {\n\t\tvar future = next.getTime();\n\t\tvar present = Date.today().setTimeToNow().getTime();\n\t\tvar diff = Date.today().setTimeToNow().getTime() + Math.floor((future - present)/1000);\n\n\t\treturn diff;\n\t}\n}\n\t\njQuery('.CountDownWrapper').ClassyCountdown({\n\ttheme: \"flat-colors-very-wide\",\n\tend: next3rdTuesday('1')\n});", in_footer: '1', extra: {  }, name: next3rdTuesday }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+	<name>KOU Menu Alias as body class</name>
+	<author>Mary McGinty</author>
+	<creationDate>January 2019</creationDate>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<version>1.0.3</version>
+	<description>KOUALIASASBODYCLASS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="koualiasasbodyclass">koualiasasbodyclass.php</filename>
+        <folder>language</folder>
+	</files>
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="koualiasasbodyclass">https://www.kindofuseful.com/downloads/joomla/modules/kouAliasAsBodyClass/updates.xml</server>
+	</updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+				name="prefix" 
+				type="text" 
+				default="m" 
+				label="KOUALIASASBODYCLASS_PREFIX_LABEL" 
+				description="KOUALIASASBODYCLASS_PREFIX_DESCRIPTION" 
+				size="10" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

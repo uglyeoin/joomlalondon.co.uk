@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="ajax" method="upgrade">
+	<name>plg_ajax_joocialwebpushmanifest</name>
+    <creationDate>2019-05-22</creationDate>
+
+    <author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>8.28.0</version>
+
+	<description>PLG_JOOCIALWEBPUSHMANIFEST_DESC</description>
+
+	<files>
+		<filename plugin="joocialwebpushmanifest">joocialwebpushmanifest.php</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_ajax_joocialwebpushmanifest.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_ajax_joocialwebpushmanifest.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+                <field name="name" type="text"
+                    label="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_NAME_LABEL"
+                    description="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_NAME_DESC"/>
+
+                <field name="short_name" type="text"
+                    label="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_SHORT_NAME_LABEL"
+                    description="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_SHORT_NAME_DESC"/>
+
+				<field name="pushservice" type="list"
+                    label="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_PUSHWOOSH_PUSHSERVICE_LABEL"
+                    description="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_PUSHWOOSH_PUSHSERVICE_DESC">
+                    <option value="">JSELECT</option>
+                    <option value="onesignal">OneSignal</option>
+                    <option value="pushwoosh">Pushwoosh</option>
+				</field>
+
+                <field name="pushwoosh_gcm_sender_id" type="text"
+                    label="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_PUSHWOOSH_GCM_SENDER_ID_LABEL"
+                    description="PLG_JOOCIALWEBPUSHMANIFEST_PARAM_PUSHWOOSH_GCM_SENDER_ID_DESC"
+                    showon="pushservice:pushwoosh"/>
+
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="Web Push for Joocial - Manifest Definition">http://cdn.extly.com/update-joocial-web-push-manifest-definition.xml</server>
+	</updateservers>
+
+</extension>

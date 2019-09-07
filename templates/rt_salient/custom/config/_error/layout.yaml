@@ -1,0 +1,289 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1443867711
+layout:
+  top: {  }
+  navigation: {  }
+  /header/:
+    -
+      - position-position-2177
+  slideshow: {  }
+  /showcase/:
+    -
+      - 'position-position-6881 33.3'
+      - 'position-position-6684 33.3'
+      - 'position-position-3365 33.3'
+  /above/:
+    -
+      - 'position-position-3193 33.3'
+      - 'position-position-8062 33.3'
+      - 'position-position-2977 33.3'
+  /utility/:
+    -
+      - 'position-position-8118 33.3'
+      - 'position-position-4065 33.3'
+      - 'position-position-4328 33.3'
+  /feature/:
+    -
+      - 'position-position-1607 33.3'
+      - 'position-position-2558 33.3'
+      - 'position-position-9540 33.3'
+  /container-3308/:
+    -
+      -
+        'sidebar 20':
+          -
+            - position-position-2184
+      -
+        'mainbar 60':
+          -
+            - 'position-position-4825 33.3'
+            - 'position-position-5721 33.3'
+            - 'position-position-4844 33.3'
+          -
+            - system-messages-9973
+          -
+            - contentarray-7349
+          -
+            - position-position-6998
+      -
+        'aside 20':
+          -
+            - position-position-4654
+  expanded: {  }
+  extension: {  }
+  bottom: {  }
+  /container-4964/:
+    -
+      -
+        'footer 75': {  }
+      -
+        'footside 25': {  }
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: '16'
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+  slideshow:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'box-darkgrey g-outer-box'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+  mainbar:
+    type: section
+  container-3308:
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  extension:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  bottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  footer:
+    inherit:
+      outline: default
+      include:
+        - block
+        - children
+        - attributes
+  footside:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - block
+        - children
+        - attributes
+  container-4964:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+content:
+  position-position-2177:
+    title: Header
+    attributes:
+      enabled: 0
+      key: header
+  position-position-6881:
+    title: 'Showcase A'
+    attributes:
+      enabled: 0
+      key: showcase-a
+  position-position-6684:
+    title: 'Showcase B'
+    attributes:
+      enabled: 0
+      key: showcase-b
+  position-position-3365:
+    title: 'Showcase C'
+    attributes:
+      enabled: 0
+      key: showcase-c
+  position-position-3193:
+    title: 'Above A'
+    attributes:
+      enabled: 0
+      key: above-a
+  position-position-8062:
+    title: 'Above B'
+    attributes:
+      enabled: 0
+      key: above-b
+  position-position-2977:
+    title: 'Above C'
+    attributes:
+      enabled: 0
+      key: above-c
+  position-position-8118:
+    title: 'Utility A'
+    attributes:
+      enabled: 0
+      key: utility-a
+  position-position-4065:
+    title: 'Utility B'
+    attributes:
+      enabled: 0
+      key: utility-b
+  position-position-4328:
+    title: 'Utility C'
+    attributes:
+      enabled: 0
+      key: utility-c
+  position-position-1607:
+    title: 'Feature A'
+    attributes:
+      enabled: 0
+      key: feature-a
+  position-position-2558:
+    title: 'Feature B'
+    attributes:
+      enabled: 0
+      key: feature-b
+  position-position-9540:
+    title: 'Feature C'
+    attributes:
+      enabled: 0
+      key: feature-c
+  position-position-2184:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  position-position-4825:
+    title: 'Mainbar A'
+    attributes:
+      key: mainbar-a
+  position-position-5721:
+    title: 'Mainbar B'
+    attributes:
+      key: mainbar-b
+  position-position-4844:
+    title: 'Mainbar C'
+    attributes:
+      key: mainbar-c
+  contentarray-7349:
+    title: 'Joomla Articles'
+    attributes:
+      article:
+        filter:
+          categories: ''
+          articles: '133'
+          featured: include
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        display:
+          pagination_buttons: ''
+          image:
+            enabled: intro
+          text:
+            type: full
+            formatting: html
+            prepare: '1'
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          hits:
+            enabled: ''
+        sort:
+          orderby: publish_up
+          ordering: ASC
+  position-position-6998:
+    title: content-bottom
+    attributes:
+      key: content-bottom
+  position-position-4654:
+    title: Aside
+    attributes:
+      key: aside

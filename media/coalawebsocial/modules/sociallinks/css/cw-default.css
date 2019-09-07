@@ -1,0 +1,68 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+/* Module Style
+------------------------------------------------------------------------------- */
+.cwtest100 {width: 100%; margin-left: auto; margin-right: auto; }
+.cwtest90 {width: 90%; margin-left: auto; margin-right: auto; }
+.cwtest80 {width: 80%; margin-left: auto; margin-right: auto; }
+.cwtest70 {width: 70%; margin-left: auto; margin-right: auto; }
+.cwtest60 {width: 60%; margin-left: auto; margin-right: auto; }
+.cwtest50 {width: 50%; margin-left: auto; margin-right: auto; }
+.cwtest40 {width: 40%; margin-left: auto; margin-right: auto; }
+.cwtest30 {width: 30%; margin-left: auto; margin-right: auto; }
+.cwtest20 {width: 20%; margin-left: auto; margin-right: auto; }
+.cwtest10 {width: 10%; margin-left: auto; margin-right: auto; }
+
+
+.cw-social-mod h1, .cw-social-mod h2, .cw-social-mod h3,
+.cw-social-mod h4, .cw-social-mod h5, .cw-social-mod h6{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.cw-social-mod-title-ac {text-align:center;}
+.cw-social-mod-title-al {text-align:left;}
+.cw-social-mod-title-ar {text-align:right;}
+
+.cw-social-mod-bookmark {
+    margin-bottom: 10px;
+    padding: 5px 5px 10px 5px;
+}
+
+.cw-social-mod-bookmark li,
+.cw-social-mod-follow li,
+.cw-social-mod-bookmark a,
+.cw-social-mod-follow a {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    font-size: 0.00001em !important;
+}
+
+.cw-social-mod ul > li:before {
+    display: none !important;
+}
+
+.cw-social-mod-follow {
+    padding: 5px 5px 10px 5px;
+}
+
+/* Icon Alignment */
+.cw-social-mod-icon-ac {text-align:center;}
+.cw-social-mod-icon-al {text-align:left;}
+.cw-social-mod-icon-ar {text-align:right;}
+
+/* Copyright */
+.cw-social-mod_copyrht{
+    text-align: center;
+    display:block;
+    font-size: 12px;
+    margin:5px 0px;
+}
+
+/* End
+------------------------------------------------------------------------------*/

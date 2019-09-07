@@ -1,0 +1,145 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1558378238
+layout:
+  /container-top/:
+    -
+      -
+        'logo 30': {  }
+      -
+        'menu-and-countdown 70': {  }
+  header-banner: {  }
+  /container-below-header-banner/:
+    -
+      -
+        'latest-joomla-london-event 50':
+          -
+            - position-latest-joomla-london-event
+      -
+        'other-joomla-events 50':
+          -
+            - position-other-joomla-events
+          -
+            - position-latest-blog-post
+  /container-reasons-to-come/:
+    -
+      -
+        reasons-to-come:
+          -
+            - 'position-benefits-of-attending 50'
+            - 'position-joomla-announcements 25'
+            - 'position-joomla-security 25'
+          -
+            - 'position-who-attends 50'
+            - 'position-joomla-extensions 25'
+            - 'position-joomla-magazine 25'
+  /joomla-videos/:
+    -
+      - position-joomla-videos
+    -
+      - position-homepage-seo-content
+  footer: {  }
+  sub-footer: {  }
+  offcanvas: {  }
+structure:
+  logo:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  menu-and-countdown:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-top:
+    attributes:
+      boxed: ''
+  header-banner:
+    title: Banner
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  latest-joomla-london-event:
+    type: section
+  other-joomla-events:
+    type: section
+  container-below-header-banner:
+    attributes:
+      boxed: ''
+  reasons-to-come:
+    type: section
+  container-reasons-to-come:
+    attributes:
+      boxed: ''
+  joomla-videos:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sub-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  position-latest-joomla-london-event:
+    attributes:
+      key: latest-joomla-london-event
+  position-other-joomla-events:
+    attributes:
+      key: other-joomla-events
+  position-latest-blog-post:
+    attributes:
+      key: latest-blog-post
+  position-benefits-of-attending:
+    attributes:
+      key: benefits-of-attending
+  position-joomla-announcements:
+    attributes:
+      key: joomla-announcements
+  position-joomla-security:
+    attributes:
+      key: joomla-security
+  position-who-attends:
+    attributes:
+      key: who-attends
+  position-joomla-extensions:
+    attributes:
+      key: joomla-extensions
+  position-joomla-magazine:
+    attributes:
+      key: joomla-magazine
+  position-joomla-videos:
+    attributes:
+      key: joomla-videos
+  position-homepage-seo-content:
+    attributes:
+      key: homepage-seo-content

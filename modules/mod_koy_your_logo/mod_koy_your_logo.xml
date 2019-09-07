@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5" client="site" method="upgrade">
+	<name>Your Logo in a Module</name>
+	<creationDate>28/06/2017</creationDate>
+	<author>Mary McGinty</author>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<copyright>Copyright Kind of Useful</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>0.0.7</version>
+	<description>MOD_KOY_YOUR_LOGO_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_koy_your_logo">mod_koy_your_logo.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<folder>media</folder>
+		<filename>mod_koy_your_logo.xml</filename>
+	</files>
+
+	<media destination="mod_koy_your_logo" folder="media">
+		<folder>css</folder>
+	</media>
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="mod_koy_your_logo">https://www.squareballoon.co.uk/downloads/joomla/modules/mod_koy_your_logo/updates.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="logoImageText"
+					   type="list"
+					   label="MOD_KOY_YOUR_LOGO_LIST"
+					   default="0">
+					<option value="0">MOD_KOY_YOUR_LOGO_LIST_OPTION_LOGO_ONLY</option>
+					<option value="1">MOD_KOY_YOUR_LOGO_LIST_OPTION_TEXT_ONLY</option>
+					<option value="2">MOD_KOY_YOUR_LOGO_LIST_OPTION_TEXT_AND_LOGO</option>
+				</field>
+				<field name="logoLocal"
+					   type="list"
+					   label="MOD_KOY_YOUR_LOGO_LIST"
+					   showon="logoImageText:0[OR]logoImageText:2">
+					<option value="0">MOD_KOY_YOUR_LOGO_LOCAL_LIST_OPTION_MEDIA_MANAGER</option>
+					<option value="1">MOD_KOY_YOUR_LOGO_LOCAL_LIST_OPTION_EXTERNAL_URL</option>
+				</field>
+				<field
+					name="logoMediaManager"
+					type="media"
+					label="MOD_KOY_YOUR_LOGO_LOGO_MEDIA_MANAGER_LABEL"
+					description="MOD_KOY_YOUR_LOGO_LOGO_MEDIA_MANAGER_DESC"
+					hint="MOD_KOY_YOUR_LOGO_LOGO_MEDIA_MANAGER_HINT"
+                    showon="logoImageText!:1[AND]logoLocal:0"
+				/>
+				<field
+						name="logoExternal"
+						type="image"
+						label="MOD_KOY_YOUR_LOGO_EXTERNAL_URL_LABEL"
+						description="MOD_KOY_YOUR_LOGO_EXTERNAL_URL_DESC"
+						showon="logoImageText!:1[AND]logoLocal:1"
+				/>
+				<field
+						name="logoAltText"
+						type="text"
+						label="MOD_KOY_YOUR_LOGO_LOGO_ALT_LABEL"
+						description="MOD_KOY_YOUR_LOGO_LOGO_ALT_DESC"
+						showon="logoImageText:0[OR]logoImageText:2"
+				/>
+				<field
+						name="text"
+						type="text"
+						label="MOD_KOY_YOUR_LOGO_TEXT_LABEL"
+						description="MOD_KOY_YOUR_LOGO_TEXT_DESC"
+						hint="MOD_KOY_YOUR_LOGO_HINT"
+						showon="logoImageText:1[OR]logoImageText:2"
+				/>
+				<field
+						name="url"
+						type="url"
+						label="MOD_KOY_YOUR_LOGO_LINK_URL_LABEL"
+						description="MOD_KOY_YOUR_LOGO_LINK_URL_DESC"
+				/>
+				<field name="differentUrlForText"
+					   type="list"
+					   label="MOD_KOY_YOUR_LOGO_DIFFERENT_URL_FOR_TEXT"
+					   showon="logoImageText:2">
+					<option value="0">MOD_KOY_YOUR_LOGO_DIFFERENT_URL_FOR_TEXT_OPTION_SAME</option>
+					<option value="1">MOD_KOY_YOUR_LOGO_DIFFERENT_URL_FOR_TEXT_OPTION_DIFFERENT</option>
+				</field>
+				<field
+						name="textUrl"
+						type="url"
+						label="MOD_KOY_YOUR_LOGO_TEXT_URL_LABEL"
+						description="MOD_KOY_YOUR_LOGO_TEXT_URL_DESC"
+						showon="differentUrlForText:1"
+				/>
+				<field name="openNewWindow"
+					   type="list"
+					   default="_self"
+					   label="MOD_KOY_YOUR_LOGO_OPEN_NEW_WINDOW"
+				>
+					<option value="_blank">MOD_KOY_YOUR_LOGO_OPEN_NEW_WINDOW_BLANK</option>
+					<option value="_self">MOD_KOY_YOUR_LOGO_OPEN_NEW_WINDOW_SELF</option>
+				</field>
+			</fieldset>
+			<fieldset
+					name="advanced">
+				<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

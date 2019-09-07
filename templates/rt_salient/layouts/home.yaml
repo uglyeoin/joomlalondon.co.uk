@@ -1,0 +1,1308 @@
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1438593570
+children:
+  -
+    id: 0ab39ee5-cde5-3e39-6587-381962e907cf
+    type: section
+    subtype: false
+    title: Top
+    attributes:
+      boxed: '0'
+      class: ''
+      extra: {  }
+    children:
+      -
+        id: abfbde77-5858-9dcc-f776-19da95879e08
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: e1776779-fb1f-4090-9ec5-906c4d080989
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: 8bc314d7-9265-42f4-b854-a545c3817f87
+                type: pagecontent
+                subtype: system-messages
+                title: 'System Messages'
+                attributes: {  }
+                children: {  }
+  -
+    id: 5146ebf2-fe84-aa62-bdf4-8178eab530f2
+    type: section
+    subtype: false
+    title: Navigation
+    attributes:
+      boxed: '0'
+      class: ''
+      extra: {  }
+    children:
+      -
+        id: accc11ae-db87-1095-4956-a819c8b28736
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 616b8b9c-10e2-41d2-b6f7-335484746cc0
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              extra: {  }
+              size: 20
+            children:
+              -
+                id: f69641f7-55ac-40ae-b1f2-ac269bb72169
+                type: particle
+                subtype: logo
+                title: Logo
+                attributes:
+                  enabled: 1
+                  rel: home
+                  alt: salient
+                children: {  }
+          -
+            id: 32d5513c-36e3-479f-8c23-5c6c6acc7708
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 55
+            children:
+              -
+                id: 4490b5ef-1821-4af2-8fe0-116d641b5759
+                type: particle
+                subtype: menu
+                title: Menu
+                attributes: {  }
+                children: {  }
+          -
+            id: e8914194-a484-4ce5-81c4-c745db47bf57
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 5
+              extra: {  }
+            children:
+              -
+                id: 40104d84-434d-41a9-b018-3502455593d5
+                type: particle
+                subtype: custom
+                title: 'Off Canvas Toggle'
+                attributes:
+                  enabled: 1
+                  html: "<div class=\"g-offcanvas-toggle\" data-offcanvas-toggle=\"\">\n  <i class=\"fa fa-fw fa-indent\"></i>\n</div>"
+                children: {  }
+          -
+            id: fed117b1-9b4e-4a58-ac96-0806fd4fd68f
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 20
+            children:
+              -
+                id: 9e409d9d-7c2f-4989-b6db-bafa3b49f77e
+                type: particle
+                subtype: social
+                title: Social
+                attributes: {  }
+                children: {  }
+  -
+    id: a875dce8-82c8-88cb-88cc-888f7c9828f8
+    type: section
+    subtype: false
+    title: Header
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 663b74eb-9c96-4602-b1d5-5c2f44f7f5d9
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 7cfcfbf6-8c1f-454f-a203-9d23d28b3c55
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              extra: {  }
+            children:
+              -
+                id: 6c9bb7a1-872d-4805-a21f-9bbab8b95a78
+                type: particle
+                subtype: promocontent
+                title: 'A next-generation'
+                attributes:
+                  enabled: 1
+                  promostyle: promo
+                  promo: 'A next-generation theme built for success.'
+                  readmore: '&rarr;'
+                  readmoreclass: 'button-arrow nopaddingall'
+                  link: '#'
+                  linkstyle: block
+                children: {  }
+  -
+    id: 71fa8c64-3ff4-6683-bb80-258c17267929
+    type: container
+    subtype: false
+    title: Untitled
+    attributes:
+      boxed: '0'
+      class: fp-slideshow-blocks
+      extra:
+        -
+          id: g-slideshow
+    children:
+      -
+        id: 31222a3d-67cf-83f6-8604-7c5e2ee8dabb
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 32c242bd-7b7f-e873-45ff-7ba091f41bf1
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 25
+            children:
+              -
+                id: aca65835-9782-15a8-e6c9-737fcf1f93ea
+                type: section
+                subtype: false
+                title: SlideLeft
+                attributes:
+                  class: ''
+                  extra: {  }
+                children:
+                  -
+                    id: cf3aac0f-cb6f-4ee2-b545-d8566fce9487
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: db23a665-5f93-42fb-b312-fa0694a6fe49
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          variations: nopaddingall
+                          extra: {  }
+                        children:
+                          -
+                            id: 8c3fe291-2010-4998-a6ac-ca3c91ab43e7
+                            type: particle
+                            subtype: animatedblock
+                            title: '100+ Templates'
+                            attributes:
+                              enabled: 1
+                              bgclass: g-bg-2
+                              animationclass: g-animatedblock-animation-1
+                              image: 'gantry-media://demo/home/slideshow/img-01.jpg'
+                              headline: 100+
+                              desc: Templates
+                              readmore: '&rarr;'
+                              link: '#'
+                            children: {  }
+                  -
+                    id: 5c5d8340-ba7f-4105-9be6-e25f96e2fee5
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 884b71cf-f98f-4d44-949b-b08f47589041
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          variations: nopaddingall
+                          extra: {  }
+                        children:
+                          -
+                            id: f353abe1-5c5a-444d-a66f-1dae53cb1503
+                            type: particle
+                            subtype: animatedblock
+                            title: '36 Projects'
+                            attributes:
+                              enabled: 1
+                              bgclass: g-bg-4
+                              animationclass: g-animatedblock-animation-2
+                              image: 'gantry-media://demo/home/slideshow/img-02.png'
+                              headline: '36'
+                              desc: Projects
+                              readmore: '&rarr;'
+                              link: '#'
+                              button: Join
+                              buttonclass: button-4
+                            children: {  }
+          -
+            id: b186da4c-b8f1-67ae-c725-47dc7f8f80ef
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+            children:
+              -
+                id: e628a8f5-fe23-ba7a-6dfd-99b3709e654a
+                type: section
+                subtype: false
+                title: SlideCenter
+                attributes:
+                  class: ''
+                  extra: {  }
+                children:
+                  -
+                    id: fae8b7bf-6b69-421b-8bd6-8e12f2ad7a60
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 9e8b13c3-41fe-474d-896b-8f31db29744c
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          variations: nopaddingall
+                          extra: {  }
+                        children:
+                          -
+                            id: 1a7e10b4-6a7e-4448-891e-3a7627fea50d
+                            type: particle
+                            subtype: animatedblock
+                            title: Fresh
+                            attributes:
+                              enabled: 1
+                              bgclass: g-bg-1
+                              animationclass: g-animatedblock-animation-1
+                              image: 'gantry-media://demo/home/slideshow/img-03.jpg'
+                              headline: Fresh
+                              desc: 'Simple & Clean'
+                              readmore: '&rarr;'
+                              link: '#'
+                            children: {  }
+          -
+            id: 7496e1a8-2ee5-bb0a-227f-4cf7ebbd3c45
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 25
+            children:
+              -
+                id: 1d27062c-b652-55a8-049b-ad7177a5262a
+                type: section
+                subtype: false
+                title: SlideRight
+                attributes:
+                  class: ''
+                  extra: {  }
+                children:
+                  -
+                    id: 8a73913a-98e3-4273-8e01-71cb3177632f
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 18c9ef47-9be0-42fc-9012-8d6dab3ff766
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          class: 'g-animatedblock hidden-phone'
+                          variations: nopaddingall
+                          extra: {  }
+                        children:
+                          -
+                            id: b1616076-1d9e-4a54-8c07-cb315b37d973
+                            type: particle
+                            subtype: custom
+                            title: 'Grey Blocks'
+                            attributes:
+                              enabled: 1
+                              html: '<img src="gantry-media://demo/home/slideshow/img-04.png" alt="Salient" />'
+                            children: {  }
+                  -
+                    id: ed0d811d-6e4e-4cad-ab7b-dd322bc10e57
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 00354629-f204-495f-bb36-434234338ce2
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          variations: nopaddingall
+                          extra: {  }
+                        children:
+                          -
+                            id: d203065c-946e-4d6b-a660-4e75c820c1fe
+                            type: particle
+                            subtype: animatedblock
+                            title: '5 Team Members'
+                            attributes:
+                              enabled: 1
+                              bgclass: g-bg-5
+                              animationclass: g-animatedblock-animation-3
+                              image: 'gantry-media://demo/home/slideshow/img-05.png'
+                              headline: '5'
+                              desc: 'Team Members'
+                              readmore: '&rarr;'
+                              link: '#'
+                              button: Hire
+                              buttonclass: button-4
+                            children: {  }
+                  -
+                    id: 2b80a7b9-5483-439e-9c68-e24826c3fb21
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 7c85cea1-a82f-40c5-9fba-8356bd10df8e
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          variations: nopaddingall
+                          extra: {  }
+                        children:
+                          -
+                            id: f9265e72-9706-43c9-a54c-760706b886a8
+                            type: particle
+                            subtype: animatedblock
+                            title: '7 Sample Pages'
+                            attributes:
+                              enabled: 1
+                              bgclass: g-bg-3
+                              animationclass: g-animatedblock-animation-1
+                              image: 'gantry-media://demo/home/slideshow/img-06.jpg'
+                              headline: '7'
+                              desc: 'Sample Pages'
+                              readmore: '&rarr;'
+                              link: '#'
+                            children: {  }
+  -
+    id: 2a3fffe7-b2c4-c8cf-76cc-c25f7c9828f4
+    type: section
+    subtype: false
+    title: Showcase
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 6a5b2af7-2f7a-4df4-84dc-9c38adf98cb3
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 606f5dcd-a253-4779-83da-99a844408b83
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              extra: {  }
+            children:
+              -
+                id: 0b0cdc48-80b3-4f3e-8898-0283fec47fc2
+                type: particle
+                subtype: promocontent
+                title: 'An excellent design'
+                attributes:
+                  enabled: 1
+                  promostyle: subpromo
+                  promo: 'An excellent design with a fresh approach for the ever-changing Web.'
+                  desc: ''
+                  readmore: More
+                  readmoreclass: button-3
+                  link: '#'
+                  linkstyle: aside
+                children: {  }
+      -
+        id: 5b32d8da-4151-42e7-bcc1-920ab54daaca
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: cb914d76-a205-4976-86c6-10e3add1e40d
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              extra: {  }
+            children:
+              -
+                id: 85d11c74-2b1b-4d1d-aaab-3c22e4fa59d6
+                type: particle
+                subtype: blockcontent
+                title: 'Block Content'
+                attributes:
+                  enabled: 1
+                  subcontents:
+                    -
+                      name: ''
+                      icon: ''
+                      img: 'gantry-media://demo/home/showcase/img-01.png'
+                      subtitle: ''
+                      description: ''
+                      class: ''
+                      title: 'Item 1'
+                    -
+                      name: ''
+                      icon: ''
+                      img: 'gantry-media://demo/home/showcase/img-02.png'
+                      subtitle: ''
+                      description: ''
+                      class: ''
+                      title: 'Item 2'
+                    -
+                      name: ''
+                      icon: ''
+                      img: 'gantry-media://demo/home/showcase/img-03.png'
+                      subtitle: ''
+                      description: ''
+                      class: ''
+                      title: 'Item 3'
+                    -
+                      name: ''
+                      icon: ''
+                      img: 'gantry-media://demo/home/showcase/img-04.png'
+                      subtitle: ''
+                      description: ''
+                      class: ''
+                      title: 'Item 4'
+                    -
+                      name: ''
+                      icon: ''
+                      img: 'gantry-media://demo/home/showcase/img-05.png'
+                      subtitle: ''
+                      description: ''
+                      class: ''
+                      title: 'Item 5'
+                children: {  }
+  -
+    id: 5a754282-2da7-0a53-5111-a731c4b9443b
+    type: section
+    subtype: false
+    title: Above
+    attributes:
+      boxed: 0
+    children: {  }
+  -
+    id: 8888ddf8-c1d4-e8ab-88aa-c88f7c9828f8
+    type: section
+    subtype: false
+    title: Utility
+    attributes:
+      boxed: '0'
+      class: ''
+      extra: {  }
+    children:
+      -
+        id: 56784784-07ff-4d6b-8527-14b8eee88660
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 279c110a-e8d5-44b3-a791-53e3a1bf0267
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+            children:
+              -
+                id: e19cf7ae-3c0c-44c5-bc2f-418546c81b33
+                type: spacer
+                subtype: spacer
+                title: Spacer
+                attributes: {  }
+                children: {  }
+          -
+            id: 67e94662-d321-49ba-892b-4790a1a6c82a
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+              extra: {  }
+            children:
+              -
+                id: 9cf101fc-dd8f-4a90-9ed5-d523bd8ed572
+                type: particle
+                subtype: promocontent
+                title: 'Contemporary Interface'
+                attributes:
+                  enabled: 1
+                  promostyle: superpromo
+                  promo: 'Contemporary <br />Interface'
+                  desc: '<p>Gantry 5''s administrative interface has been completely rebuilt from the ground up to meet the needs of tomorrow''s developer, today. The admin provides multiple options for styles, layout, particles, and more.</p>'
+                  readmore: '&rarr;'
+                  readmoreclass: 'button-arrow nopaddingall'
+                  link: '#'
+                  tags:
+                    -
+                      icon: ''
+                      text: Intuitive
+                      link: '#'
+                      title: Intuitive
+                    -
+                      icon: ''
+                      text: Powerful
+                      link: '#'
+                      title: Powerful
+                children: {  }
+  -
+    id: 3b4dddf8-c1d4-e8ab-88aa-c88f7c9828f8
+    type: section
+    subtype: false
+    title: Feature
+    attributes:
+      boxed: '0'
+      class: ''
+      extra: {  }
+    children:
+      -
+        id: af6c945b-6539-4099-949d-fb2131dc2964
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 8e978de2-a154-4dba-825a-591d21743216
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+            children:
+              -
+                id: 7cf08a90-b66c-474b-b3b3-d502f1974d9a
+                type: spacer
+                subtype: spacer
+                title: Spacer
+                attributes: {  }
+                children: {  }
+          -
+            id: 5a92b670-174a-4e80-ae12-d814c6e62dea
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+              extra: {  }
+            children:
+              -
+                id: ae6023c0-68f4-4560-8126-6c36f5d0675c
+                type: particle
+                subtype: promocontent
+                title: 'Mobile Responsive'
+                attributes:
+                  enabled: 1
+                  promostyle: superpromo
+                  promo: 'Mobile <br />Responsive'
+                  desc: '<p>Salient is built with a responsive layout, which means it automatically adapts to the viewing device, so it will expand and contract accordingly to the size and resolution of the screen, whether mobile, tablet or desktop.</p>'
+                  readmore: '&rarr;'
+                  readmoreclass: 'button-arrow nopaddingall'
+                  link: '#'
+                  tags:
+                    -
+                      icon: ''
+                      text: Flexible
+                      link: '#'
+                      title: Flexible
+                    -
+                      icon: ''
+                      text: Resilient
+                      link: '#'
+                      title: Resilient
+                children: {  }
+  -
+    id: 4bf3811a-a93a-15bc-6cd5-c72837ecaa12
+    type: container
+    subtype: false
+    title: Untitled
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 4e392a61-a7b8-49a6-c651-6f9fa9deb615
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: af745017-c9f0-0033-7a89-3727e34d803d
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 20
+            children:
+              -
+                id: 23b41892-0579-7204-936d-d51221df6843
+                type: section
+                subtype: false
+                title: Sidebar
+                attributes: {  }
+                children: {  }
+          -
+            id: 5ce5aef7-c18b-d523-eae5-23a8f21f1776
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 60
+            children:
+              -
+                id: 342a5422-ca38-bda6-35ba-e62ac28a3c6c
+                type: section
+                subtype: false
+                title: Mainbar
+                attributes:
+                  boxed: '0'
+                  class: fp-mainbar
+                  extra: {  }
+                children:
+                  -
+                    id: 7c2172a7-1065-4ab6-ba10-352d972dd5aa
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: ae60a1ab-e51e-4da3-8339-fc90070a6826
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          extra: {  }
+                        children:
+                          -
+                            id: 8bd53b96-d2e3-47a8-bb1f-b31af7f8c8f2
+                            type: particle
+                            subtype: blockcontent
+                            title: Capabilities
+                            attributes:
+                              enabled: 1
+                              headline: Capabilities
+                              subcontents:
+                                -
+                                  name: Styling
+                                  icon: ''
+                                  img: 'gantry-media://demo/home/mainbar/img-01.png'
+                                  subtitle: '<a href="#">01.</a>'
+                                  description: 'The Styles settings allows for customizing the stylistic elements of the template, such as links, font or background colors.'
+                                  class: ''
+                                  title: Styling
+                                -
+                                  name: Particles
+                                  icon: ''
+                                  img: 'gantry-media://demo/home/mainbar/img-02.png'
+                                  subtitle: '<a href="#">02.</a>'
+                                  description: 'Particles operate as customizable blocks that form the flesh of the frontend, from placeholders to self contained content and functions.'
+                                  class: ''
+                                  title: Particles
+                                -
+                                  name: Layout
+                                  icon: ''
+                                  img: 'gantry-media://demo/home/mainbar/img-03.png'
+                                  subtitle: '<a href="#">03.</a>'
+                                  description: 'The Layout manager provides drag-and-drop functionality with power to move, resize, and configure content in seconds.'
+                                  class: ''
+                                  title: Layout
+                            children: {  }
+                  -
+                    id: 1ee4908f-add7-4264-b887-e1840d25ea5f
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 64d41f45-0685-4ae3-81dd-0ff7280f9a90
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                        children:
+                          -
+                            id: 5c836d95-c5dc-4ba3-8f90-7d252b24c694
+                            type: pagecontent
+                            subtype: pagecontent
+                            title: 'Page Content'
+                            attributes: {  }
+                            children: {  }
+          -
+            id: b4033baa-a997-0462-11c2-4948674569d5
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 20
+            children:
+              -
+                id: 03156c2b-585c-810b-36e2-edd46f8e9fdd
+                type: section
+                subtype: false
+                title: Aside
+                attributes: {  }
+                children: {  }
+  -
+    id: 28a0de88-8f18-8bf8-84b8-c5a67880f9d8
+    type: section
+    subtype: false
+    title: Expanded
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 664e3f39-08b0-4bf3-ac67-d814f7209a06
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 7028978d-0416-4a95-83e3-0ba45c7afea9
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              variations: title1
+              extra: {  }
+            children:
+              -
+                id: d9915f0e-1993-459e-8ebe-f47a03773398
+                type: particle
+                subtype: promocontent
+                title: 'Open Positions'
+                attributes:
+                  enabled: 1
+                  title: 'Open Positions'
+                  promostyle: subpromo
+                  promo: 'Gantry 5 features an advanced Menu Editor, which augments the core menu with a rich, drag and drop interface. '
+                  readmore: '&rarr;'
+                  readmoreclass: button-arrow
+                  link: '#'
+                  linkstyle: inline
+                children: {  }
+  -
+    id: 68a0de11-cf1d-cbfa-84b0-a5a67990f9d8
+    type: section
+    subtype: false
+    title: Extension
+    attributes:
+      boxed: '0'
+      class: fp-extension
+      extra: {  }
+    children:
+      -
+        id: d23b3817-fd31-4a90-832c-80130db202b0
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 45bc3971-ad95-459d-aaa5-bd51f786dca6
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+              extra: {  }
+            children:
+              -
+                id: 82d8463c-46f0-448e-aafb-1886bb2ba2dc
+                type: particle
+                subtype: promocontent
+                title: 'Extensive Documentation'
+                attributes:
+                  enabled: 1
+                  promostyle: standard
+                  title: 'Extensive Documentation'
+                  desc: '<p>Gantry benefits from an extensive, and ever expanding, catalog of online and free documentation covering basic to more advanced topics.</p>'
+                  readmore: 'Know More'
+                  link: '#'
+                  linkstyle: block
+                  tags:
+                    -
+                      icon: ''
+                      text: Manual
+                      link: '#'
+                      title: Manual
+                    -
+                      icon: ''
+                      text: Tutorial
+                      link: '#'
+                      title: Tutorial
+                children: {  }
+          -
+            id: ac99b579-0bf0-4280-92ac-43aeea077cee
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+              extra: {  }
+            children:
+              -
+                id: 3ff819c7-3a45-417d-81c4-82ac7062c163
+                type: particle
+                subtype: promocontent
+                title: 'YAML-Driven / Twig Templating'
+                attributes:
+                  enabled: 1
+                  promostyle: standard
+                  title: 'YAML-Driven / Twig Templating'
+                  desc: '<p>Gantry is built with several modern web technologies, such as the Twig PHP templating engine and YAML for human readable configuration files.</p>'
+                  readmore: 'Know More'
+                  link: '#'
+                  linkstyle: block
+                  tags:
+                    -
+                      icon: ''
+                      text: Computing
+                      link: '#'
+                      title: Computing
+                    -
+                      icon: ''
+                      text: Programming
+                      link: '#'
+                      title: Programming
+                children: {  }
+  -
+    id: 618a6182-88ab-bda8-88ba-e88ac28a3c8c
+    type: section
+    subtype: false
+    title: Bottom
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 91867b3c-4f54-446c-b2a1-9fa7be91d2da
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 705d244d-fc85-44d6-b6cf-b7961f043e74
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              variations: title1
+              extra: {  }
+            children:
+              -
+                id: 997f4862-0782-44ec-a211-8dc0dace2ca1
+                type: particle
+                subtype: testimonial
+                title: Testimonial
+                attributes:
+                  enabled: 1
+                  title: Testimonial
+                  cols: g-1cols
+                  testimonials:
+                    -
+                      img: 'gantry-media://demo/home/bottom/img-01.jpg'
+                      content: 'The Gantry 5 Framework is an ideal platform for users of all levels, whether beginners or web professionals. The administrative interface is both simple to use, intuitive and highly flexible, allowing for swift and extensive changes.'
+                      author: 'Eddie Lobanovsky'
+                      company: 'Super Corporation'
+                      companyurl: '#'
+                      title: 'Eddie Lobanovsky'
+                children: {  }
+  -
+    id: a9ae9244-8b06-ce7a-6775-fcf4d67259f7
+    type: container
+    subtype: false
+    title: Untitled
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 5b13e4cb-c20d-6e0f-82c0-c552c6f7caf0
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: c03265e3-00c4-edce-dcfb-2d2bc229edc5
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+            children:
+              -
+                id: 510ada67-7713-516a-b197-43c2960958d8
+                type: section
+                subtype: false
+                title: Footer
+                attributes: {  }
+                children:
+                  -
+                    id: 7958bc99-2b23-482a-ba69-0da307cda0d7
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 375ee1f2-3330-40f7-bfec-0760cec6c86e
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          variations: 'nomarginall nopaddingall'
+                          extra: {  }
+                        children:
+                          -
+                            id: 98444353-020a-48f4-8da8-1ad9f53411b6
+                            type: particle
+                            subtype: contact
+                            title: Map
+                            attributes:
+                              enabled: 1
+                              mapposition: top
+                              maps:
+                                -
+                                  img: 'gantry-media://demo/home/footer/img-01.jpg'
+                                  overlay: enabled
+                                  marker: enabled
+                                  icon: 'fa fa-map-marker fa-fw'
+                                  height: 400px
+                                  top: 140px
+                                  left: 170px
+                                  label: London
+                            children: {  }
+          -
+            id: d653392d-d37a-bfaa-55e5-f3e085e90dc2
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+            children:
+              -
+                id: 16813637-d936-d4a8-1d65-b4133cae4097
+                type: section
+                subtype: false
+                title: Footside
+                attributes: {  }
+                children:
+                  -
+                    id: 8feb7bc4-15e8-474e-9237-587c2a231c5d
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: e09e55d7-2487-401d-977f-afcff11fc8e6
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          class: fp-footside-a
+                          variations: 'box1 nomarginall'
+                          extra: {  }
+                        children:
+                          -
+                            id: 46d0353c-4086-449b-b32d-ec46154b348f
+                            type: particle
+                            subtype: promocontent
+                            title: +1(555)666.777.8888
+                            attributes:
+                              enabled: 1
+                              class: ''
+                              promostyle: subpromo
+                              title: +1(555)666.777.8888
+                              desc: '<p>hello@salient-gantry.com</p>'
+                            children: {  }
+                  -
+                    id: 75000433-d2b3-4256-a790-df71ed59d82c
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: ade66acd-8c38-4ca0-9718-35a3cd8fdf1c
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 50
+                          variations: title1
+                          extra: {  }
+                        children:
+                          -
+                            id: a361b2b7-83d1-49e5-b894-27a5d7f75913
+                            type: particle
+                            subtype: contact
+                            title: Address
+                            attributes:
+                              enabled: 1
+                              class: g-contact-compact
+                              title: Address
+                              contactitems:
+                                -
+                                  icon: ''
+                                  text: '23 Salient Road'
+                                  label: '23 Salient Road'
+                                -
+                                  icon: ''
+                                  text: '<strong>London</strong>, United Kingdom'
+                                  label: 'London, United Kingdom'
+                                -
+                                  icon: ''
+                                  text: 'PO-LDN 123'
+                                  label: 'PO-LDN 123'
+                            children: {  }
+                      -
+                        id: 0809ac72-29ea-4fd9-b785-bd73def33ed9
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 50
+                          variations: title1
+                          extra: {  }
+                        children:
+                          -
+                            id: 20dd2abb-3d37-4e1e-8be6-a94ea3ae6f64
+                            type: particle
+                            subtype: contact
+                            title: Hours
+                            attributes:
+                              enabled: 1
+                              class: g-contact-compact
+                              title: Hours
+                              contactitems:
+                                -
+                                  icon: ''
+                                  text: 'Monday - Friday'
+                                  label: 'Monday - Friday'
+                                -
+                                  icon: ''
+                                  text: '09:00 - 17:00 (GMT 0)'
+                                  label: '09:00 - 17:00 (GMT 0)'
+                            children: {  }
+  -
+    id: a73b36ef-b6e6-8ec5-cc6d-6ccc083e669c
+    type: section
+    subtype: false
+    title: Copyright
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 9800ad75-a1d7-4fca-9de8-e2c74fc52d6d
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: d6d55640-a69f-45fc-9830-c7f465bcdd4c
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              extra: {  }
+              size: 33.3333
+            children:
+              -
+                id: a87bf23d-8e40-4dda-92c2-bf98c960bfad
+                type: particle
+                subtype: logo
+                title: Logo
+                attributes:
+                  enabled: 1
+                  rel: home
+                  image: 'gantry-media://logo/logo-footer.png'
+                  alt: Salient
+                  class: g-footer-logo
+                children: {  }
+          -
+            id: e2a4028b-6b9b-4b59-9485-f2c378de9d3a
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 33.3333
+            children:
+              -
+                id: 401341c5-43ae-417e-b897-3dff0e66d6e6
+                type: particle
+                subtype: totop
+                title: 'To Top'
+                attributes: {  }
+                children: {  }
+          -
+            id: 5fb6a41c-9dcd-46d2-9c82-d743e48b8d51
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              extra: {  }
+              size: 33.3333
+            children:
+              -
+                id: 8b29da7f-e4de-4ded-a629-59a56e740783
+                type: particle
+                subtype: social
+                title: Social
+                attributes:
+                  enabled: 1
+                  items:
+                    -
+                      icon: 'fa fa-twitter fa-fw'
+                      text: ''
+                      link: 'http://twitter.com/rockettheme'
+                      name: Twitter
+                    -
+                      icon: 'fa fa-facebook fa-fw'
+                      text: ''
+                      link: 'http://facebook.com/rockettheme'
+                      name: Facebook
+                    -
+                      icon: 'fa fa-google fa-fw'
+                      text: ''
+                      link: 'https://plus.google.com/+rockettheme/about'
+                      name: Google
+                    -
+                      icon: 'fa fa-rss fa-fw'
+                      text: ''
+                      link: 'http://www.rockettheme.com/product-updates?rss'
+                      name: RSS
+                children: {  }
+  -
+    id: e4a7e190-0847-5f74-c5ac-16aa482a19d4
+    type: offcanvas
+    subtype: false
+    title: Offcanvas
+    attributes:
+      name: 'Offcanvas Section'
+      boxed: 0
+    children:
+      -
+        id: 2e6f4650-d162-4b3e-9122-2dcc13130827
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 40457259-df29-4121-af65-20997b66369c
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: bf329703-4503-4875-91e1-830a5a9fbc9e
+                type: particle
+                subtype: mobile-menu
+                title: 'Mobile Menu'
+                attributes: {  }
+                children: {  }
+      -
+        id: c7232dd9-906a-4fec-b4ae-5f7475919092
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f8bd72a3-aac1-40db-aa46-7e7a30042e26
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              extra: {  }
+            children:
+              -
+                id: a9f43940-ea90-4d0a-80c1-4f9571ccad56
+                type: particle
+                subtype: custom
+                title: Offcanvas
+                attributes:
+                  enabled: 1
+                  html: "<div class=\"g-offcanvas-toggle\" data-offcanvas-toggle=\"\">\n  <i class=\"fa fa-fw fa-remove\"></i>\n</div>\n\n<h4 class=\"g-subpromo nomarginbottom\"><a href=\"#\">Creativity</a></h4>\n<h4 class=\"g-subpromo nomarginbottom\"><a href=\"#\">Innovation</a></h4>\n<h4 class=\"g-subpromo nomarginbottom\"><a href=\"#\">Originality</a></h4>\n<h4 class=\"g-subpromo nomarginbottom\"><a href=\"#\">Imagination</a></h4>\n\n<div class=\"largemarginall largepaddingall\">&nbsp;</div>\n\n<hr />\n\n<h2 class=\"g-promo\">Salient</h2>\n\n<p>Salient is an excellent design with a fresh approach for the ever-changing Web. Integrated with Gantry 5, it is infinitely customizable, incredibly powerful, and remarkably simple.</p>\n\n<a href=\"http://www.rockettheme.com/joomla/templates/salient\" class=\"button button-3\"><i class=\"fa fa-fw fa-cloud-download\"></i> Download</a>"
+                children: {  }
+  -
+    id: 9636f3e2-bfb3-4d39-c303-2356e0909c42
+    type: atoms
+    subtype: false
+    title: Atoms
+    attributes:
+      name: 'Atoms Section'
+      boxed: 0
+    children:
+      -
+        id: 0a320a69-87db-49d8-b5fb-118478761346
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children: {  }

@@ -1,0 +1,16 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+ */
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+ul.cwsl-content-items li,
+ul.cwsl-zoo-items li {
+display: inline-block;
+*display: inline;
+zoom: 1;
+}

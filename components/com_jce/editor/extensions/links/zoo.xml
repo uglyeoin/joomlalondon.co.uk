@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<install version="2.0.0" type="extension" extension="zoo" folder="links" method="upgrade">
+	<name>Zoo Links for Advanced Link</name>
+	<version>2.1.0</version>
+	<creationDate>01/12/2010</creationDate>
+	<author>progmist</author>
+	<authorEmail>support@shop.progmist.com</authorEmail>
+	<authorUrl>http://shop.progmist.com/</authorUrl>
+	<copyright>progmist</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<description>
+        <![CDATA[ 
+        <p>The extension allows you to create links to applications, category, elements and tags of the Zoo</p>
+        <br/>
+        <pre>Author = Baturin Boris (Progmist)</pre>
+        <pre>Email: <a href="mailto:support@shop.progmist.com">support@shop.progmist.com</a></pre>
+        
+        <pre>SKYPE: progmist</pre>
+        
+        ]]>
+    </description>
+	<files>
+		<filename>zoo.php</filename>
+		<filename>zoo.xml</filename>
+		<folder>zoo</folder>
+	</files>
+	<params group="zoo">
+        <param name="enabled" type="radio" default="1" label="Enabled" description="Enabled" parent="enable[1]">
+            <option value="1">WF_OPTION_YES</option>
+            <option value="0">WF_OPTION_NO</option>
+        </param>
+	</params>
+	<plugins></plugins>
+</install>

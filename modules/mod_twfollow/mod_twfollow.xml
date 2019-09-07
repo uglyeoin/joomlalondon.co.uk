@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>AutoTweetNG TW Follow</name>
+	<creationDate>2019-05-22</creationDate>
+
+	<author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2019 Extly, CB. All rights reserved.
+	</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+
+	<version>8.28.0</version>
+	<description><![CDATA[
+
+	<p>This module shows a follow link and the tweets for a twitter account.</p>
+
+	<p>To create a <b>Twitter app</b> (Access tokens), please visit <a href="https://dev.twitter.com/apps/new">Twitter Developers</a>, or check the <a target="_blank" href="https://www.extly.com/docs/autotweetng_joocial/installation/faq/">documentation</a>.</p>
+
+	]]></description>
+	<files>
+		<filename module="mod_twfollow">mod_twfollow.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="consumer_key" type="text" default="" label="Consumer key *" description="Twitter consumer key." />
+				<field name="consumer_secret" type="text" default="" label="Consumer secret *" description="Twitter consumer secret" />
+				<field name="access_token" type="text" default="" label="Access token *" 	description="Twitter access token." />
+				<field name="access_token_secret" type="text" default="" label="Access token secret *" 	description="Twitter access token secret." />
+
+				<field name="twUsername" type="text" default="" label="Twitter username *" 	description="Twitter username." />
+				<field name="twShowFollowLink" type="list" default="1" label="Show follow link" description="Show the follow link.">
+					<option value="0">no, do not show</option>
+					<option value="1">show text link and icon</option>
+					<option value="2">show text link only</option>
+				</field>
+				<field name="twFollowText" type="text" default="Follow me on twitter" label="Text for follow link" description="Link text for follow link." />
+				<field name="twMaxTweets" type="text" size="5" default="5" label="Maximum of tweets" description="Maximum number of messages to display." />
+				<field name="twShowDate" type="radio" default="0" label="Show date" description="Display the date for each message.">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="twParseLinks" type="list" default="0" label="Link mode" description="Select display type for links.">
+					<option value="0">do not show link</option>
+					<option value="1">show link as text</option>
+					<option value="2">show link as link</option>
+					<option value="3">show whole message as link</option>
+					<option value="4">show text entered bellow as the link</option>
+				</field>
+				<field name="twLinkText" type="text" default="more..." label="Text for link" description="" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="twEnableCache" type="radio" default="1" label="Enable the cache" description="Cache the results for faster load times.">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="twCacheTime" type="text" default="10" label="Cache refresh time" description="Enter the number of minutes after which the cache expires." />
+
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					label="Cache Mode"
+					type="list"
+					default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

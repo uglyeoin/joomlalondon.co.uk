@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" version="3.8" client="site" method="upgrade">
+    <name>Joomla! London Template</name>
+    <version>1.0</version>
+    <creationDate>08/06/2018</creationDate>
+    <author>Eoin Oliver &amp; Gary Barclay</author>
+    <authorEmail>eoin@squareballoon.co.uk</authorEmail>
+    <copyright>Joomla! London - GPL</copyright>
+    <description><![CDATA[TPL_JOOMLA_LONDON_XML_DESCRIPTION]]></description>
+
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>offline.php</filename>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>scss</folder>
+    </files>
+
+    <positions>
+        <position>offcanvas</position>
+        <position>header</position>
+        <position>mainBanner</position>
+        <position>belowBanner</position>
+        <position>middle</position>
+        <position>bottom</position>
+        <position>footer</position>
+        <position>belowFooter</position>
+        <position>debug</position>
+    </positions>
+
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="sitedescription"
+                       type="text"
+                       default=""
+                       label="JGLOBAL_DESCRIPTION"
+                       description="JGLOBAL_SUBHEADING_DESC"
+                       filter="string"/>
+                <field name="framework" type="list" default="bootstrap4" required="true" label="TPL_JOOMLA_LONDON_FRAMEWORK_LABLE" description="TPL_JOOMLA_LONDON_FRAMEWORK_DESC">
+                    <option value="">TPL_JOOMLA_LONDON_FRAMEWORK_DEFAULT_OPTION</option>
+                    <option value="bootstrap4">Bootstrap4</option>
+                    <option value="foundation6">Foundation 6</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

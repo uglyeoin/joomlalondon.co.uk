@@ -1,0 +1,10 @@
+<td>
+	<%= agendaDate %>
+</td>
+<td>
+	<%= agendaTime %>
+	
+	<input type="hidden" name="xtform[agenda][]" value="<%= agendaDate %> <%= agendaTime %>">
+</td>
+<td><a href="#" class="destroy"><i class="xticon xticon-trash-o"></i></a></td>
+

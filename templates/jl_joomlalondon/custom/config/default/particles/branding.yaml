@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Powered by <a href="http://www.softforge.co.uk" title="SoftForge" class="g-powered-by">Soft Forge</a> | Created by <a href="https://www.squareballoon.co.uk" title="Square Balloon | Design & Web">Square Balloon</a> and <a href="http://www.barclayworks.com/" title="BarclayWorks">Barclay.Works</a>'
+css:
+  class: branding

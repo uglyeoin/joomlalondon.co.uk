@@ -1,0 +1,124 @@
+name: 23
+timestamp: 1495041534
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1443867711
+positions:
+  top-a: 'Top A'
+  top-b: 'Top B'
+  top-c: 'Top C'
+  header: Header
+  slideshow-a: 'Slideshow A'
+  slideshow-b: 'Slideshow B'
+  slideshow-c: 'Slideshow C'
+  showcase-a: 'Showcase A'
+  showcase-b: 'Showcase B'
+  showcase-c: 'Showcase C'
+  above-a: 'Above A'
+  above-b: 'Above B'
+  above-c: 'Above C'
+  utility-a: 'Utility A'
+  utility-b: 'Utility B'
+  utility-c: 'Utility C'
+  feature-a: 'Feature A'
+  feature-b: 'Feature B'
+  feature-c: 'Feature C'
+  sidebar: Sidebar
+  mainbar-a: 'Mainbar A'
+  mainbar-b: 'Mainbar B'
+  mainbar-c: 'Mainbar C'
+  content-bottom: content-bottom
+  aside: Aside
+  expanded-a: 'Expanded A'
+  expanded-b: 'Expanded B'
+  expanded-c: 'Expanded C'
+  extension-a: 'Extension A'
+  extension-b: 'Extension B'
+  extension-c: 'Extension C'
+  bottom-a: 'Bottom A'
+  bottom-b: 'Bottom B'
+  bottom-c: 'Bottom C'
+  footer-a: 'Footer A'
+  footer-b: 'Footer B'
+  footside-a: 'Footside A'
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  showcase: Showcase
+  above: Above
+  utility: Utility
+  feature: Feature
+  sidebar: Sidebar
+  mainbar: Mainbar
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  footside: Footside
+  copyright: Copyright
+  header: Header
+  aside: Aside
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-7335: 'System Messages'
+  position:
+    position-2318: 'Top A'
+    position-1495: 'Top B'
+    position-7785: 'Top C'
+    position-7787: Header
+    position-1594: 'Slideshow A'
+    position-9798: 'Slideshow B'
+    position-5787: 'Slideshow C'
+    position-1125: 'Showcase A'
+    position-7379: 'Showcase B'
+    position-4776: 'Showcase C'
+    position-6095: 'Above A'
+    position-2569: 'Above B'
+    position-6973: 'Above C'
+    position-8681: 'Utility A'
+    position-4595: 'Utility B'
+    position-2179: 'Utility C'
+    position-9833: 'Feature A'
+    position-6902: 'Feature B'
+    position-5361: 'Feature C'
+    position-1148: Sidebar
+    position-7931: 'Mainbar A'
+    position-4885: 'Mainbar B'
+    position-1908: 'Mainbar C'
+    position-1096: content-bottom
+    position-2193: Aside
+    position-1264: 'Expanded A'
+    position-6067: 'Expanded B'
+    position-1289: 'Expanded C'
+    position-5651: 'Extension A'
+    position-8118: 'Extension B'
+    position-9161: 'Extension C'
+    position-7092: 'Bottom A'
+    position-9959: 'Bottom B'
+    position-7056: 'Bottom C'
+    position-7152: 'Footer A'
+    position-5745: 'Footer B'
+    position-8973: 'Footside A'
+  logo:
+    logo-2708: Logo
+    logo-6303: Logo
+  menu:
+    menu-8181: Menu
+  custom:
+    custom-8371: 'Off Canvas Toggle'
+    custom-3198: Offcanvas
+  branding:
+    branding-1279: Branding
+  social:
+    social-4618: Social
+  totop:
+    totop-6944: 'To Top'
+  mobile-menu:
+    mobile-menu-6105: 'Mobile Menu'
+  assets:
+    assets-1998: 'Custom CSS / JS'
+inherit: {  }

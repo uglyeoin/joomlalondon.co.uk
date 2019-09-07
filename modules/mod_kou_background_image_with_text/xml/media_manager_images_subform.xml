@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <fieldset name="mediaManagerOrUrlFieldset">   
+    <field name="image"
+          type="media"
+          label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_IMAGE_LABEL"
+          description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_IMAGE_DESCRIPTION"
+          />  
+    <field  name="realSize"
+            type="text"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_REAL_SIZE_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_REAL_SIZE_DESCRIPTION"            
+    />
+    <field  name="size"
+            type="text"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_SIZE_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_SIZE_DESCRIPTION"            
+    /> 
+    <field  name="slot"
+            type="text"
+            label="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_SLOT_LABEL"
+            description="MOD_KOU_BACKGROUND_IMAGE_WITH_TEXT_SLOT_DESCRIPTION"            
+    />                   
+  </fieldset>
+</form>

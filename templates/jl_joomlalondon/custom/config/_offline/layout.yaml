@@ -1,0 +1,140 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1443867711
+layout:
+  /top/:
+    -
+      - system-messages-1405
+  /navigation/:
+    -
+      - logo-5346
+  /header/: {  }
+  /slideshow/: {  }
+  /showcase/: {  }
+  /above/: {  }
+  /utility/: {  }
+  /feature/:
+    -
+      - 'spacer-9944 50'
+      - 'custom-1763 50'
+  /container-3308/:
+    -
+      -
+        'sidebar 20':
+          -
+            - spacer-5015
+      -
+        'mainbar 60':
+          -
+            - system-content-8263
+      -
+        'aside 20':
+          -
+            - spacer-8433
+  /expanded/: {  }
+  /extension/:
+    -
+      - custom-2601
+  /bottom/: {  }
+  /container-4964/:
+    -
+      -
+        'footer 75': {  }
+      -
+        'footside 25': {  }
+  /copyright/:
+    -
+      - 'logo-4418 33.3'
+      - 'totop-7796 33.3'
+      - 'social-9464 33.3'
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'box-darkgrey g-outer-box'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+  mainbar:
+    type: section
+  container-3308:
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+  footside:
+    type: section
+  container-4964:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  system-messages-1405:
+    block:
+      variations: 'nomarginall nopaddingall'
+  logo-5346:
+    block:
+      variations: center
+  custom-1763:
+    title: 'Coming Soon'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Offline</h2>\n\t<div class=\"g-layercontent-subtitle\">Sorry, We are Down for Maintenance</div>\n</div>"
+    block:
+      class: g-overlay
+      variations: 'nomarginall center'
+  custom-2601:
+    title: 'Have Something to Tell Us?'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Maintenance Mode</h2>\n\t<div class=\"g-layercontent-subtitle\">Sorry, Our Website is Temporarily Down for Maintenance. Please Check Back Again Soon.</div>\n\t<a href=\"http://www.rockettheme.com/joomla/templates/salient\" class=\"button\">Contact Us</a>\n</div>"
+    block:
+      variations: 'center nomarginall nopaddingall'
+  totop-7796:
+    title: 'To Top'
+    attributes:
+      css:
+        class: totop
+      content: '<span class="fa fa-2x fa-angle-up"></span>'

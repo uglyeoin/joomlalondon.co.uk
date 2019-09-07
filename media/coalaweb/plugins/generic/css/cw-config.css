@@ -1,0 +1,323 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/* Module configuration styling
+------------------------------------------------------------------------------*/
+::-moz-selection { background: #fec23d; color: #fff }
+
+::selection { background: #fec23d; color: #fff }
+
+
+#jform_params_tabs_data-lbl,
+
+#jform_params___field1-lbl,
+
+#invisible { display: none; }
+
+.unit { line-height:34px; }
+
+/* togglers */
+
+.pane-sliders .panel { border: none !important; }
+
+.panel > h3 { 
+    height: 43px; 
+    background: transparent url('../images/icons/cw-panel-bg.png') repeat-x 0 0 !important; 
+    border: 1px solid #d8d8d8; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    font: bold 12px/43px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase; 
+}
+
+.panel > h3 a { color: #333; text-shadow: 0 1px 1px #fff; }
+
+.panel > h3 a:hover,
+
+.panel h3.pane-toggler-down a { color: #1272A5 }
+
+.panel h3.pane-toggler-down { border-bottom: 4px solid #1272A5 !important }
+
+.pane-toggler span { background: transparent url('../images/icons/cw-panel-arrow.png') no-repeat 5px 50% !important; }
+
+.pane-toggler-down span { background: transparent url('../images/icons/cw-panel-arrow-down.png') no-repeat 5px 50% !important; }
+
+.pane-sliders .content { 
+    margin: 4px auto; 
+    width: 99%; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+}
+
+
+/* form elements in the container */
+
+.panel fieldset.panelform > ul > li > label { 
+    color: #444; 
+    font-size: 11px; 
+    font-weight: bold; 
+    height: 24px; 
+    line-height: 24px; 
+    padding: 0 20px 0 10px; 
+    text-align: right; 
+    max-width: 40%!important; 
+    min-width: 30%!important; 
+}
+
+
+fieldset.panelform input { 
+    height: 16px; 
+    color: #555; 
+    line-height: 16px; 
+    padding: 4px;  
+}
+
+.spacer label {
+    color: #1272A5;
+    font: bold 12px/30px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    padding: 0px 5px;
+    text-align: left;
+}
+
+fieldset.panelform input.small { width: 40px; }
+
+fieldset.panelform input.tright { text-align: right; }
+
+fieldset.panelform input[type=button] { 
+    height: 26px; 
+    line-height: 26px; 
+}
+
+fieldset.panelform select { 
+    height: 26px; 
+    color: #555; 
+    line-height: 24px; 
+    padding: 4px; 
+    font-size:11px; 
+    border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+}
+
+fieldset.panelform select.position { width: 80px!important; }
+
+fieldset.panelform textarea { 
+    padding: 4px; 
+    border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+}
+
+/*.fltrt ul.adminformlist li { 
+    padding: 1px 10px; 
+    margin: 0; 
+}*/
+
+fieldset.panelform .label { 
+    font-size: 11px; 
+    font-weight: bold; 
+    width: auto; 
+    padding: 0 5px; 
+    line-height:34px; 
+}
+
+fieldset.panelform .desc { 
+    font-size: 11px; 
+    font-weight: normal; 
+    width: auto; 
+    padding: 10px; 
+}
+
+fieldset.adminform fieldset.radio, 
+fieldset.panelform fieldset.radio, 
+fieldset.adminform-legacy fieldset.radio { 
+    margin: 5px !important;
+    padding: 0;
+}
+
+/* End
+------------------------------------------------------------------------------*/
+
+/* Module description styling
+------------------------------------------------------------------------------*/
+.cw-module { 
+    padding: 0px; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:13px !important; 
+    font-weight: normal !important; 
+    text-align: justify; color: #4d4d4d; 
+}
+
+.cw-module h1 { 
+    clear:both; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:38px; 
+    margin:10px 5px; 
+    padding:0px 0px 5px 0px; 
+    color:#333; 
+    font-weight: normal;
+    background:none !important;
+}
+
+.cw-module h3 { 
+    clear:both; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:22px !important; 
+    margin:10px 5px; 
+    padding:0px; 
+    color:#333 !important;  
+    font-weight: normal !important;
+    background:none !important;    
+}
+
+.cw-module strong { color: #1272A5; }
+.cw-module p { margin: 10px }
+
+.cw-module p a, .cw-module ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+.cw-module p a:hover, .cw-module ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+.cw-module p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border-bottom: 1px solid #D2DCE1;
+    border-top: 1px solid #D2DCE1; 
+    padding: 10px;
+}
+
+.cw-module p.forum a { color:#CE6A23; }
+.cw-module p.forum a:hover {color:#E2AB53;}
+.cw-module p.forum {
+    background: url("../images/icons/cw-forum.png") no-repeat scroll 0 0  #FFFAE6; 
+    border-bottom: 1px solid #FAE6BE;
+    border-top: 1px solid #FAE6BE; 
+    padding: 10px;
+}
+
+.cw-module p.vote a { color:#8a916e; }
+.cw-module p.vote a:hover {color:#b0bf7f;}
+.cw-module p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border-bottom: 1px solid #DCE6BE;
+    border-top: 1px solid #DCE6BE; 
+    padding: 10px;
+}
+
+.cw-module p.donate a, .cw-module p.donate em { color:#A05A2C; }
+.cw-module p.donate a:hover {color:#D38D5F;}
+.cw-module p.donate {
+    background: url("../images/icons/cw-coffee2.png") no-repeat scroll 0 0 #F6ECE6; 
+    border-bottom: 1px solid #EDD7C9;
+    border-top: 1px solid #EDD7C9;
+    padding: 10px;
+}
+
+.cw-module p.info, .cw-module p.forum, .cw-module p.vote, .cw-module p.donate{
+    padding-left:40px;
+    line-height: 18px; 
+    margin: 15px 20px; 
+}
+
+.cw-module p a:hover, .cw-module ul a:hover  {
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+.cw-module ul li {
+    margin-left:10px !important;
+    background: transparent url('../images/icons/cw-panel-arrow.png') no-repeat 5px 50% !important;
+    padding-left:20px !important;
+    list-style: none outside none;
+}
+
+span.readonly{
+    margin-left: 0px !important;
+}
+
+/* End
+------------------------------------------------------------------------------*/
+
+/* Media Field Type 
+------------------------------------------------------------------------------*/
+.button2-left { margin-top: 7px; }
+.fieldset img { margin-top: 0 !important; }
+.media-preview, .hasTipPreview { margin-top: 12px !important;}
+
+/* End
+------------------------------------------------------------------------------*/
+
+fieldset.adminform fieldset.radio label, fieldset.panelform fieldset.radio label {
+    min-width: 20px !important;
+    padding-right: 5px !important;
+}
+
+/* Messages
+------------------------------------------------------------------------------*/
+/* General message */
+.cw-message p.info, .cw-message p.alert, .cw-message p.vote {
+    padding:10px 10px 10px 40px;
+    line-height: 18px; 
+    margin: 5px 10px 10px; 
+    border-radius:5px;
+    text-align:left;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #4D4D4D;
+}
+.cw-message p { margin: 10px 20px }
+
+.cw-message p a, .cw-message ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+.cw-message p a:hover, .cw-message ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+/* Info Message */
+.cw-message p.info a, .cw-message p.info em { color: #1272A5;}
+.cw-message p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border: 1px solid #D2DCE1;
+}
+
+/* Alert Message */
+.cw-message p.alert a, .cw-message p.alert em { color: #B1191C;}
+.cw-message p.alert a:hover { color: #D85863;}
+.cw-message p.alert {
+    background: url("../images/icons/cw-alert.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+}
+
+/* Vote Message */
+.cw-message p.vote a, .cw-message p.vote em { color:#268413; }
+.cw-message p.vote a:hover {color:#b0bf7f;}
+.cw-message p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border: 1px solid #DCE6BE;
+}
+
+/* Upgrade message*/
+.cw-message p.upgrade a, .cw-message p.upgrade em  { color:#CE6A23; }
+.cw-message p.upgrade a:hover {color:#E2AB53;}
+.cw-message p.upgrade {
+    background: url("../images/icons/cw-forum.png") no-repeat scroll 0 0  #FFFAE6; 
+    border: 1px solid #FAE6BE;
+}

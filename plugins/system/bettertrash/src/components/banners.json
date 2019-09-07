@@ -1,0 +1,9 @@
+{
+	"banners": {
+		"table": "banners"
+	},
+	"clients": {
+		"table": "banner_clients",
+		"filter": "state"
+	}
+}

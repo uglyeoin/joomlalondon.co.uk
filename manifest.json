@@ -1,0 +1,18 @@
+{
+			"name": "Progressive Web App",
+	"short_name": "Name of application. If present this property will be used over the name property if present",
+	"icons":
+		[
+			{
+				"src": "images/BT-ArtBox-Sofa-483x297.png",
+				"sizes": "96x96"
+			},{
+			"src": "images/london_fireworks.png",
+				"sizes": "192x192"
+			}
+		],
+		"theme_color": "#eee",
+		"background_color": "#eee",
+		"display": "minimal-ui",
+		"start_url": "/?home=true"
+}

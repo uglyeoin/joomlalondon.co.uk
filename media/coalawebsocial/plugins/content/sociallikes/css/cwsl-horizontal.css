@@ -1,0 +1,63 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+.grid-box .cwsl-content, .cwsl-content { 
+    float: none;
+    width:100%;
+    margin:5px 2px !important;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    text-align:left;
+}
+
+.grid-box .width50 .cwsl-content { height:auto; }
+.grid-box .width33 .cwsl-content { height:auto; }
+.grid-box #k2Container .cwsl-content { height:auto;}
+
+ul.cwsl-content-items {
+    margin: 0 !important;
+    padding: 0!important;
+    list-style: none;
+}
+
+ul.cwsl-content-items li {
+    padding: 0px !important;
+    margin-right:5px !important;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.cwsl-content-t { width:85px; }
+.cwsl-content-gp { width:70px; }
+.cwsl-content-pi { width:65px; }
+.cwsl-content-xi { width:90px; }
+.cwsl-content-sli { min-width:70px; }
+.cwsl-content-like { min-width:85px; }
+.cwsl-content-likeshare { min-width:130px; }
+.cwsl-content-share {
+    margin-left:4px;
+    min-width:90px;
+}
+.cwsl-content-like,
+.cwsl-content-likeshare,
+.cwsl-content-share {
+    min-height:25px;
+}
+
+/* Make drop downs visible on certain templates */
+.item-page, .items-leading{
+    overflow: visible !important;
+}
+
+iframe,svg {
+  max-width: inherit !important;
+}
+
+.fb_iframe_widget_lift{
+    min-width:500px !important;
+}

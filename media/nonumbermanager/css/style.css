@@ -1,0 +1,68 @@
+/**
+ * NoNumber Extension Manager Admin CSS
+ *
+ * @package         NoNumber Extension Manager
+ * @version         5.2.1
+ *
+ * @author          Peter van Westen <peter@nonumber.nl>
+ * @link            http://www.nonumber.nl
+ * @copyright       Copyright © 2015 NoNumber All Rights Reserved
+ * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+#nnem input[type="checkbox"] {
+  margin-top: 0;
+}
+#nnem td {
+  height: 28px;
+}
+#nnem .progress {
+  margin-bottom: 0;
+}
+#nnem .alert {
+  margin-bottom: 0;
+  padding: 2px 6px;
+}
+#nnem span.hasPopover {
+  display: inline-block;
+}
+.com_nonumbermanager .popover {
+  width: auto;
+  max-width: 600px;
+}
+/* Not on mobile */
+@media (min-width: 768px) {
+  #nnem td.ext_name {
+    font-size: 16px;
+  }
+}
+table.hide_not_installed tbody tr.not_installed {
+  display: none;
+}
+@media (min-width: 481px) {
+  #toolbar .btn-success {
+    width: auto !important;
+  }
+}
+.installselected,
+.updateall,
+.reinstallall,
+div.has_install .installselected_disabled,
+div.has_update .installselected_disabled,
+div.has_update .updateall_disabled,
+div.has_reinstall .reinstallall_disabled {
+  display: none !important;
+}
+div.has_install .installselected,
+div.has_update .installselected,
+div.has_update .updateall,
+div.has_reinstall .reinstallall {
+  display: inline-block !important;
+}
+.well.well-danger {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.well > h4 {
+  margin-top: 0;
+}

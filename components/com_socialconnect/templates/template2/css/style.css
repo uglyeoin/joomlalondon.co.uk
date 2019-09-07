@@ -1,0 +1,838 @@
+/**
+ * @version		1.8.x
+ * @package		SocialConnect
+ * @author		JoomlaWorks http://www.joomlaworks.net
+ * @copyright	Copyright (c) 2006 - 2016 JoomlaWorks Ltd. All rights reserved.
+ * @license		http://www.joomlaworks.net/license
+ */
+
+/* Common extension styles */
+#comSocialConnectContainer {
+	font-size: 14px;
+	color: #333333;
+	clear: both;
+}
+#comSocialConnectContainer div.socialConnectBlock {
+	border: 1px solid #D4D4D4;
+	border-radius: 8px;
+	padding: 20px;
+	overflow: hidden;
+}
+#comSocialConnectContainer .socialConnectHeading {
+	font-size: 20px;
+	line-height: 1;
+	font-weight: normal;
+	color: #333333;
+	margin: 0 0 16px 0;
+	padding: 0;
+}
+#comSocialConnectContainer .socialConnectSubHeading {
+	font-size: 20px;
+	line-height: 1;
+	font-weight: normal;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (min-width: 767px) {
+	#comSocialConnectContainer div.socialConnectBlock {
+		padding: 46px 40px;
+	}
+	#comSocialConnectContainer .socialConnectHeading {
+		font-size: 37px;
+	}
+	#comSocialConnectContainer .socialConnectSubHeading {
+		font-size: 25px;
+	}
+}
+#comSocialConnectContainer .socialConnectServicesMessage {
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 23px;
+	margin: 35px 0 28px 0;
+	padding: 0;
+	color: #333333;
+}
+#comSocialConnectContainer .socialConnectLabel {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+}
+#comSocialConnectContainer .socialConnectInput {
+	display: block;
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+	background: #f8f6f6;
+	padding: 8px 14px;
+	height: 18px;
+	box-shadow: 0 1px 1px 0 #d4d4d4 inset;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333333;
+}
+#comSocialConnectContainer .socialConnectInput:focus {
+	background-color: #FFFFFF;
+	border-color: rgba(82, 168, 236, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+#comSocialConnectContainer .socialConnectLink {
+	background: none;
+	color: #333333;
+	font-size: 12px;
+	text-decoration: none;
+}
+#comSocialConnectContainer .socialConnectLink:hover, #comSocialConnectContainer .socialConnectLink:focus {
+	background: none;
+	color: #333333;
+	font-size: 12px;
+	text-decoration: underline;
+}
+#comSocialConnectContainer .socialConnectButton {
+	display: block;
+	max-width: 192px;
+	height: 34px;
+	line-height: 34px;
+	padding: 0;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	text-shadow: 0 1px 0 #333333;
+}
+#comSocialConnectContainer .socialConnectButton i {
+	display: block;
+	float: left;
+	width: 32px;
+	height: 34px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#comSocialConnectContainer .socialConnectButton span {
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	padding-right: 14px;
+	text-align: center;
+}
+/* Sign in button */
+#comSocialConnectContainer .socialConnectSignInButton {
+	width: 140px;
+	height: 36px;
+	background-color: #299bd8;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#299bd8), to(#0143d0));
+	background-image: -webkit-linear-gradient(top, #299bd8, #0143d0);
+	background-image: -moz-linear-gradient(top, #299bd8, #0143d0);
+	background-image: -ms-linear-gradient(top, #299bd8, #0143d0);
+	background-image: -o-linear-gradient(top, #299bd8, #0143d0);
+	border-color: #005fba;
+	margin: 24px 0 14px 0;
+	box-shadow: 0 1px 0 0 #2baced inset;
+	text-shadow: 0 1px 0 #696363;
+}
+#comSocialConnectContainer .socialConnectSignInButton:hover, #comSocialConnectContainer .socialConnectSignInButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2eb1f2), to(#2d69eb));
+	background-image: -webkit-linear-gradient(top, #2eb1f2, #2d69eb);
+	background-image: -moz-linear-gradient(top, #2eb1f2, #2d69eb);
+	background-image: -ms-linear-gradient(top, #2eb1f2, #2d69eb);
+	background-image: -o-linear-gradient(top, #2eb1f2, #2d69eb);
+}
+#comSocialConnectContainer .socialConnectSignInButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2d69eb), to(#2eb1f2));
+	background-image: -webkit-linear-gradient(top, #2d69eb, #2eb1f2);
+	background-image: -moz-linear-gradient(top, #2d69eb, #2eb1f2);
+	background-image: -ms-linear-gradient(top, #2d69eb, #2eb1f2);
+	background-image: -o-linear-gradient(top, #2d69eb, #2eb1f2);
+}
+#comSocialConnectContainer .socialConnectSignInButton i {
+	border-right-color: #005fba;
+	background-image: url('../images/key.png');
+	position: relative;
+	top: -1px;
+}
+#comSocialConnectContainer .socialConnectSignInButton span {
+	position: relative;
+	top: -1px;
+}
+/* Registration button */
+#comSocialConnectContainer .socialConnectRegistrationButton {
+	max-width: 192px;
+	color: #333333;
+	border-color: #bdbdbd;
+	margin-top: 14px;
+	background-color: #e9e9e9;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cccccc));
+	background-image: -webkit-linear-gradient(top, #ffffff, #cccccc);
+	background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
+	background-image: -ms-linear-gradient(top, #ffffff, #cccccc);
+	background-image: -o-linear-gradient(top, #ffffff, #cccccc);
+	text-shadow: 0 1px 0 #ffffff;
+}
+#comSocialConnectContainer .socialConnectRegistrationButton:hover, #comSocialConnectContainer .socialConnectRegistrationButton:focus {
+	color: #333333;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#e9e9e9));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e9e9e9);
+	background-image: -moz-linear-gradient(top, #ffffff, #e9e9e9);
+	background-image: -ms-linear-gradient(top, #ffffff, #e9e9e9);
+	background-image: -o-linear-gradient(top, #ffffff, #e9e9e9);
+}
+#comSocialConnectContainer .socialConnectRegistrationButton:active {
+	color: #333333;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e9e9e9), to(#ffffff));
+	background-image: -webkit-linear-gradient(top, #e9e9e9, #ffffff);
+	background-image: -moz-linear-gradient(top, #e9e9e9, #ffffff);
+	background-image: -ms-linear-gradient(top, #e9e9e9, #ffffff);
+	background-image: -o-linear-gradient(top, #e9e9e9, #ffffff);
+}
+
+#comSocialConnectContainer .socialConnectRegistrationButton i {
+	border-right-color: #bdbdbd;
+	background-image: url('../images/user.png');
+}
+
+#comSocialConnectContainer .socialConnectServiceButton {
+	width: 169px;
+}
+
+/* Facebook Button */
+#comSocialConnectContainer .socialConnectFacebookButton {
+	border-color: #394e90;
+	background-color: #4159a2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#566eb7), to(#4159a2));
+	background-image: -webkit-linear-gradient(top, #566eb7, #4159a2);
+	background-image: -moz-linear-gradient(top, #566eb7, #4159a2);
+	background-image: -ms-linear-gradient(top, #566eb7, #4159a2);
+	background-image: -o-linear-gradient(top, #566eb7, #4159a2);
+	box-shadow: 0 1px 0 0 #8a9bcd inset;
+}
+#comSocialConnectContainer .socialConnectFacebookButton:hover, #comSocialConnectContainer .socialConnectFacebookButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#627ed1), to(#4b68bd));
+	background-image: -webkit-linear-gradient(top, #627ed1, #4b68bd);
+	background-image: -moz-linear-gradient(top, #627ed1, #4b68bd);
+	background-image: -ms-linear-gradient(top, #627ed1, #4b68bd);
+	background-image: -o-linear-gradient(top, #627ed1, #4b68bd);
+}
+#comSocialConnectContainer .socialConnectFacebookButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4b68bd), to(#627ed1));
+	background-image: -webkit-linear-gradient(top, #4b68bd, #627ed1);
+	background-image: -moz-linear-gradient(top, #4b68bd, #627ed1);
+	background-image: -ms-linear-gradient(top, #4b68bd, #627ed1);
+	background-image: -o-linear-gradient(top, #4b68bd, #627ed1);
+}
+#comSocialConnectContainer .socialConnectFacebookButton i {
+	background-image: url("../images/facebook.png");
+	border-right: 1px solid #394e90;
+}
+/* Twitter Button */
+#comSocialConnectContainer .socialConnectTwitterButton {
+	border-color: #3092bf;
+	background-color: #39b0e9;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#50c4fe), to(#39b0e9));
+	background-image: -webkit-linear-gradient(top, #50c4fe, #39b0e9);
+	background-image: -moz-linear-gradient(top, #50c4fe, #39b0e9);
+	background-image: -ms-linear-gradient(top, #50c4fe, #39b0e9);
+	background-image: -o-linear-gradient(top, #50c4fe, #39b0e9);
+	box-shadow: 0 1px 0 0 #86d6fe inset;
+}
+#comSocialConnectContainer .socialConnectTwitterButton:hover, #comSocialConnectContainer .socialConnectTwitterButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8dd6fa), to(#3dc2ff));
+	background-image: -webkit-linear-gradient(top, #8dd6fa, #3dc2ff);
+	background-image: -moz-linear-gradient(top, #8dd6fa, #3dc2ff);
+	background-image: -ms-linear-gradient(top, #8dd6fa, #3dc2ff);
+	background-image: -o-linear-gradient(top, #8dd6fa, #3dc2ff);
+}
+#comSocialConnectContainer .socialConnectTwitterButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3dc2ff), to(#8dd6fa));
+	background-image: -webkit-linear-gradient(top, #3dc2ff, #8dd6fa);
+	background-image: -moz-linear-gradient(top, #3dc2ff, #8dd6fa);
+	background-image: -ms-linear-gradient(top, #3dc2ff, #8dd6fa);
+	background-image: -o-linear-gradient(top, #3dc2ff, #8dd6fa);
+}
+#comSocialConnectContainer .socialConnectTwitterButton i {
+	background-image: url("../images/twitter.png");
+	border-right: 1px solid #3092bf;
+}
+/* Google Button */
+#comSocialConnectContainer .socialConnectGoogleButton {
+	border-color: #b53c28;
+	background-color: #cc442e;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e25944), to(#cc442e));
+	background-image: -webkit-linear-gradient(top, #e25944, #cc442e);
+	background-image: -moz-linear-gradient(top, #e25944, #cc442e);
+	background-image: -ms-linear-gradient(top, #e25944, #cc442e);
+	background-image: -o-linear-gradient(top, #e25944, #cc442e);
+	box-shadow: 0 1px 0 0 #eb8c7e inset;
+}
+#comSocialConnectContainer .socialConnectGoogleButton:hover, #comSocialConnectContainer .socialConnectGoogleButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fc634c), to(#e54c35));
+	background-image: -webkit-linear-gradient(top, #fc634c, #e54c35);
+	background-image: -moz-linear-gradient(top, #fc634c, #e54c35);
+	background-image: -ms-linear-gradient(top, #fc634c, #e54c35);
+	background-image: -o-linear-gradient(top, #fc634c, #e54c35);
+}
+#comSocialConnectContainer .socialConnectGoogleButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e54c35), to(#fc634c));
+	background-image: -webkit-linear-gradient(top, #e54c35, #fc634c);
+	background-image: -moz-linear-gradient(top, #e54c35, #fc634c);
+	background-image: -ms-linear-gradient(top, #e54c35, #fc634c);
+	background-image: -o-linear-gradient(top, #e54c35, #fc634c);
+}
+#comSocialConnectContainer .socialConnectGoogleButton i {
+	background-image: url("../images/google.png");
+	border-right: 1px solid #b53c28;
+}
+/* Google+ Button */
+#comSocialConnectContainer .socialConnectGooglePlusButton {
+	border-color: #bd402f;
+	background-color: #ab3a2b;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ed5b47), to(#ab3a2b));
+	background-image: -webkit-linear-gradient(top, #ed5b47, #ab3a2b);
+	background-image: -moz-linear-gradient(top, #ed5b47, #ab3a2b);
+	background-image: -ms-linear-gradient(top, #ed5b47, #ab3a2b);
+	background-image: -o-linear-gradient(top, #ed5b47, #ab3a2b);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectGooglePlusButton:hover, #comSocialConnectContainer .socialConnectGooglePlusButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bd402f), to(#dd4b38));
+	background-image: -webkit-linear-gradient(top, #bd402f, #dd4b38);
+	background-image: -moz-linear-gradient(top, #bd402f, #dd4b38);
+	background-image: -ms-linear-gradient(top, #bd402f, #dd4b38);
+	background-image: -o-linear-gradient(top, #bd402f, #dd4b38);
+}
+#comSocialConnectContainer .socialConnectGooglePlusButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd4b38), to(#bd402f));
+	background-image: -webkit-linear-gradient(top, #dd4b38, #bd402f);
+	background-image: -moz-linear-gradient(top, #dd4b38, #bd402f);
+	background-image: -ms-linear-gradient(top, #dd4b38, #bd402f);
+	background-image: -o-linear-gradient(top, #dd4b38, #bd402f);
+}
+#comSocialConnectContainer .socialConnectGooglePlusButton i {
+	background-image: url("../images/googleplus.png");
+	border-right: 1px solid #bd402f;
+}
+/* LinkedIn Button */
+#comSocialConnectContainer .socialConnectLinkedInButton {
+	border-color: #00698a;
+	background-color: #00789c;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#008db1), to(#00789c));
+	background-image: -webkit-linear-gradient(top, #008db1, #00789c);
+	background-image: -moz-linear-gradient(top, #008db1, #00789c);
+	background-image: -ms-linear-gradient(top, #008db1, #00789c);
+	background-image: -o-linear-gradient(top, #008db1, #00789c);
+	box-shadow: 0 1px 0 0 #4fb0c9 inset;
+}
+#comSocialConnectContainer .socialConnectLinkedInButton:hover, #comSocialConnectContainer .socialConnectLinkedInButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00a1c9), to(#008bb5));
+	background-image: -webkit-linear-gradient(top, #00a1c9, #008bb5);
+	background-image: -moz-linear-gradient(top, #00a1c9, #008bb5);
+	background-image: -ms-linear-gradient(top, #00a1c9, #008bb5);
+	background-image: -o-linear-gradient(top, #00a1c9, #008bb5);
+}
+#comSocialConnectContainer .socialConnectLinkedInButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#008bb5), to(#00a1c9));
+	background-image: -webkit-linear-gradient(top, #008bb5, #00a1c9);
+	background-image: -moz-linear-gradient(top, #008bb5, #00a1c9);
+	background-image: -ms-linear-gradient(top, #008bb5, #00a1c9);
+	background-image: -o-linear-gradient(top, #008bb5, #00a1c9);
+}
+#comSocialConnectContainer .socialConnectLinkedInButton i {
+	background-image: url("../images/linkedin.png");
+	border-right: 1px solid #00698a;
+}
+/* GitHub Button */
+#comSocialConnectContainer .socialConnectGitHubButton {
+	border-color: #3877b5;
+	background-color: #336ba3;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3b9dff), to(#336ba3));
+	background-image: -webkit-linear-gradient(top, #3b9dff, #336ba3);
+	background-image: -moz-linear-gradient(top, #3b9dff, #336ba3);
+	background-image: -ms-linear-gradient(top, #3b9dff, #336ba3);
+	background-image: -o-linear-gradient(top, #3b9dff, #336ba3);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectGitHubButton:hover, #comSocialConnectContainer .socialConnectGitHubButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4da4fa), to(#3e83c8));
+	background-image: -webkit-linear-gradient(top, #4da4fa, #3e83c8);
+	background-image: -moz-linear-gradient(top, #4da4fa, #3e83c8);
+	background-image: -ms-linear-gradient(top, #4da4fa, #3e83c8);
+	background-image: -o-linear-gradient(top, #4da4fa, #3e83c8);
+}
+#comSocialConnectContainer .socialConnectGitHubButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3e83c8), to(#4da4fa));
+	background-image: -webkit-linear-gradient(top, #3e83c8, #4da4fa);
+	background-image: -moz-linear-gradient(top, #3e83c8, #4da4fa);
+	background-image: -ms-linear-gradient(top, #3e83c8, #4da4fa);
+	background-image: -o-linear-gradient(top, #3e83c8, #4da4fa);
+}
+#comSocialConnectContainer .socialConnectGitHubButton i {
+	background-image: url("../images/github.png");
+	border-right: 1px solid #3877b5;
+}
+/* WordPress Button */
+#comSocialConnectContainer .socialConnectWordPressButton {
+	border-color: #16658a;
+	background-color: #16678c;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2092c7), to(#16678c));
+	background-image: -webkit-linear-gradient(top, #2092c7, #16678c);
+	background-image: -moz-linear-gradient(top, #2092c7, #16678c);
+	background-image: -ms-linear-gradient(top, #2092c7, #16678c);
+	background-image: -o-linear-gradient(top, #2092c7, #16678c);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectWordPressButton:hover, #comSocialConnectContainer .socialConnectWordPressButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1f8ec2), to(#19749e));
+	background-image: -webkit-linear-gradient(top, #1f8ec2, #19749e);
+	background-image: -moz-linear-gradient(top, #1f8ec2, #19749e);
+	background-image: -ms-linear-gradient(top, #1f8ec2, #19749e);
+	background-image: -o-linear-gradient(top, #1f8ec2, #19749e);
+}
+#comSocialConnectContainer .socialConnectWordPressButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#19749e), to(#1f8ec2));
+	background-image: -webkit-linear-gradient(top, #19749e, #1f8ec2);
+	background-image: -moz-linear-gradient(top, #19749e, #1f8ec2);
+	background-image: -ms-linear-gradient(top, #19749e, #1f8ec2);
+	background-image: -o-linear-gradient(top, #19749e, #1f8ec2);
+}
+#comSocialConnectContainer .socialConnectWordPressButton i {
+	background-image: url("../images/wordpress.png");
+	border-right: 1px solid #16658a;
+}
+/* Windows Button */
+#comSocialConnectContainer .socialConnectWindowsLiveButton {
+	border-color: #008bc2;
+	background-color: #0090c9;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#27b9f2), to(#0090c9));
+	background-image: -webkit-linear-gradient(top, #27b9f2, #0090c9);
+	background-image: -moz-linear-gradient(top, #27b9f2, #0090c9);
+	background-image: -ms-linear-gradient(top, #27b9f2, #0090c9);
+	background-image: -o-linear-gradient(top, #27b9f2, #0090c9);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectWindowsLiveButton:hover, #comSocialConnectContainer .socialConnectWindowsLiveButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#28c2ff), to(#01adef));
+	background-image: -webkit-linear-gradient(top, #28c2ff, #01adef);
+	background-image: -moz-linear-gradient(top, #28c2ff, #01adef);
+	background-image: -ms-linear-gradient(top, #28c2ff, #01adef);
+	background-image: -o-linear-gradient(top, #28c2ff, #01adef);
+}
+#comSocialConnectContainer .socialConnectWindowsLiveButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#01adef), to(#28c2ff));
+	background-image: -webkit-linear-gradient(top, #01adef, #28c2ff);
+	background-image: -moz-linear-gradient(top, #01adef, #28c2ff);
+	background-image: -ms-linear-gradient(top, #01adef, #28c2ff);
+	background-image: -o-linear-gradient(top, #01adef, #28c2ff);
+}
+#comSocialConnectContainer .socialConnectWindowsLiveButton i {
+	background-image: url("../images/windows.png");
+	border-right: 1px solid #008bc2;
+}
+
+/* Instagram Button */
+#comSocialConnectContainer .socialConnectInstagramButton {
+	border-color: #466b8b;
+	background-color: #5280a5;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6aa4d1), to(#5280a5));
+	background-image: -webkit-linear-gradient(top, #6aa4d1, #5280a5);
+	background-image: -moz-linear-gradient(top, #6aa4d1, #5280a5);
+	background-image: -ms-linear-gradient(top, #6aa4d1, #5280a5);
+	background-image: -o-linear-gradient(top, #6aa4d1, #5280a5);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectInstagramButton:hover, #comSocialConnectContainer .socialConnectInstagramButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#76b8eb), to(#5f94bf));
+	background-image: -webkit-linear-gradient(top, #76b8eb, #5f94bf);
+	background-image: -moz-linear-gradient(top, #76b8eb, #5f94bf);
+	background-image: -ms-linear-gradient(top, #76b8eb, #5f94bf);
+	background-image: -o-linear-gradient(top, #76b8eb, #5f94bf);
+}
+#comSocialConnectContainer .socialConnectInstagramButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5f94bf), to(#76b8eb));
+	background-image: -webkit-linear-gradient(top, #5f94bf, #76b8eb);
+	background-image: -moz-linear-gradient(top, #5f94bf, #76b8eb);
+	background-image: -ms-linear-gradient(top, #5f94bf, #76b8eb);
+	background-image: -o-linear-gradient(top, #5f94bf, #76b8eb);
+}
+#comSocialConnectContainer .socialConnectInstagramButton i {
+	background-image: url("../images/instagram.png");
+	border-right: 1px solid #466b8b;
+}
+
+/* Foursquare Button */
+#comSocialConnectContainer .socialConnectFoursquareButton {
+	border-color: #057992;
+	background-color: #04b8df;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#02ccf5), to(#04b8df));
+	background-image: -webkit-linear-gradient(top, #02ccf5, #04b8df);
+	background-image: -moz-linear-gradient(top, #02ccf5, #04b8df);
+	background-image: -ms-linear-gradient(top, #02ccf5, #04b8df);
+	background-image: -o-linear-gradient(top, #02ccf5, #04b8df);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectFoursquareButton:hover, #comSocialConnectContainer .socialConnectFoursquareButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2cd9fd), to(#05c9f6));
+	background-image: -webkit-linear-gradient(top, #2cd9fd, #05c9f6);
+	background-image: -moz-linear-gradient(top, #2cd9fd, #05c9f6);
+	background-image: -ms-linear-gradient(top, #2cd9fd, #05c9f6);
+	background-image: -o-linear-gradient(top, #2cd9fd, #05c9f6);
+}
+#comSocialConnectContainer .socialConnectFoursquareButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#05c9f6), to(#2cd9fd));
+	background-image: -webkit-linear-gradient(top, #05c9f6, #2cd9fd);
+	background-image: -moz-linear-gradient(top, #05c9f6, #2cd9fd);
+	background-image: -ms-linear-gradient(top, #05c9f6, #2cd9fd);
+	background-image: -o-linear-gradient(top, #05c9f6, #2cd9fd);
+}
+#comSocialConnectContainer .socialConnectFoursquareButton i {
+	background-image: url("../images/foursquare.png");
+	border-right: 1px solid #057992;
+}
+
+/* Amazon Button */
+#comSocialConnectContainer .socialConnectAmazonButton {
+	border-color: #b16b08;
+	background-color: #fd9904;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcba2b), to(#fd9904));
+	background-image: -webkit-linear-gradient(top, #fcba2b, #fd9904);
+	background-image: -moz-linear-gradient(top, #fcba2b, #fd9904);
+	background-image: -ms-linear-gradient(top, #fcba2b, #fd9904);
+	background-image: -o-linear-gradient(top, #fcba2b, #fd9904);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectAmazonButton:hover, #comSocialConnectContainer .socialConnectAmazonButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fac755), to(#fdb407));
+	background-image: -webkit-linear-gradient(top, #fac755, #fdb407);
+	background-image: -moz-linear-gradient(top, #fac755, #fdb407);
+	background-image: -ms-linear-gradient(top, #fac755, #fdb407);
+	background-image: -o-linear-gradient(top, #fac755, #fdb407);
+}
+#comSocialConnectContainer .socialConnectAmazonButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fdb407), to(#fac755));
+	background-image: -webkit-linear-gradient(top, #fdb407, #fac755);
+	background-image: -moz-linear-gradient(top, #fdb407, #fac755);
+	background-image: -ms-linear-gradient(top, #fdb407, #fac755);
+	background-image: -o-linear-gradient(top, #fdb407, #fac755);
+}
+#comSocialConnectContainer .socialConnectAmazonButton i {
+	background-image: url("../images/amazon.png");
+	border-right: 1px solid #b16b08;
+}
+
+/* Disqus Button */
+#comSocialConnectContainer .socialConnectDisqusButton {
+	border-color: #245271;
+	background-color: #1c7cce;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2499f9), to(#1c7cce));
+	background-image: -webkit-linear-gradient(top, #2499f9, #1c7cce);
+	background-image: -moz-linear-gradient(top, #2499f9, #1c7cce);
+	background-image: -ms-linear-gradient(top, #2499f9, #1c7cce);
+	background-image: -o-linear-gradient(top, #2499f9, #1c7cce);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectDisqusButton:hover, #comSocialConnectContainer .socialConnectDisqusButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#44a7f8), to(#218ae7));
+	background-image: -webkit-linear-gradient(top, #44a7f8, #218ae7);
+	background-image: -moz-linear-gradient(top, #44a7f8, #218ae7);
+	background-image: -ms-linear-gradient(top, #44a7f8, #218ae7);
+	background-image: -o-linear-gradient(top, #44a7f8, #218ae7);
+}
+#comSocialConnectContainer .socialConnectDisqusButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#218ae7), to(#44a7f8));
+	background-image: -webkit-linear-gradient(top, #218ae7, #44a7f8);
+	background-image: -moz-linear-gradient(top, #218ae7, #44a7f8);
+	background-image: -ms-linear-gradient(top, #218ae7, #44a7f8);
+	background-image: -o-linear-gradient(top, #218ae7, #44a7f8);
+}
+#comSocialConnectContainer .socialConnectDisqusButton i {
+	background-image: url("../images/disqus.png");
+	border-right: 1px solid #245271;
+}
+
+/* StackExchange Button */
+#comSocialConnectContainer .socialConnectStackExchangeButton {
+	border-color: #1b5198;
+	background-color: #1b5299;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4397d2), to(#1b5299));
+	background-image: -webkit-linear-gradient(top, #4397d2, #1b5299);
+	background-image: -moz-linear-gradient(top, #4397d2, #1b5299);
+	background-image: -ms-linear-gradient(top, #4397d2, #1b5299);
+	background-image: -o-linear-gradient(top, #4397d2, #1b5299);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectStackExchangeButton:hover, #comSocialConnectContainer .socialConnectStackExchangeButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4aa9ec), to(#1e5eb0));
+	background-image: -webkit-linear-gradient(top, #4aa9ec, #1e5eb0);
+	background-image: -moz-linear-gradient(top, #4aa9ec, #1e5eb0);
+	background-image: -ms-linear-gradient(top, #4aa9ec, #1e5eb0);
+	background-image: -o-linear-gradient(top, #4aa9ec, #1e5eb0);
+}
+#comSocialConnectContainer .socialConnectStackExchangeButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1e5eb0), to(#4aa9ec));
+	background-image: -webkit-linear-gradient(top, #1e5eb0, #4aa9ec);
+	background-image: -moz-linear-gradient(top, #1e5eb0, #4aa9ec);
+	background-image: -ms-linear-gradient(top, #1e5eb0, #4aa9ec);
+	background-image: -o-linear-gradient(top, #1e5eb0, #4aa9ec);
+}
+#comSocialConnectContainer .socialConnectStackExchangeButton i {
+	background-image: url("../images/stackexchange.png");
+	border-right: 1px solid #1b5198;
+}
+
+/* Tumblr Button */
+#comSocialConnectContainer .socialConnectTumblrButton {
+	border-color: #2f3c50;
+	background-color: #36465d;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#445874), to(#36465d));
+	background-image: -webkit-linear-gradient(top, #445874, #36465d);
+	background-image: -moz-linear-gradient(top, #445874, #36465d);
+	background-image: -ms-linear-gradient(top, #445874, #36465d);
+	background-image: -o-linear-gradient(top, #445874, #36465d);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectTumblrButton:hover, #comSocialConnectContainer .socialConnectTumblrButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5c779e), to(#36465d));
+	background-image: -webkit-linear-gradient(top, #5c779e, #36465d);
+	background-image: -moz-linear-gradient(top, #5c779e, #36465d);
+	background-image: -ms-linear-gradient(top, #5c779e, #36465d);
+	background-image: -o-linear-gradient(top, #5c779e, #36465d);
+}
+#comSocialConnectContainer .socialConnectTumblrButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#445874), to(#36465d));
+	background-image: -webkit-linear-gradient(top, #445874, #36465d);
+	background-image: -moz-linear-gradient(top, #445874, #36465d);
+	background-image: -ms-linear-gradient(top, #445874, #36465d);
+	background-image: -o-linear-gradient(top, #445874, #36465d);
+}
+#comSocialConnectContainer .socialConnectTumblrButton i {
+	background-image: url("../images/tumblr.png");
+	border-right: 1px solid #2f3c50;
+}
+
+/* SoundCloud Button */
+#comSocialConnectContainer .socialConnectSoundCloudButton {
+	border-color: #e02e02;
+	background-color: #f30;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f70), to(#f30));
+	background-image: -webkit-linear-gradient(top, #f70, #f30);
+	background-image: -moz-linear-gradient(top, #f70, #f30);
+	background-image: -ms-linear-gradient(top, #f70, #f30);
+	background-image: -o-linear-gradient(top, #f70, #f30);
+	box-shadow: 0 1px 0 0 rgba(255,255,255,0.3) inset;
+}
+#comSocialConnectContainer .socialConnectSoundCloudButton:hover, #comSocialConnectContainer .socialConnectSoundCloudButton:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff973c), to(#f30));
+	background-image: -webkit-linear-gradient(top, #ff973c, #f30);
+	background-image: -moz-linear-gradient(top, #ff973c, #f30);
+	background-image: -ms-linear-gradient(top, #ff973c, #f30);
+	background-image: -o-linear-gradient(top, #ff973c, #f30);
+}
+#comSocialConnectContainer .socialConnectSoundCloudButton:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f30), to(#f70));
+	background-image: -webkit-linear-gradient(top, #f30, #f70);
+	background-image: -moz-linear-gradient(top, #f30, #f70);
+	background-image: -ms-linear-gradient(top, #f30, #f70);
+	background-image: -o-linear-gradient(top, #f30, #f70);
+}
+#comSocialConnectContainer .socialConnectSoundCloudButton i {
+	background-image: url("../images/soundcloud.png");
+	border-right: 1px solid #e02e02;
+}
+
+#comSocialConnectContainer #socialConnectEmailFormSubmitButton span {
+	padding-right: 0;
+}
+/* Authenticated user */
+#comSocialConnectContainer .socialConnectUserInfo {
+	float: left;
+	width: 50%;
+	margin: 0 3% 0 0;
+}
+#comSocialConnectContainer .socialConnectUserMenu {
+	display: block;
+	float: left;
+	width: 45%;
+}
+#comSocialConnectContainer img.socialConnectAvatar {
+	width: 80px;
+	height: 80px;
+	float: left;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	margin: 0 15px 13px 0;
+}
+#comSocialConnectContainer .socialConnectGreeting {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+}
+#comSocialConnectContainer .socialConnectUsername {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+}
+#comSocialConnectContainer .socialConnectSignOutButton {
+	width: 142px;
+	color: #333333;
+	border-color: #BDBDBD;
+	margin: 0;
+	background-color: #e9e9e9;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cccccc));
+	background-image: -webkit-linear-gradient(top, #ffffff, #cccccc);
+	background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
+	background-image: -ms-linear-gradient(top, #ffffff, #cccccc);
+	background-image: -o-linear-gradient(top, #ffffff, #cccccc);
+	text-shadow: 0 1px 0 #ffffff;
+}
+#comSocialConnectContainer .socialConnectSignOutButton:hover, #comSocialConnectContainer .socialConnectSignOutButton:focus {
+	color: #333333;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#e9e9e9));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e9e9e9);
+	background-image: -moz-linear-gradient(top, #ffffff, #e9e9e9);
+	background-image: -ms-linear-gradient(top, #ffffff, #e9e9e9);
+	background-image: -o-linear-gradient(top, #ffffff, #e9e9e9);
+}
+#comSocialConnectContainer .socialConnectSignOutButton:active {
+	color: #333333;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e9e9e9), to(#ffffff));
+	background-image: -webkit-linear-gradient(top, #e9e9e9, #ffffff);
+	background-image: -moz-linear-gradient(top, #e9e9e9, #ffffff);
+	background-image: -ms-linear-gradient(top, #e9e9e9, #ffffff);
+	background-image: -o-linear-gradient(top, #e9e9e9, #ffffff);
+}
+#comSocialConnectContainer .socialConnectSignOutButton i {
+	border-right-color: #BDBDBD;
+	background-image: url('../images/signout.png');
+}
+#comSocialConnectContainer ul.socialConnectUserMenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #BDBDBD;
+	border-radius: 4px;
+	border-bottom: none;
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li {
+	border-bottom: 1px solid #BDBDBD;
+}
+#comSocialConnectContainer ul.socialConnectUserMenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li ul li {
+	border: none;
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li ul li a {
+	font-weight: normal;
+	background: url('../images/link-deeper.png') 40px center no-repeat;
+	padding-left: 50px;
+}
+#comSocialConnectContainer .socialConnectAccountLink, #comSocialConnectContainer ul.socialConnectUserMenu li a {
+	display: block;
+	width: auto;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li a {
+	background-image: url('../images/link.png');
+}
+#comSocialConnectContainer .socialConnectAccountLink {
+	display: inline-block;
+	padding-left: 28px;
+	background-image: url('../images/account.png');
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li a.socialConnectAddLink {
+	background-image: url('../images/add.png');
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li a.socialConnectUserLink {
+	background-image: url('../images/mypage.png');
+}
+#comSocialConnectContainer ul.socialConnectUserMenu li a.socialConnectCommentsLink {
+	background-image: url('../images/comments.png');
+}
+/* Clear Fix */
+#comSocialConnectContainer .socialConnectClearFix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+body.scIsIE6 #comSocialConnectContainer .socialConnectClearFix {
+	height: 1%;
+}
+body.scIsIE7 #comSocialConnectContainer .socialConnectClearFix {
+	display: inline-block;
+}
+#comSocialConnectContainer .socialConnectColumn {
+	margin-bottom: 3%;
+}
+#comSocialConnectContainer .socialConnectIntroMessage {
+	margin-bottom: 5%;
+}
+@media screen and (min-width: 767px) {
+	/* Template specific styles */
+	#comSocialConnectContainer .socialConnectIntroMessage {
+		width: 25%;
+		float: left;
+		margin-right: 5%;
+	}
+	#comSocialConnectContainer .socialConnectSignInBlock {
+		width: 70%;
+		float: left;
+	}
+	#comSocialConnectContainer .socialConnectColumn {
+		float: left;
+		width: 45%;
+		padding: 0;
+		margin: 0 5% 0 0;
+		border: none;
+	}
+	#comSocialConnectContainer .socialConnectRegistrationInnerBlock {
+		float: left;
+		width: 27%;
+		margin-right: 3%;
+	}
+	#comSocialConnectContainer .socialConnectRegistrationMessage {
+		float: left;
+		width: 65%;
+	}
+}
+#comSocialConnectContainer .socialConnectRegistrationMessage {
+	margin-top: 5%;
+}
+#comSocialConnectContainer .socialConnectSignInMessage {
+	margin-bottom: 30px
+}
+#comSocialConnectContainer .socialConnectRow {
+	margin: 22px 0;
+}
+#comSocialConnectContainer .socialConnectInput {
+	width: 80%;
+	margin-top: 8px;
+	margin-bottom: 6px;
+}
+#comSocialConnectRemember {
+	margin: 0;
+}
+#comSocialConnectContainer .socialConnectServiceButton {
+	float: left;
+	margin: 0 13px 15px 0;
+}
+#comSocialConnectContainer .socialConnectRegistrationBlock {
+	margin: 13px 0 0 0;
+}
+#comSocialConnectRemember {
+	margin: 0;
+}

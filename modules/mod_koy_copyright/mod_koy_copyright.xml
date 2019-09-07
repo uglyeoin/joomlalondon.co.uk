@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+	<name>Copyright</name>
+	<creationDate>20/06/2018</creationDate>
+	<author>Mary McGinty</author>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<copyright>Kind of Useful</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.2.1</version>
+	<description>MOD_KOY_COPYRIGHT_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_koy_copyright">mod_koy_copyright.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>mod_koy_copyright.xml</filename>
+	</files>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="mod_koy_copyright">https://www.kindofuseful.com/mod_koy_copyright.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="startDate"
+					type="text"
+					label="MOD_KOY_COPYRIGHT_STARTDATE_LABEL"
+					description="MOD_KOY_COPYRIGHT_STARTDATE_DESCRIPTION"
+				/>
+				<field
+						name="siteName"
+						type="text"
+						label="MOD_KOY_COPYRIGHT_SITENAME_LABEL"
+						description="MOD_KOY_COPYRIGHT_SITENAME_DESCRIPTION"
+				/>
+			</fieldset>
+			<fieldset
+					name="advanced">
+				<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,203 @@
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1437307913
+children:
+  -
+    id: d1c35869-9f6d-d4ba-61e0-f41e8e4f6a2c
+    type: section
+    subtype: false
+    title: Header
+    attributes:
+      boxed: 0
+    children: {  }
+  -
+    id: 7d1c53a8-f60a-9cf1-76d1-2524a81f61ea
+    type: section
+    subtype: false
+    title: Navigation
+    attributes:
+      boxed: 0
+    children: {  }
+  -
+    id: f3af9447-008e-2185-bcaf-be0516d13f0e
+    type: section
+    subtype: false
+    title: Main
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 9124cf54-6ab2-1401-a5d8-e2e3e206d9a5
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 7be401c3-dcb0-d594-39fd-bb1bfb856181
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: b8189e5f-19cd-426f-be52-47322fc2145a
+                type: pagecontent
+                subtype: system-messages
+                title: 'System Messages'
+                attributes:
+                  enabled: 1
+                children: {  }
+      -
+        id: 9b309217-c226-4d22-a0e3-7d783b8afae6
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f60b79b2-4d93-44fd-99a6-eb32687585e9
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              extra: {  }
+            children:
+              -
+                id: 437090fe-0ba3-4ded-bedf-41b61fdca938
+                type: particle
+                subtype: custom
+                title: 'Custom HTML'
+                attributes:
+                  enabled: 1
+                  html: "<div class=\"demo-4\">\n    <div class=\"container\">\n        <div class=\"content\">\n            <!-- trianglify pattern container -->\n            <div class=\"pattern pattern--hidden\"></div>\n            <!-- cards -->\n            <div class=\"wrapper\">\n                <div class=\"card\">\n                    <div class=\"card__container card__container--closed\">\n                        <svg class=\"card__image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1920 1200\" preserveAspectRatio=\"xMidYMid slice\">\n                            <defs>\n                                <clipPath id=\"clipPath1\">\n                                    <polygon class=\"clip\" points=\"0,1200 0,0 1920,0 1920,1200\"></polygon>\n                                </clipPath>\n                            </defs>\n                            <image clip-path=\"url(#clipPath1)\" width=\"1920\" height=\"1200\" xlink:href=\"http://tympanus.net/Development/CardExpansion/img/g.jpg\"></image>\n                        </svg>\n                        <div class=\"card__content\">\n\t\t\t\t\t\t\t<i class=\"card__btn-close fa fa-times\"></i>\n\t\t\t\t\t\t\t<div class=\"card__caption\">\n\t\t\t\t\t\t\t\t<h2 class=\"card__title\">Tristan and Isolde</h2>\n\t\t\t\t\t\t\t\t<p class=\"card__subtitle\">A modern day love story</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card__copy\">\n\t\t\t\t\t\t\t\t<div class=\"meta\">\n\t\t\t\t\t\t\t\t\t<img class=\"meta__avatar\" src=\"http://tympanus.net/Development/CardExpansion/img/authors/1.png\" alt=\"author01\" />\n\t\t\t\t\t\t\t\t\t<span class=\"meta__author\">Gerry Sutherland</span>\n\t\t\t\t\t\t\t\t\t<span class=\"meta__date\">06/19/2015</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>\n\t\t\t\t\t\t\t\t<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>\n\t\t\t\t\t\t\t\t<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>\n\t\t\t\t\t\t\t\t<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>\n\t\t\t\t\t\t\t\t<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>\n\t\t\t\t\t\t\t\t<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                </div>\n                <div class=\"card\">\n                    <div class=\"card__container card__container--closed\">\n                        <svg class=\"card__image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1920 1200\" preserveAspectRatio=\"xMidYMid slice\">\n                            <defs>\n                                <clipPath id=\"clipPath2\">\n                                    <polygon class=\"clip\" points=\"0,1200 0,0 1920,0 1920,1200\"></polygon>\n                                </clipPath>\n                            </defs>\n                            <image clip-path=\"url(#clipPath2)\" width=\"1920\" height=\"1200\" xlink:href=\"http://tympanus.net/Development/CardExpansion/img/h.jpg\"></image>\n                        </svg>\n                        <div class=\"card__content\">\n\t\t\t\t\t\t\t<i class=\"card__btn-close fa fa-times\"></i>\n\t\t\t\t\t\t\t<div class=\"card__caption\">\n\t\t\t\t\t\t\t\t<h2 class=\"card__title\">About Helen</h2>\n\t\t\t\t\t\t\t\t<p class=\"card__subtitle\">A story about a woman</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card__copy\">\n\t\t\t\t\t\t\t\t<div class=\"meta\">\n\t\t\t\t\t\t\t\t\t<img class=\"meta__avatar\" src=\"http://tympanus.net/Development/CardExpansion/img/authors/2.png\" alt=\"author02\" />\n\t\t\t\t\t\t\t\t\t<span class=\"meta__author\">Frank Posterius</span>\n\t\t\t\t\t\t\t\t\t<span class=\"meta__date\">06/16/2015</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>\n\t\t\t\t\t\t\t\t<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>\n\t\t\t\t\t\t\t\t<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>\n\t\t\t\t\t\t\t\t<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>\n\t\t\t\t\t\t\t\t<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>\n\t\t\t\t\t\t\t\t<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                </div>\n                <div class=\"card\">\n                    <div class=\"card__container card__container--closed\">\n                        <svg class=\"card__image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1920 1200\" preserveAspectRatio=\"xMidYMid slice\">\n                            <defs>\n                                <clipPath id=\"clipPath3\">\n                                    <polygon class=\"clip\" points=\"0,1200 0,0 1920,0 1920,1200\"></polygon>\n                                </clipPath>\n                            </defs>\n                            <image clip-path=\"url(#clipPath3)\" width=\"1920\" height=\"1200\" xlink:href=\"http://tympanus.net/Development/CardExpansion/img/i.jpg\"></image>\n                        </svg>\n                        <div class=\"card__content\">\n\t\t\t\t\t\t\t<i class=\"card__btn-close fa fa-times\"></i>\n\t\t\t\t\t\t\t<div class=\"card__caption\">\n\t\t\t\t\t\t\t\t<h2 class=\"card__title\">A mild winter</h2>\n\t\t\t\t\t\t\t\t<p class=\"card__subtitle\">Helen's view on wells</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card__copy\">\n\t\t\t\t\t\t\t\t<div class=\"meta\">\n\t\t\t\t\t\t\t\t\t<img class=\"meta__avatar\" src=\"http://tympanus.net/Development/CardExpansion/img/authors/3.png\" alt=\"author03\" />\n\t\t\t\t\t\t\t\t\t<span class=\"meta__author\">Sarah Lester</span>\n\t\t\t\t\t\t\t\t\t<span class=\"meta__date\">06/16/2015</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>\n\t\t\t\t\t\t\t\t<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>\n\t\t\t\t\t\t\t\t<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>\n\t\t\t\t\t\t\t\t<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>\n\t\t\t\t\t\t\t\t<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>\n\t\t\t\t\t\t\t\t<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                </div>\n                <div class=\"card\">\n                    <div class=\"card__container card__container--closed\">\n                        <svg class=\"card__image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1920 1200\" preserveAspectRatio=\"xMidYMid slice\">\n                            <defs>\n                                <clipPath id=\"clipPath4\">\n                                    <polygon class=\"clip\" points=\"0,1200 0,0 1920,0 1920,1200\"></polygon>\n                                </clipPath>\n                            </defs>\n                            <image clip-path=\"url(#clipPath4)\" width=\"1920\" height=\"1200\" xlink:href=\"http://tympanus.net/Development/CardExpansion/img/l.jpg\"></image>\n                        </svg>\n                        <div class=\"card__content\">\n\t\t\t\t\t\t\t<i class=\"card__btn-close fa fa-times\"></i>\n\t\t\t\t\t\t\t<div class=\"card__caption\">\n\t\t\t\t\t\t\t\t<h2 class=\"card__title\">Food sources</h2>\n\t\t\t\t\t\t\t\t<p class=\"card__subtitle\">What will we eat in 30 years?</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card__copy\">\n\t\t\t\t\t\t\t\t<div class=\"meta\">\n\t\t\t\t\t\t\t\t\t<img class=\"meta__avatar\" src=\"http://tympanus.net/Development/CardExpansion/img/authors/4.png\" alt=\"author04\" />\n\t\t\t\t\t\t\t\t\t<span class=\"meta__author\">Lena Bestofos</span>\n\t\t\t\t\t\t\t\t\t<span class=\"meta__date\">06/14/2015</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>\n\t\t\t\t\t\t\t\t<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>\n\t\t\t\t\t\t\t\t<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>\n\t\t\t\t\t\t\t\t<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>\n\t\t\t\t\t\t\t\t<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>\n\t\t\t\t\t\t\t\t<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                </div>\n                <div class=\"card\">\n                    <div class=\"card__container card__container--closed\">\n                        <svg class=\"card__image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1920 1200\" preserveAspectRatio=\"xMidYMid slice\">\n                            <defs>\n                                <clipPath id=\"clipPath5\">\n                                    <polygon class=\"clip\" points=\"0,1200 0,0 1920,0 1920,1200\"></polygon>\n                                </clipPath>\n                            </defs>\n                            <image clip-path=\"url(#clipPath5)\" width=\"1920\" height=\"1200\" xlink:href=\"http://tympanus.net/Development/CardExpansion/img/m.jpg\"></image>\n                        </svg>\n                        <div class=\"card__content\">\n\t\t\t\t\t\t\t<i class=\"card__btn-close fa fa-times\"></i>\n\t\t\t\t\t\t\t<div class=\"card__caption\">\n\t\t\t\t\t\t\t\t<h2 class=\"card__title\">Swimming in the ocean</h2>\n\t\t\t\t\t\t\t\t<p class=\"card__subtitle\">A Makrel's story</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card__copy\">\n\t\t\t\t\t\t\t\t<div class=\"meta\">\n\t\t\t\t\t\t\t\t\t<img class=\"meta__avatar\" src=\"http://tympanus.net/Development/CardExpansion/img/authors/5.png\" alt=\"author05\" />\n\t\t\t\t\t\t\t\t\t<span class=\"meta__author\">Michaela Walters</span>\n\t\t\t\t\t\t\t\t\t<span class=\"meta__date\">06/11/2015</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>\n\t\t\t\t\t\t\t\t<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>\n\t\t\t\t\t\t\t\t<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>\n\t\t\t\t\t\t\t\t<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>\n\t\t\t\t\t\t\t\t<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>\n\t\t\t\t\t\t\t\t<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                </div>\n                <div class=\"card\">\n                    <div class=\"card__container card__container--closed\">\n                        <svg class=\"card__image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1920 1200\" preserveAspectRatio=\"xMidYMid slice\">\n                            <defs>\n                                <clipPath id=\"clipPath6\">\n                                    <polygon class=\"clip\" points=\"0,1200 0,0 1920,0 1920,1200\"></polygon>\n                                </clipPath>\n                            </defs>\n                            <image clip-path=\"url(#clipPath6)\" width=\"1920\" height=\"1200\" xlink:href=\"http://tympanus.net/Development/CardExpansion/img/n.jpg\"></image>\n                        </svg>\n                        <div class=\"card__content\">\n\t\t\t\t\t\t\t<i class=\"card__btn-close fa fa-times\"></i>\n\t\t\t\t\t\t\t<div class=\"card__caption\">\n\t\t\t\t\t\t\t\t<h2 class=\"card__title\">Freedom Fighters</h2>\n\t\t\t\t\t\t\t\t<p class=\"card__subtitle\">When it's too hot to think</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card__copy\">\n\t\t\t\t\t\t\t\t<div class=\"meta\">\n\t\t\t\t\t\t\t\t\t<img class=\"meta__avatar\" src=\"http://tympanus.net/Development/CardExpansion/img/authors/6.png\" alt=\"author06\" />\n\t\t\t\t\t\t\t\t\t<span class=\"meta__author\">Tom Goldman</span>\n\t\t\t\t\t\t\t\t\t<span class=\"meta__date\">06/10/2015</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>\n\t\t\t\t\t\t\t\t<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>\n\t\t\t\t\t\t\t\t<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>\n\t\t\t\t\t\t\t\t<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>\n\t\t\t\t\t\t\t\t<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>\n\t\t\t\t\t\t\t\t<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                </div>\n            </div>\n            <!-- /cards -->\n        </div>\n    </div>\n</div>    \n"
+                children: {  }
+  -
+    id: 9147b6fb-1581-0b4d-3dc4-aeb2265b3ecd
+    type: section
+    subtype: false
+    title: Footer
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: c6f50ef1-3507-b142-ac15-aa91f66407eb
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 2a35de2d-3180-b2f4-5f77-01a588dbd184
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 40
+            children:
+              -
+                id: 111e2508-78a5-e2e3-9048-a859309dbb5d
+                type: particle
+                subtype: copyright
+                title: Copyright
+                attributes:
+                  enabled: 1
+                children: {  }
+          -
+            id: e48f8c55-8423-efc5-a2f2-10918dc60ef4
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 30
+            children:
+              -
+                id: 5b7ca579-ce9e-ab98-dc9d-87918959548a
+                type: spacer
+                subtype: false
+                title: Spacer
+                attributes:
+                  enabled: 1
+                children: {  }
+          -
+            id: 0c5371e6-3b42-8bbe-6547-dafb578447c2
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 30
+            children:
+              -
+                id: 3ee7496e-891b-1946-217e-e6577727ca47
+                type: particle
+                subtype: branding
+                title: Branding
+                attributes:
+                  enabled: 1
+                children: {  }
+  -
+    id: 250b4765-a60c-a1f9-5cbc-361de9e8379e
+    type: offcanvas
+    subtype: false
+    title: Offcanvas
+    attributes:
+      name: 'Offcanvas Section'
+      boxed: 0
+    children:
+      -
+        id: f1109f09-7b59-1670-99e5-625b9d57d39d
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: e8b46c1e-7971-009b-6e4f-615e750b5efe
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: e37bdba9-6d96-63ea-29d7-4f3646ac07f2
+                type: particle
+                subtype: mobile-menu
+                title: Mobile-menu
+                attributes:
+                  enabled: 1
+                children: {  }
+  -
+    id: d62a36fe-eae5-df20-b0f3-19dd591e7ba0
+    type: atoms
+    subtype: false
+    title: Atoms
+    attributes:
+      name: 'Atoms Section'
+      boxed: 0
+    children:
+      -
+        id: 02c9dea4-73fb-4281-b43b-982ea030e515
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 7ecc9387-4445-4564-9a3c-8b3b7090a68a
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: b7fd59ef-ac80-4c19-b688-45493905b4e8
+                type: atom
+                subtype: assets
+                title: 'Custom CSS / JS'
+                attributes: {  }
+                children: {  }

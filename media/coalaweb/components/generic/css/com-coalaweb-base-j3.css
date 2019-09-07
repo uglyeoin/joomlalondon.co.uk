@@ -1,0 +1,807 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2015 Steven Palmer All rights reserved.
+*/
+
+/* Header icons 
+------------------------------------------------------------------------------*/
+.icon-48-cw-cpanel {background-image: url('../images/icons/icon-48-cw-cpanel.png');}
+
+
+/* Search Box 
+------------------------------------------------------------------------------*/
+.cw-filter-search {
+    margin-right:5px;
+    background:white;
+    border:1px solid #CCC;
+    padding:5px;
+    font-size: 1.3em;
+    margin-top: 8px;
+}
+
+/* Powered By Styling
+------------------------------------------------------------------------------*/
+span.cw-powerby-back {
+    padding:5px;
+}
+
+div.cw-powerby-back a:link, div.cw-powerbyfront a:visited { text-decoration: none;}
+div.cw-powerby-back a:hover { text-decoration: none;}
+
+.cw-powerby-back {
+    width: 100%;
+    display: block;
+    clear: both;
+    text-align: center;
+}
+/* END Powered By
+------------------------------------------------------------------------------*/
+
+/* Slider and Options styling Admin Minimum 
+------------------------------------------------------------------------------*/
+::-moz-selection { background: #fec23d; color: #fff }
+
+::selection { background: #fec23d; color: #fff }
+
+
+#jform-params-tabs-data-lbl,
+
+#jform-params---field1-lbl,
+
+#invisible { display: none; }
+
+.unit { line-height:34px; }
+
+togglers 
+
+.pane-sliders .panel { 
+    border: none !important;
+    margin-right:10px !important;
+}
+
+#tabs {
+    margin-top:-4px!important;
+}
+
+.panel > h3 { 
+    height: 43px; 
+    background: transparent url('../images/icons/cw-panel-bg.png') repeat-x 0 0 !important; 
+    border: 1px solid #d8d8d8; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    font: bold 12px/43px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    margin:2px;
+    overflow: hidden;
+}
+
+.panel > h3 a { color: #333; text-shadow: 0 1px 1px #fff; }
+
+.panel > h3 a:hover,
+
+.panel h3.pane-toggler-down a { color: #1272A5 }
+
+.panel h3.pane-toggler-down { border-bottom: 4px solid #1272A5 !important }
+
+.pane-toggler span { 
+    background: transparent url('../images/icons/cw-panel-arrow.png') no-repeat 7px 50% !important;
+    padding-left: 20px;
+}
+
+.pane-toggler-down span { 
+    background: transparent url('../images/icons/cw-panel-arrow-down.png') no-repeat 7px 50% !important;
+    padding-left: 20px;
+}
+
+.pane-sliders .content { 
+    margin: 4px auto; 
+    width: 99%; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+}
+
+.panel fieldset.panelform > ul > li > label { 
+    color: #444; 
+    font-size: 11px; 
+    font-weight: bold; 
+    height: 24px; 
+    padding: 0 20px 0 10px; 
+    text-align: right; 
+    max-width: 30%!important; 
+    min-width: 30%!important; 
+}
+
+input.readonly {
+    padding:0px !important;
+    color: rgb(18, 114, 165) !important;
+}
+
+.pane-sliders .panel {
+    border: medium none !important;
+}
+/* END Admin Minimum 
+------------------------------------------------------------------------------*/
+
+/* Admin Config Style
+------------------------------------------------------------------------------*/
+.current label, div.current span.faux-label{ 
+    color: #444; 
+    font-size: 11px; 
+    font-weight: bold; 
+    padding: 0 20px 0 10px; 
+    text-align: right; 
+}
+
+.current fieldset.radio label { text-align: left; }
+
+.current select {
+    height: auto; 
+    color: #555; 
+    line-height: 24px; 
+    padding: 4px; 
+    font-size:11px; 
+    border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+}
+
+.current input { 
+    height: 16px; 
+    color: #555; 
+    line-height: 16px; 
+    padding: 4px;  
+}
+.spacer label {
+    color: #1272A5;
+    font: bold 14px/30px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* Permissions */
+ul#rules table.group-rules td label {
+    min-width: 0!important;
+}
+/* END Admin Config
+------------------------------------------------------------------------------*/
+
+/* Header Custom Field
+------------------------------------------------------------------------------*/
+.cwclr { 
+    clear:both; 
+    height:0; 
+    line-height:0; 
+    border:none; 
+    float:none; 
+    background:none; 
+    padding:0; 
+    margin:0; 
+}
+.paramHeaderContainer { 
+    clear:both; 
+    padding:0px; 
+    font-weight: normal; 
+    border-bottom: 4px solid #1272A5 !important;
+/*    width:100%; */
+    margin: 2px 0 2px -180px;
+    font: bold 14px/30px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+}
+.paramHeaderContent { 
+    color:#1272A5;
+    text-shadow: 0 1px 1px #FFFFFF;
+    padding:2px 2px 2px 15px; }
+
+/* END Header Custom 
+------------------------------------------------------------------------------*/
+
+/* Slider Content Styling
+------------------------------------------------------------------------------*/
+.cw-slider { 
+    padding: 10px; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:13px !important; 
+    font-weight: normal !important; 
+    color: #4d4d4d; 
+    /*    text-align: justify;*/
+}
+
+.cw-slider h1 { 
+    clear:both; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:34px; 
+    margin:10px 15px; 
+    padding:0px 0px 5px 0px; 
+    color:#333; 
+    font-weight: normal;
+    line-height: 30px;
+    background:none !important;
+}
+
+.cw-slider h3 { 
+    clear:both; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:22px; 
+    margin:10px 15px; 
+    padding:0px; 
+    color:#333;  
+    font-weight: normal;
+    background:none !important;
+}
+.cw-slider h4 {
+    font: bold 14px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    color: #1272A5;
+    margin:10px 15px; 
+    padding:0px; 
+    background:none !important;
+}
+
+.cw-slider p { margin: 10px 20px }
+
+.cw-slider p a, .cw-slider ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+.cw-slider p a:hover, .cw-slider ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+.cw-slider p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border-bottom: 1px solid #D2DCE1;
+    border-top: 1px solid #D2DCE1; 
+    padding: 10px;
+}
+
+.cw-slider p.forum a, .cw-slider p.forum em { color:#CE6A23; }
+.cw-slider p.forum a:hover {color:#E2AB53;}
+.cw-slider p.forum {
+    background: url("../images/icons/cw-forum.png") no-repeat scroll 0 0  #FFFAE6; 
+    border-bottom: 1px solid #FAE6BE;
+    border-top: 1px solid #FAE6BE; 
+    padding: 10px;
+}
+
+.cw-slider p.vote a, .cw-slider p.vote em { color:#268413; }
+.cw-slider p.vote a:hover {color:#b0bf7f;}
+.cw-slider p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border-bottom: 1px solid #DCE6BE;
+    border-top: 1px solid #DCE6BE; 
+    padding: 10px;
+}
+
+.cw-slider p.donate a, .cw-slider p.donate em { color:#A05A2C; }
+.cw-slider p.donate a:hover {color:#D38D5F;}
+.cw-slider p.donate {
+    background: url("../images/icons/cw-coffee.png") no-repeat scroll 0 0 #F6ECE6; 
+    border-bottom: 1px solid #EDD7C9;
+    border-top: 1px solid #EDD7C9;
+    padding: 10px;
+}
+
+.cw-slider p.info, .cw-slider p.forum, .cw-slider p.vote, .cw-slider p.donate {
+    padding-left:40px;
+    line-height: 18px; 
+    margin: 15px 20px; 
+}
+
+.cw-slider p a:hover, .cw-slider ul a:hover  {
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+.cw-slider ul li {
+    margin-left:10px;
+    background: transparent url('../images/icons/cw-panel-arrow.png') no-repeat 5px 50% !important;
+    padding-left:20px;
+    list-style: none outside none;
+}
+
+.cw-slider em, .cw-slider strong {
+    color:#1272A5;
+    font-weight: bold;
+}
+
+/* END Slider
+------------------------------------------------------------------------------*/
+
+/* Cpanel Icon Styling 
+------------------------------------------------------------------------------*/
+
+#cpanel img, .cpanel img {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.cpanel div.icon, #cpanel div.icon {
+    float: left;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+.cpanel div.icon a, #cpanel div.icon a {
+    background-color: white;
+    background-position: -30px center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1) inset, 5px 5px 10px rgba(0, 0, 0, 0.05) inset;
+    display: block;
+    float: left;
+    height: 97px;
+    padding: 5px;
+    text-decoration: none;
+    transition-property: none;
+    vertical-align: middle;
+    width: 108px;
+    color: #333333 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+}
+
+#cpanel div.icon a:hover, #cpanel div.icon a:focus, #cpanel div.icon a:active, 
+.cpanel div.icon a:hover, .cpanel div.icon a:focus, .cpanel div.icon a:active {
+    background-position: 0 center !important;
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1) inset, -5px -5px 10px rgba(0, 0, 0, 0.05) inset !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.cpanel div.icon span, #cpanel div.icon span {
+    display: block;
+    text-align: center;
+}
+
+/* Cpanel Layout Styling
+------------------------------------------------------------------------------*/
+#cpanel {}
+
+/* END Cpanel
+------------------------------------------------------------------------------*/
+
+/* Install and Stats Table
+------------------------------------------------------------------------------*/
+
+.coalaweb {
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    color: #4D4D4D;
+}
+
+.coalaweb {
+    border: solid #ccc 1px;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 95%;    
+    margin: 7px 15px 15px !important;
+}
+
+.coalaweb tr:hover {
+    background: #E8F6FE;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+ 
+.coalaweb tr.row1 {
+    background-color: #F0F0EE;
+}
+
+.coalaweb td, .coalaweb th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px !important;
+    text-align: left;    
+}
+
+.coalaweb th {
+    background:url("../images/icons/cw-panel-bg.png") repeat-x scroll 0px 0px transparent !important;
+    border-top: none;
+    color: #333 !important;
+    text-shadow: 0px 1px 1px #FFF;
+    border-bottom:4px solid rgb(18, 114, 165) !important;
+}
+
+.coalaweb td:first-child, .coalaweb th:first-child {
+    border-left: none;
+}
+
+.coalaweb th:first-child {
+    -moz-border-radius: 3px 0 0 0;
+    -webkit-border-radius: 3px 0 0 0;
+    border-radius: 3px 0 0 0;
+}
+
+.coalaweb th:last-child {
+    -moz-border-radius: 0 3px 0 0;
+    -webkit-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0;
+}
+
+.coalaweb th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.coalaweb tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 3px;
+    -webkit-border-radius: 0 0 0 3px;
+    border-radius: 0 0 0 3px;
+}
+
+.coalaweb tr:last-child td:last-child {
+    -moz-border-radius: 0 0 3px 0;
+    -webkit-border-radius: 0 0 3px 0;
+    border-radius: 0 0 3px 0;
+}
+
+.coalaweb em, .coalaweb strong {
+    color:#1272A5;
+    font-weight: bold;
+}
+
+/* END Tables
+------------------------------------------------------------------------------*/
+
+/* Messages
+------------------------------------------------------------------------------*/
+/* General message */
+.cw-message p.info, .cw-message p.alert, .cw-message p.vote, .cw-message p.upgrade {
+    padding:10px 10px 10px 40px;
+    line-height: 18px; 
+    margin: 0px 0px 10px 0px; 
+    border-radius:5px;
+    text-align:left;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #4D4D4D;
+}
+.cw-message p { margin: 10px 20px }
+
+.cw-message p a, .cw-message ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+.cw-message p a:hover, .cw-message ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+/* Info Message */
+.cw-message p.info a, .cw-message p.info em { color: #1272A5;}
+.cw-message p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border: 1px solid #D2DCE1;
+}
+
+/* Alert Message */
+.cw-message p.alert a, .cw-message p.alert em { color: #B1191C;}
+.cw-message p.alert a:hover { color: #D85863;}
+.cw-message p.alert {
+    background: url("../images/icons/cw-alert.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+}
+
+/* Vote Message */
+.cw-message p.vote a, .cw-message p.vote em { color:#268413; }
+.cw-message p.vote a:hover {color:#b0bf7f;}
+.cw-message p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border: 1px solid #DCE6BE;
+}
+
+/* Upgrade message*/
+.cw-message p.upgrade a, .cw-message p.upgrade em  { color:#CE6A23; }
+.cw-message p.upgrade a:hover {color:#E2AB53;}
+.cw-message p.upgrade {
+    background: url("../images/icons/cw-forum.png") no-repeat scroll 0 0  #FFFAE6; 
+    border: 1px solid #FAE6BE;
+}
+
+#permissions-sliders .pane-toggler-down span.level, 
+#permissions-sliders .pane-toggler span.level,
+#permissions-sliders .pane-sliders{
+    background-image: none !important;
+    margin:0px;
+}
+
+/*.controls .cw-message-block {
+    margin-left: -180px !important;
+}*/
+
+/* END Messages
+------------------------------------------------------------------------------*/
+
+/* Live Update
+------------------------------------------------------------------------------*/
+.icon-48-liveupdate { background-image: url("../images/icons/icon-48-cw-liveupdate.png") }
+
+var { font-style: italic; font-weight: bold; }
+p.liveupdate-url { font-family: "Lucida Sans Mono", "Courier New", Courier, monospace; }
+
+div.liveupdate-notsupported,
+div.liveupdate-stuck {
+    /*    border: thin solid #990000;
+        background: #fff0f0;
+        padding: 1em;
+        color: #330000;*/
+    background: url("../images/icons/cw-alert.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -border-radius: 10px;
+    -moz-box-shadow: 5px 5px 5px #f88;
+    -webkit-box-shadow: 5px 5px 5px #f88;
+    /*    box-shadow: 5px 5px 5px #f88;*/
+}
+div.liveupdate-notsupported h3,
+div.liveupdate-stuck h3 {
+    color: #B1191C;
+    font-size: 14px;
+    min-height: 20px;
+    padding: 0 0 0 40px;
+
+}
+
+
+div.liveupdate-notsupported a,
+div.liveupdate-stuck  a, 
+div.liveupdate-notsupported em,
+div.liveupdate-stuck em { color: #B1191C;}
+
+div.liveupdate-notsupported a:hover ,
+div.liveupdate-stuck a:hover { color: #D85863;}
+
+div.liveupdate-infotable {
+    margin: auto auto;
+    padding: 10px;
+    color: #565656;
+    font-size:14px;
+    text-align: center;
+}
+div.liveupdate-infotable a{
+    color: #025A8D;
+    transition: color 0.3s ease-out 0s;
+}
+div.liveupdate-infotable a:hover{
+    text-decoration: none;
+    color:#2690C5;
+}
+
+div.liveupdate-infotable .row0 { background: #fcfcfc }
+div.liveupdate-infotable .row1 { background: #f0f0f0 }
+div.liveupdate-row { padding: 5px 1px }
+span.liveupdate-label { 
+    display: inline-block; 
+    font-weight: bold;
+    overflow: hidden;
+    vertical-align:middle;
+}
+span.liveupdate-data { 
+    display: inline-block; 
+    overflow: hidden;
+    vertical-align:middle;
+}
+
+p.liveupdate-buttons, p.liveupdate-buttons button { 
+    text-align: center; 
+    margin: 1em;
+    padding: 5px 15px;
+}
+
+p.liveupdate-error-needsauth {}
+
+div.liveupdate-ftp p { 
+    margin: 1em 2em; 
+    line-height: 140%; 
+    padding: 0.5em; 
+    color: #3A87AD;
+    font-size: 12pt; 
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#nagscreen {
+    margin: 1em;
+    background: url("../images/icons/cw-alert.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+    color: #B1191C;
+    font-size: large;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -border-radius: 10px;
+    -moz-box-shadow: 5px 5px 5px #f88;
+    -webkit-box-shadow: 5px 5px 5px #f88;
+}
+
+root { display: block; }
+
+/* Update overview css 
+------------------------------------------------------------------------------*/
+
+/* General */
+div.cw-liveupadte a:link, div.cw-liveupdate a:visited {
+    text-decoration: none;
+}
+div.cw-liveupdate a:hover {
+    text-decoration: none;
+}
+
+div.liveupdate-hasupdates, div.liveupdate-noupdates {
+    margin: 10px auto auto;
+}
+
+/* No Updates */
+
+div.liveupdate-noupdates { }
+
+div.liveupdate-noupdates span.cw-liveupdate,
+div.liveupdate-hasupdates span.cw-liveupdate {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+div.liveupdate-noupdates .cw-liveupdate,
+div.liveupdate-hasupdates .cw-liveupdate {
+    margin: 20px 5px;
+    overflow: hidden;
+    padding: 5px 0px;
+    text-align: center;
+    width:100%;
+}
+
+/* Updates */
+
+div.liveupdate-hasupdates .cw-liveupdate {
+    background: none repeat scroll 0 0 #EF7F7F;
+    line-height: 30px;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* NEW */
+div.liveupdate-hasupdates, div.liveupdate-noupdates {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+div.liveupdate-noupdates .cw-liveupdate {
+    background: none repeat scroll 0 0 #99C24B;
+    line-height: 30px;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* END Live Update
+------------------------------------------------------------------------------*/
+
+/* Buttons
+------------------------------------------------------------------------------*/
+
+.button-blue, .button-green, .button-red {
+    border: none;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    height: 36px;
+    line-height: 36px;
+    margin: 5px;
+    padding: 0 15px !important;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-out 0s;
+}
+
+.button-blue:active, .button-blue:focus, .button-blue:hover,
+.button-green:active, .button-green:focus, .button-green:hover,
+.button-red:active, .button-red:focus, .button-red:hover{
+    background: none repeat scroll 0 0 #3D3D3D;
+    color: #FFFFFF;
+    border:none;
+}
+
+.button-blue {
+    background: none repeat scroll 0 0 #4C90FE;
+}
+
+.button-green {
+    background: none repeat scroll 0 0 #99C24B;
+}
+
+.button-red {
+    background: none repeat scroll 0 0 #EF7F7F;
+}
+
+/* END Buttons
+------------------------------------------------------------------------------*/
+
+/* Upload Window
+------------------------------------------------------------------------------*/
+.cw-upload-window {
+    height:60px;
+    margin-top:3px;
+    padding:10px;
+    margin-left:10px;
+    text-align: center;
+}
+
+.cw-upload-window button {
+    float:none !important;
+}
+
+.cw-upload-window input, .cw-upload-window select {
+    font-size: 1.1em;
+    border: 1px solid #c4c4c4;
+    outline: medium none;
+}
+
+.cw-progress {
+    display:block;
+    width:100%;
+}
+
+.cw-progress img{
+    float:none;
+}
+
+#cw-progress-bar {
+    text-align:center;
+}
+
+/* END Upload
+------------------------------------------------------------------------------*/
+
+/* Info icon
+------------------------------------------------------------------------------*/
+td.center img, th.center img {
+    margin-top: -8px;
+}
+
+/*Admin Links 
+------------------------------------------------------------------------------*/
+table.adminlist a:hover {text-decoration: none !important;}
+
+/* Tool tips
+------------------------------------------------------------------------------*/
+.tool-title {
+    text-align: left !important;
+    text-decoration: none;
+}
+
+/* Admin Forms
+------------------------------------------------------------------------------*/
+.adminform ul li{
+    list-style: none outside none;
+}
+

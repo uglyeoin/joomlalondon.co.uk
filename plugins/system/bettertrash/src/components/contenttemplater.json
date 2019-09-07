@@ -1,0 +1,12 @@
+{
+	"list": {
+		"table": "contenttemplater",
+		"state": "published",
+		"filter": "state"
+	},
+	"items": {
+		"table": "contenttemplater",
+		"state": "published",
+		"filter": "state"
+	}
+}

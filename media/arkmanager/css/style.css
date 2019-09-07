@@ -1,0 +1,73 @@
+/**
+ * NoNumber Extension Manager Admin CSS
+ *
+ * @package         NoNumber Extension Manager
+ * @version         4.3.1
+ *
+ * @author          Peter van Westen <peter@nonumber.nl>
+ * @link            http://www.nonumber.nl
+ * @copyright       Copyright © 2014 NoNumber All Rights Reserved
+ * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+#arkem input[type="checkbox"] {
+  margin-top: 0;
+}
+#arkem td {
+  height: 28px;
+}
+#arkem .progress {
+  margin-bottom: 0;
+}
+#arkem .alert {
+  margin-bottom: 0;
+  padding: 2px 6px;
+}
+#arkem span.hasPopover {
+  display: inline-block;
+}
+.com_arkmanager .popover {
+  width: auto;
+  max-width: 600px;
+}
+/* Not on mobile */
+@media (min-width: 768px) {
+  #arkem td.ext_name {
+    font-size: 16px;
+  }
+}
+table.hide_not_installed tbody tr.not_installed {
+  display: none;
+}
+@media (min-width: 481px) {
+  #toolbar .btn-success {
+    width: auto !important;
+  }
+}
+.installselected,
+.installselected,
+div.btn-toolbar .updateall,
+div.has_install .installselected_disabled,
+div.has_update .installselected_disabled,
+div.has_update .updateall_disabled {
+  display: none;
+}
+div.has_install .installselected,
+div.has_update .installselected,
+div.has_update .updateall {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .ark-hide-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .ark-hide-tablet {
+    display: none !important;
+	}
+}
+
+@media (max-width: 480px) {
+}

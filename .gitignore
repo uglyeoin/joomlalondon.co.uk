@@ -1,0 +1,15 @@
+configuration.php
+administrator/**
+bin/**
+cache/**
+cli/**
+engines/**
+fonts/**
+includes/**
+libraries/**
+logs/**
+tmp/**
+**.zip
+**.psd
+**.indd
+**.idml

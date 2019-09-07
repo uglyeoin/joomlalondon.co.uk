@@ -1,0 +1,167 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1558378238
+layout:
+  /container-top/:
+    -
+      -
+        'logo 40':
+          -
+            - position-logo
+      -
+        'menu-and-countdown 60':
+          -
+            - position-countdown-timer
+          -
+            - menu-6319
+  /header-banner/:
+    -
+      - position-header-banner
+  /container-main/:
+    -
+      -
+        '/main/ 60':
+          -
+            - position-breadcrumbs
+          -
+            - system-messages-2715
+          -
+            - system-content-3598
+      -
+        'sidebar1 20':
+          -
+            - social-3688
+          -
+            - position-sidebar
+          -
+            - position-right
+      -
+        'sidebar2 20':
+          -
+            - social-2605
+          -
+            - position-position-9212
+          -
+            - position-position-5927
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'position-footer-menu-1 25'
+      - 'position-footer-menu-2 25'
+      - 'position-footer-menu-3 25'
+      - 'position-footer-menu-4 25'
+    -
+      - position-disclaimer
+    -
+      - position-address
+  /sub-footer/:
+    -
+      - position-sub-footer
+    -
+      - 'position-copyright 33'
+      - 'position-softforge 33'
+      - 'position-download-joomla 34'
+  offcanvas:
+    -
+      - mobile-menu-5290
+structure:
+  logo:
+    type: section
+  menu-and-countdown:
+    type: section
+  container-top:
+    attributes:
+      boxed: ''
+  header-banner:
+    title: Banner
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  main:
+    attributes:
+      boxed: ''
+  sidebar1:
+    type: section
+  sidebar2:
+    type: section
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  sub-footer:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  position-logo:
+    attributes:
+      key: logo
+  position-countdown-timer:
+    attributes:
+      key: countdown-timer
+  menu-6319:
+    attributes:
+      hoverExpand: '0'
+    block:
+      variations: align-right
+  position-header-banner:
+    attributes:
+      key: header-banner
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-sidebar:
+    attributes:
+      key: sidebar
+  position-right:
+    attributes:
+      key: right
+  position-position-9212:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  position-position-5927:
+    title: Right
+    attributes:
+      key: right
+  position-footer:
+    attributes:
+      key: footer
+  position-footer-menu-1:
+    attributes:
+      key: footer-menu-1
+  position-footer-menu-2:
+    attributes:
+      key: footer-menu-2
+  position-footer-menu-3:
+    attributes:
+      key: footer-menu-3
+  position-footer-menu-4:
+    attributes:
+      key: footer-menu-4
+  position-disclaimer:
+    attributes:
+      key: disclaimer
+  position-address:
+    attributes:
+      key: address
+  position-sub-footer:
+    attributes:
+      key: sub-footer
+  position-copyright:
+    attributes:
+      key: copyright
+  position-softforge:
+    attributes:
+      key: softforge
+  position-download-joomla:
+    attributes:
+      key: download-joomla
+    block:
+      variations: 'align-right nomarginall nopaddingall'

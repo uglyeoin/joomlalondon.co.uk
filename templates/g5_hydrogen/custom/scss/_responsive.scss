@@ -1,0 +1,113 @@
+/*==========  Mobile First Responsive  ==========*/
+
+$above-large-deskmargin-top: 74.939rem;  // > 1199.024px
+$large-deskmargin-top: 74.938rem;        // 1199.024px
+$deskmargin-top: 59.938rem;              // 959.008
+$tablet: 47.938rem;               // 767.008
+$large-mobile: 29.938rem;         // 479.008
+
+
+/* Just the background images */
+/* MOBILE */
+@media only all and (max-width: $large-mobile) {
+    .mod_kou_background_image_with_text {
+        .text-holder {
+            padding: 0 0.5rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        a {
+            font-size: 1.6rem;
+            padding: 0.25rem 1.5rem;
+        }
+    }
+}
+
+@media only all and (min-width: $large-mobile) {
+    .mod_kou_background_image_with_text {
+        .text-holder {
+            width: 30rem;
+            padding: 0 0.5rem;
+            margin-top: 1rem;
+            font-size: 2rem;        
+        }
+    }
+}
+
+@media only all and (min-width: $tablet) {
+    .mod_kou_background_image_with_text {
+        .text-holder {
+            width: 75rem;
+            padding: 0 0.5rem;
+            margin-top: 1rem;
+            font-size: 2rem;        
+        }
+    }
+}
+
+
+/* iPad Landscape */
+/* Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+@media only all and (min-width: $deskmargin-top) {
+    .mod_kou_background_image_with_text {
+        .text-holder {
+            width: 48rem;
+            padding: 0 0.5rem;
+            margin-top: 1rem;
+            font-size: 2rem;        
+        }
+    }
+}
+
+
+@media only all and (min-width: $large-deskmargin-top) {
+    .mod_kou_background_image_with_text {
+        .text-holder {
+
+            width: 60rem;
+            text-align: left;
+            padding: 0 4rem;
+            margin-top: 1rem;        
+            h1 {
+                font-size: 2.4rem;
+            }
+            a {
+                font-size: 1.6rem;  
+                margin-top: 1rem;          
+            }
+        }    
+    }
+    #g-footer {
+        .menuFooter {
+            .g-title {
+                min-height: 4.5rem;
+            }
+        }
+    } 
+}
+
+@media only all and (min-width: $above-large-deskmargin-top) {
+    .mod_kou_background_image_with_text {
+        .text-holder {
+            width: 75rem;
+            padding: 0 0.5rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }    
+    }
+    #g-footer {
+        .menuFooter {
+            .g-title {
+                min-height: 4.5rem;
+            }
+        }
+    }    
+}

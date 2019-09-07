@@ -1,0 +1,19 @@
+context:              com_k2.item
+
+items_table:          k2_items
+items_state:          published
+
+categories_table:     k2_categories
+categories_title:     name
+categories_parent_id: parent
+# The K2 categories table does not use an 'extensions' column, so set it to empty
+categories_extension:
+
+tags_table:           k2_tags
+tags_title:           name
+# k2 tags have no alias easier to just map it to name
+tags_alias:           name
+tags_state:           published
+
+ignore_access_tags:   true;
+ignore_language_tags: true;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+	<name>KOU Lazy Load Images &amp; Iframes</name>
+	<author>Mary McGinty</author>
+	<creationDate>January 2019</creationDate>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<version>1.0.0</version>
+	<description>KOULAZYLOADIMAGEIFRAME_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="koulazyloadimageiframe">koulazyloadimageiframe.php</filename>
+        <folder>language</folder>
+	</files>
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="koulazyloadimageiframe">https://www.kindofuseful.com/downloads/joomla/modules/kouAliasAsBodyClass/updates.xml</server>
+	</updateservers>
+</extension>

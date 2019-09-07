@@ -1,0 +1,9 @@
+enabled: '0'
+url: ''
+target: _self
+image: 'gantry-assets://images/gantry5-logo.png'
+height: ''
+link: '1'
+svg: ''
+text: 'Gantry 5'
+class: gantry-logo

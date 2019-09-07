@@ -1,0 +1,170 @@
+﻿.icon-48-autotweet-logo, .icon-48-autotweet {
+	background: url(../images/autotweet-logo.png) no-repeat;
+}
+
+.icon-32-autotweet-logo {
+	background: url(../images/isologo-autotweet-32.png) no-repeat;
+}
+
+.admin .container-title h1.page-title {
+	background: url(../images/autotweet-logo-36.png) no-repeat;
+}
+
+.site #content h1.page-title {
+	background: url(../images/autotweet-logo-28.png) no-repeat;
+}
+
+.view-cpanels #content h1.page-title,
+.view-composer #content h1.page-title,
+.view-requests #content h1.page-title,
+.view-posts #content h1.page-title,
+.view-channels #content h1.page-title {
+	padding-left: 30px;
+}
+
+#content .navbar-inner {
+	box-shadow: none;
+}
+
+#content .navbar-inner {
+	background-color: transparent;
+}
+
+.icon-process:before {
+    content: "8";
+}
+
+#fbChannelTabsContent {
+	height: 300px;
+}
+
+#jformfbchannel_id {
+	width: 300px;
+}
+
+.icon-32-process {
+    background-image: url("../images/icon-32-process.png");
+}
+
+.bar a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.extly .order .input-ordering
+{
+        width:auto;
+}
+
+.extly .disabled {
+    color: #333333;
+}
+
+.extly .controls .btn {
+	vertical-align: top;
+}
+
+#main .extly ul {
+	list-style-type: none;
+}
+
+.nobr {
+	white-space:nowrap;
+}
+
+.extly .scope-control .label-info {
+	float: left;
+	margin-right: 8px;
+}
+
+.extly .scope-control .controls  label {
+	padding-top: 0px;
+}
+
+.extly .auth-authorized {
+	margin-right: 8px;
+}
+
+.user-channels h1 .xticon {
+	margin-right: 16px;
+}
+
+.user-channels h2 .xticon {
+	margin-right: 8px;
+}
+
+#toolbar-calendar {
+	float:right;
+}
+
+.extly .xt-cal-brand {
+	float:right;
+}
+
+.extly-calendar h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.extly-calendar h2, .extly-calendar h3, .extly-calendar .fc-button {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.extly-calendar .fc-widget-header {
+	text-transform: uppercase;
+}
+
+#xt-calendar .fc-content table {
+	font-size: 16px;
+}
+
+#xt-calendar .req-success {
+	color: #468847;
+	background-color: #dff0d8;
+	border: 1px solid #d6e9c6;
+}
+
+#xt-calendar .req-error {
+	color: #b94a48;
+	background-color: #f2dede;
+	border: 1px solid #eed3d7;
+}
+
+#xt-calendar .req-warning {
+	color: #c09853;
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+}
+
+#xt-calendar .req-info {
+	color: #3a87ad;
+	background-color: #d9edf7;
+	border: 1px solid #bce8f1;
+}
+
+.icon-32-calendar {
+    background-image: url("../images/icon-32-calendar-o.png");
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+display: none !important;
+}
+
+.task-browse .nav-tabs > li:last-of-type,
+.task-browse .nav-tabs > li:nth-last-of-type(2) {
+	float:right;
+}
+
+.extly a:hover {
+ cursor:pointer;
+}
+
+.view-cpanels a.btn-subhead, .view- a.btn-subhead, .view-infos a.btn-subhead,
+.view-cpanels .subhead-collapse, .view- .subhead-collapse, .view-infos .subhead-collapse
+ {
+	display: none;
+}
+

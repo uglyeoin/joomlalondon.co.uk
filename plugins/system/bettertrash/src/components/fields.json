@@ -1,0 +1,10 @@
+{
+	"fields": {
+		"table": "fields",
+		"filter": "state"
+	},
+	"groups": {
+		"table": "fields_groups",
+		"filter": "state"
+	}
+}

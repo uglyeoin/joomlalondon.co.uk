@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="system" method="upgrade">
+	<name>JavaScript Adder Plugin</name>
+	<author>Eoin Oliver</author>
+	<creationDate>October 2018</creationDate>
+	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Adds some JavaScript to every single page.  </description>
+	<files>
+		<filename plugin="javascriptadder">javascriptadder.php</filename>
+		<folder>language</folder>
+		<folder>xml</folder>		
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name= "javascripts"
+                       label= "JAVASCRIPT_ADDER_JAVASCRIPTS_LABEL"				
+                       description= "JAVASCRIPT_ADDER_JAVASCRIPTS_DESCRIPTION"
+                       type= "subform"
+                       min= "1"
+                       max= "1000"
+                       required= "true"
+                       formsource= "/plugins/system/javascriptadder/xml/subform.xml"
+                       multiple= "true"
+                       buttons= "add,remove"
+                       layout="joomla.form.field.subform.repeatable"
+                       groupByFieldset="false"
+					   />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

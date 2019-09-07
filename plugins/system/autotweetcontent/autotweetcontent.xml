@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>plg_system_autotweetcontent</name>
+    <creationDate>2019-05-22</creationDate>
+
+    <author>Extly.com</author>
+	<authorEmail>team@extly.com</authorEmail>
+	<authorUrl>https://www.extly.com</authorUrl>
+	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>8.28.0</version>
+
+    <description>PLG_AUTOTWEETCONTENT_DESC</description>
+
+    <files>
+        <filename plugin="autotweetcontent">autotweetcontent.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_autotweetcontent.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_autotweetcontent.sys.ini</language>
+        <language tag="es-ES">es-ES/es-ES.plg_system_autotweetcontent.ini</language>
+        <language tag="es-ES">es-ES/es-ES.plg_system_autotweetcontent.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="general" label="PLG_AUTOTWEET_PARAM_GENERAL_LABEL" description="">
+
+                <field name="interval" type="text" default="180" label="PLG_AUTOTWEETCONTENT_PARAM_INTERVAL_LABEL" description="PLG_AUTOTWEETCONTENT_PARAM_INTERVAL_DESC" />
+                <field name="autopublish" type="radio" class="btn-group btn-group-yesno" default="1" label="PLG_AUTOTWEET_PARAM_AUTOPUBLISH_LABEL" description="PLG_AUTOTWEET_PARAM_AUTOPUBLISH_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+				<field name="template_msg" type="textarea" cols="40" rows="10"
+					default="[title]" label="PLG_AUTOTWEET_PARAM_MSGTEMPLATE_LABEL"
+					description="PLG_AUTOTWEET_PARAM_MSGTEMPLATE_DESC" />
+            </fieldset>
+
+            <fieldset name="filter" label="PLG_AUTOTWEET_PARAM_FILTER_LABEL" description="">
+                <field name="spacer1" type="spacer" default="" label ="PLG_AUTOTWEET_PARAM_FILTER_DESC" description="" />
+                <field name="categories" type="category" extension="com_content" multiple="true" size="10" default="" label="PLG_AUTOTWEET_PARAM_CATEGORIES_LABEL" description="PLG_AUTOTWEET_PARAM_CATEGORIES_DESC" >
+                    <option value="">JOPTION_ALL_CATEGORIES</option>
+                </field>
+
+                <field name="spacer3" type="spacer" default="" label="PLG_AUTOTWEET_PARAM_EXCLUDEDCATEGORIES_SPACER_LABEL" description="" />
+                <field name="excluded_categories" type="category" extension="com_content" multiple="true" size="10" default="" label="PLG_AUTOTWEET_PARAM_EXCLUDEDCATEGORIES_LABEL" description="PLG_AUTOTWEET_PARAM_EXCLUDEDCATEGORIES_DESC" >
+                    <option value="">PLG_AUTOTWEET_PARAM_EXCLUDEDCATEGORIES_OPTION</option>
+                </field>
+
+                <field name="spacer51" type="spacer" default="" label="PLG_AUTOTWEETCONTENT_PARAM_ACCESSLEVELS_SPACER_LABEL" description="" />
+                <field name="accesslevels" type="accesslevel" multiple="true" size="5" default="" label="PLG_AUTOTWEETCONTENT_PARAM_ACCESSLEVELS_LABEL" description="PLG_AUTOTWEETCONTENT_PARAM_ACCESSLEVELS_DESC" >
+                    <option value="">PLG_AUTOTWEETCONTENT_PARAM_ACCESSLEVELS_OPTION</option>
+                </field>
+
+                <field name="post_featured_only" type="radio" class="btn-group btn-group-yesno" default="0" label="PLG_AUTOTWEETCONTENT_PARAM_POSTFEATUREDONLY_LABEL" description="PLG_AUTOTWEETCONTENT_PARAM_POSTFEATUREDONLY_DESC">
+                	<option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="post_modified" type="radio" class="btn-group btn-group-yesno" default="0" label="PLG_AUTOTWEET_PARAM_POSTMODIFIED_LABEL" description="PLG_AUTOTWEET_PARAM_POSTMODIFIED_DESC">
+                	<option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+				<field name="post_changestatepublished" type="radio" class="btn-group btn-group-yesno" default="1"
+					label="PLG_AUTOTWEET_PARAM_POSTCHANGESTATEPUBLISHED_LABEL" description="PLG_AUTOTWEET_PARAM_POSTCHANGESTATEPUBLISHED_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+				</field>
+            </fieldset>
+
+            <fieldset name="message" label="PLG_AUTOTWEET_PARAM_MESSAGE_LABEL" description="">
+                <field name="show_url" type="list" default="2" label="PLG_AUTOTWEET_PARAM_SHOWURL_LABEL" description="PLG_AUTOTWEET_PARAM_SHOWURL_DESC">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">PLG_AUTOTWEET_PARAM_SHOWURL_OPTION_1</option>
+                    <option value="2">PLG_AUTOTWEET_PARAM_SHOWURL_OPTION_2</option>
+                </field>
+                <field name="show_category" type="list" default="0" label="PLG_AUTOTWEET_PARAM_SHOWCAT_LABEL" description="PLG_AUTOTWEET_PARAM_SHOWCAT_DESC">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">PLG_AUTOTWEET_PARAM_SHOWCAT_OPTION_1</option>
+                    <option value="2">PLG_AUTOTWEET_PARAM_SHOWCAT_OPTION_2</option>
+                </field>
+                <field name="show_hash" type="radio" class="btn-group btn-group-yesno" default="0" label="PLG_AUTOTWEET_PARAM_SHOWHASH_LABEL" description="PLG_AUTOTWEET_PARAM_SHOWHASH_DESC">
+                	<option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="tags_as_hash" type="radio" class="btn-group btn-group-yesno" default="0" label="PLG_AUTOTWEET_PARAM_TAGASHASH_LABEL" description="PLG_AUTOTWEET_PARAM_TAGASHASH_DESC">
+                	<option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="use_text" type="list" default="0" label="PLG_AUTOTWEET_PARAM_USETEXT_LABEL" description="PLG_AUTOTWEET_PARAM_USETEXT_DESC">
+                    <option value="0">PLG_AUTOTWEET_PARAM_USETEXT_OPTION_0</option>
+                    <option value="1">PLG_AUTOTWEET_PARAM_USETEXT_OPTION_1</option>
+                    <option value="2">PLG_AUTOTWEET_PARAM_USETEXT_OPTION_2</option>
+                </field>
+                <field name="use_text_count75" type="text" default="2560" label="PLG_AUTOTWEET_PARAM_USETEXTCOUNT_LABEL" description="PLG_AUTOTWEET_PARAM_USETEXTCOUNT_DESC" />
+
+                <field name="spacer7" type="spacer" default="" label="PLG_AUTOTWEET_PARAM_ADDITIONALTEXT_SPACER_LABEL" description="" />
+
+                <field name="static_text_source" type="list" default="0" label="PLG_AUTOTWEET_PARAM_STATICTEXTSOURCE_LABEL" description="PLG_AUTOTWEET_PARAM_STATICTEXTSOURCE_DESC">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">PLG_AUTOTWEET_PARAM_STATICTEXTSOURCE_OPTION_1</option>
+                    <option value="2">PLG_AUTOTWEET_PARAM_STATICTEXTSOURCE_OPTION_2</option>
+                </field>
+                <field name="metakey_count" type="text" default="1" label="PLG_AUTOTWEET_PARAM_METAKEYCOUNT_LABEL" description="PLG_AUTOTWEET_PARAM_METAKEYCOUNT_DESC" />
+                <field name="static_text" type="text" default="" label="PLG_AUTOTWEET_PARAM_STATICTEXT_LABEL" description="PLG_AUTOTWEET_PARAM_STATICTEXT_DESC" />
+                <field name="static_text_pos" type="list" default="0" label="PLG_AUTOTWEET_PARAM_STATICTEXTPOS_LABEL" description="PLG_AUTOTWEET_PARAM_STATICTEXTPOS_DESC">
+                    <option value="1">PLG_AUTOTWEET_PARAM_STATICTEXTPOS_OPTION_1</option>
+                    <option value="2">PLG_AUTOTWEET_PARAM_STATICTEXTPOS_OPTION_2</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="advanced" label="PLG_AUTOTWEET_PARAM_ADVANCED_LABEL" description="">
+                <field name="polling" type="radio" class="btn-group btn-group-yesno" default="1" label="PLG_AUTOTWEETCONTENT_PARAM_POLLING_LABEL" description="PLG_AUTOTWEETCONTENT_PARAM_POLLING_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="spacer91" type="spacer" default="" label ="PLG_AUTOTWEETCONTENT_PARAM_ADVANCED_DESC" description="" />
+
+                <field name="post_old" type="radio" class="btn-group btn-group-yesno" default="0" label="PLG_AUTOTWEETCONTENT_PARAM_POSTOLD_LABEL" description="PLG_AUTOTWEETCONTENT_PARAM_POSTOLD_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="spacer92" type="spacer" default="" label ="PLG_AUTOTWEETCONTENT_PARAM_POSTOLD_DESC" description="" />
+
+                <field name="post_old_date" type="calendar" format="%Y-%m-%d" default="2000-02-01" label="PLG_AUTOTWEETCONTENT_PARAM_POSTOLDDATE_LABEL" description="PLG_AUTOTWEETCONTENT_PARAM_POSTOLDDATE_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
