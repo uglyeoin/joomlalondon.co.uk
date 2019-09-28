@@ -12,6 +12,8 @@
 
 defined('_JEXEC') or die;
 
+use XTP_BUILD\Extly\Infrastructure\Service\Cms\Joomla\ScriptHelper;
+
 /**
  * AutotweetViewMlogin
  *
@@ -59,8 +61,7 @@ class AutotweetViewMlogin extends F0FViewForm
 		$this->params = JFactory::getApplication()->getPageParameters($this->option);
 		$this->pageclass_sfx = htmlspecialchars($this->params->get('pageclass_sfx'));
 
-		$document = JFactory::getDocument();
-		$document->addScriptDeclaration('jQuery(document).ready(function(){
+		ScriptHelper::addScriptDeclaration('jQuery(document).ready(function(){
 	jQuery("#username").attr("autocorrect", "off").attr("autocapitalize", "none");
 });');
 

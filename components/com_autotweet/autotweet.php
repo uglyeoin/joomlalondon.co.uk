@@ -44,6 +44,9 @@ if (!defined('AUTOTWEET_API'))
 	include_once JPATH_ADMINISTRATOR . '/components/com_autotweet/api/autotweetapi.php';
 }
 
+// Composer Prefixed Libraries
+require_once JPATH_ROOT . '/autoload.php';
+
 $config = array();
 
 $view = null;

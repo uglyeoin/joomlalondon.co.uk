@@ -2,34 +2,22 @@
 
 $above-large-desktop: 74.939rem;  // > 1199.024px
 $large-desktop: 74.938rem;        // 1199.024px
-$desktop: 59.938rem;              // 959.008
-$tablet: 47.938rem;               // 767.008
-$large-mobile: 29.938rem;         // 479.008
+$desktop: 59.938rem;              // 959.008px
+$tablet: 47.938rem;               // 767.008px
+$large-mobile: 29.938rem;         // 479.008px
 
 
 /* Just the background images */
 /* MOBILE */
-@media only all and (max-width: $large-mobile) {
-    .mod_kou_background_image_with_text {
-        .text-holder {
-            padding: 0 0.5rem;
-            margin-top: 1rem;
-            font-size: 2rem;
-        }
-        a {
-            font-size: 1.6rem;
-            padding: 0.25rem 1.5rem;
-        }
-    }
-}
-
 @media only all and (min-width: $large-mobile) {
     .mod_kou_background_image_with_text {
         .text-holder {
             width: 30rem;
-            padding: 0 0.5rem;
-            margin-top: 1rem;
             font-size: 2rem;        
+        }
+        a {
+            font-size: 1.3rem;
+            padding: 0.6rem 1.3rem;            
         }
     }
 }
@@ -37,10 +25,11 @@ $large-mobile: 29.938rem;         // 479.008
 @media only all and (min-width: $tablet) {
     .mod_kou_background_image_with_text {
         .text-holder {
-            width: 75rem;
-            padding: 0 0.5rem;
-            margin-top: 1rem;
+            width: 100%;
             font-size: 2rem;        
+        }
+        a {
+            padding: 0.5rem 1.1rem;
         }
     }
 }
@@ -53,16 +42,20 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1) {
-
+    .mod_kou_background_image_with_text {
+        .text-holder {
+        }
+    }
 }
 
 @media only all and (min-width: $desktop) {
     .mod_kou_background_image_with_text {
         .text-holder {
-            width: 48rem;
-            padding: 0 0.5rem;
-            margin-top: 1rem;
+            width: 100%;
             font-size: 2rem;        
+        }
+        a {
+            padding: 0.5rem 1.1rem;
         }
     }
 }
@@ -73,8 +66,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
         .text-holder {
             width: 60rem;
             text-align: left;
-            padding: 0 4rem;
-            margin: -19rem auto 4rem;
             h1 {
                 font-size: 2.4rem;
             }
@@ -97,8 +88,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .mod_kou_background_image_with_text {
         .text-holder {
             width: 75rem;
-            padding: 0 0.5rem;
-            margin-top: 1rem;
             font-size: 2rem;
         }    
     }

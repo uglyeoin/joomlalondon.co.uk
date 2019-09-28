@@ -12,6 +12,8 @@
 
 defined('_JEXEC') or die;
 
+use XTP_BUILD\Extly\Infrastructure\Service\Cms\Joomla\ScriptHelper;
+
 /**
  * AutoTweetDispatcher
  *
@@ -35,8 +37,7 @@ class AutotweetDispatcher extends F0FDispatcher
 			$view = $this->input->getCmd('view');
 			Extly::loadStyle(true, ($view != 'composer'));
 
-			$document = JFactory::getDocument();
-			$document->addStyleSheet(JUri::root() . 'media/com_autotweet/css/style.css?version=' . CAUTOTWEETNG_VERSION);
+			ScriptHelper::addStyleSheet(JUri::root() . 'media/com_autotweet/css/style.css?version=' . CAUTOTWEETNG_VERSION);
 
 			Extly::getScriptManager(
 				// LoadExtlyAdminMode

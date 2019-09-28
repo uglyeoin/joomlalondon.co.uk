@@ -12,6 +12,8 @@
 
 defined('_JEXEC') or die;
 
+use XTP_BUILD\Extly\Infrastructure\Service\Cms\Joomla\ScriptHelper;
+
 $input = new F0FInput;
 $oauth_token = $input->get('oauth_token', null, 'BASE64');
 
@@ -25,7 +27,7 @@ if (!JgOAuthServer::getInstance()->isFirstLegValid($oauth_token))
 $oauth_token = base64_decode($oauth_token);
 $callback = JgOAuthServer::getInstance()->getVerifierCallback($oauth_token);
 
-JFactory::getDocument()->addScriptDeclaration('window.location=\'' . htmlentities($callback) . '\';');
+ScriptHelper::addScriptDeclaration('window.location=\'' . htmlentities($callback) . '\';');
 
 ?>
 <div class="logout<?php echo $this->pageclass_sfx?>">

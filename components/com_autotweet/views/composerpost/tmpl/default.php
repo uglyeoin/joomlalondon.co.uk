@@ -11,6 +11,8 @@
 
 defined('_JEXEC') or die;
 
+use XTP_BUILD\Extly\Infrastructure\Service\Cms\Joomla\ScriptHelper;
+
 $message = $this->item->message;
 $imageUrl = $this->item->image_url;
 $orgUrl = $this->item->org_url;
@@ -22,7 +24,7 @@ $siteUrl = RouteHelp::getInstance()->getRoot();
 $message = TextUtil::autoLink($message);
 $message = str_replace("\n", '<br/><br/>', $message);
 
-JFactory::getDocument()->addScriptDeclaration('window.location= "' . $orgUrl . '";');
+ScriptHelper::addScriptDeclaration('window.location= "' . $orgUrl . '";');
 
 ?>
 <p>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="plugin" group="autotweet" method="upgrade">
     <name>plg_autotweet_autotweetpost</name>
-    <creationDate>2019-05-22</creationDate>
+    <creationDate>2019-08-12</creationDate>
 
     <author>Extly.com</author>
 	<authorEmail>team@extly.com</authorEmail>
 	<authorUrl>https://www.extly.com</authorUrl>
 	<copyright>Copyright (c)2007-2018 Extly, CB. All rights reserved.</copyright>
 	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
-	<version>8.28.0</version>
+	<version>8.29.0</version>
 
     <description>PLG_AUTOTWEETPOST_DESC</description>
 

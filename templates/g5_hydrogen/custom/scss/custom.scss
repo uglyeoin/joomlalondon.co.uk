@@ -72,6 +72,11 @@ a.button {
   }
 
 
+  .g-main-nav .g-toplevel > li {
+    background: red;
+  }
+
+
   #g-footer {
     font-weight: 600;
     background: $light-blue;
@@ -207,9 +212,11 @@ a.button {
     justify-content: center;    
     .text-holder {
       text-align: center;
-      margin: 0 auto;
+      margin: -18rem auto 3rem;
+      background: rgba($white, 0.81);  
+      padding: 0 0.5rem;
+      font-size: 2rem;          
       > * {
-        background: rgba($white, 0.81);
         display: flex;
       }
       > div {
@@ -223,11 +230,11 @@ a.button {
       } 
       a {
         display: inline-block;
-        font-weight: 600;
-        margin: 0 auto;  
+        font-weight: 600; 
         background: $red;
         color: $white; 
-        padding: 1rem 2rem;     
+        font-size: 1.3rem;
+        padding: 0.6rem 1.3rem;              
       }     
     }
   }
