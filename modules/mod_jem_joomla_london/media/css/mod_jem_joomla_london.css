@@ -1,0 +1,57 @@
+/* Popout */
+.jem-popout {
+	display: none;
+}
+
+a.ui-btn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding: 0.5rem;
+}
+a.ui-btn.ui-menu-close {
+   position: relative;
+}
+.ui-menu-open::after {
+	background: rgba(0, 0, 0, 0.2);
+	content: '';
+	display: none;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.ui-menu-open.is-active::after {
+	display: block;
+}
+
+@keyframes slidein-bottom {
+	from {
+		transform: translateY(26rem);
+   }
+	to {
+		transform: translateY(0);
+   }
+}
+.ui-nav-mobile {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: auto;
+	background: #fff;
+	border-left: 1px solid #aeb0b5;
+	border-right: 0;
+	display: none;
+	flex-direction: column;
+	overflow-y: auto;
+	width: 100%;
+	z-index: 9000;
+}
+.ui-nav-mobile.is-active {
+	animation: slidein-bottom 0.3s ease-in-out;
+	display: flex;
+}
